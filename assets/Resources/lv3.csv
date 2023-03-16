@@ -1,0 +1,501 @@
+id,Question,A,B,C,D
+1,Bài hát Tình ca c?a Hoàng Vi?t nói d?n mùa nào trong nam?,Mùa xuân,Mùa H?,Mùa Thu,Mùa Ðông
+2,H? nào có xác máy bay B52 roi xu?ng?,H? H?u Ti?p,H? Tây,H? Trúc B?ch,H? Ng?c Khánh
+3,Chuy?n bay d?u tiên lên m?t trang th?c hi?n b?ng con tàu vu tr? nào?,Apollo 11,Con thoi, Alpha 2,Gamax
+4,Thân sinh c?a Ðinh B? Linh là ai?,Ðinh Công Tr?,Ðinh Li?n,Ðinh Toàn,Ðinh B? S?
+5,Qu?c gia có lá qu?c k? c? nh?t th? gi?i?,Ðan M?ch,Trung Qu?c,Israel ,Hà Lan
+6,Qu?c gia nào ? Châu Phi có t? l? ngu?i da tr?ng x?p x? t? l? ngu?i da den?,Nam Phi ,Marroc,Madagasca,Ai C?p 
+7,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa hè Olympic nam 1976?,Canada,Liên Xô ,Hoa K? ,Australia
+8,Bài tho dang báo d?u tiên c?a Nguy?n Bính?,Cô hái mo ,Tuong tu ,Cô lái dò ,Cô hàng xóm 
+9,"Theo sách d? Vi?t Nam nam 2007, có m?y loài d?ng v?t hoang dã dã b? tuy?t ch?ng ? nu?c ta, nhung v?n còn m?t vài ? nu?c lân c?n?",5 loài ,3 loài ,4 loài ,6 loài 
+10,Sarajevo là th? dô c?a qu?c gia nào?,Bosnia and Herzegovina,Bolivia,Botswana,Bolivia
+11,Tháp Eiffel du?c ra d?i hoàn t?t vào nam nào?,1887 - 1889,1888 - 1889,1887 - 1890,1887 -  1891 
+12,Bangladesh là nu?c d?u tiên trên th? gi?i s?n xu?t cây gì?,Cây dai ,Cây thu?c lá ,Cây lúa m?ch ,Cây trà 
+13,B? câu xác d?nh phuong hu?ng b?ng cách nào?,T? Tru?ng trái d?t,Theo hu?ng m?t tr?i,Hu?ng gió,Trí nh?
+14,"Trong co th? cá m?p, s? không tìm th?y v?t gì?",Xuong ,Mang cá ,Gân ,Rang 
+15,Lá qu?c k? c? nh?t th? gi?i thu?c v? qu?c gia nào?,Ðan M?ch,Thu? Ði?n,Ph?n Lan ,Ai C?p
+16,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa hè Olympic nam 1972?,Tây Ð?c,Canada,Liên Xô ,Trung Qu?c
+17,Ngu?i Singapore r?t k? câu chúc nào?,Chúc phát tài,Chúc may m?n,Chúc s?c kho?,Chúc chóng l?n
+18,Thành ph? nào dông dân nh?t bán d?o Trung ?n?,Bang C?c ,Rangon ,Thimpu,Niu Deli 
+19,Gaborone là th? dô c?a qu?c gia nào?,Botswana,Brazil,Belarus,Bangladesh
+20,Cu?c v?n lý tru?ng chinh c?a H?ng Quân Trung Qu?c dã di bao nhiêu km?,12.000km,13.000km,14.000km,15.000km
+21,"Tính d?n nam 2013, chi?c bánh m? dài nh?t th? gi?i ? Vi?t Nam dài bao nhiêu?",111m,110m,112m,113m
+22,Agatha n? si ngu?i Anh chuyên vi?t truy?n v? th? lo?i gì?,Trinh thám ,Vi?n Tu?ng,Tình c?m ,T? s? 
+23,Thành ph? nào sau dây luôn luôn vào gi?a trua th?y m?t tr?i ? phía Nam?,Mát-x-co-va,Hà N?i ,Bang C?c ,Sydney 
+24,"Âm nh?c th? k? 17, d?u th? k? 18 du?c g?i là Baroque, tên này du?c l?y t? dâu?",Tên m?t phong cách ki?n trúc,Tên m?t d?a danh,Tên m?t nhà so?n nh?c,Tên m?t ph? n?
+25,Dân t?c nào ? Vi?t Nam có dân s? th?p nh?t hi?n nay?,Odu ,Brau,Co ,Sila 
+26,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa hè Olympic nam 1968?,Mexico ,Tây Ð?c,Liên Xô ,Hy L?p 
+27,Biên gi?i t? nhiên gi?a Isarel và Jordani là gì?,Con sông,Sa m?c,Dãy núi ,Bi?n 
+28,Khu v?c có m?t d? dân s? cao nh?t châu Á là?,Nam Á ,Ðông Á ,Ðông Nam Á ,Tây Nam Á 
+29,Thành ph? nào ? nu?c ta có s?n lu?ng y?n sào nhi?u nh?t?,Khánh Hoà ,Bình Thu?n ,Qu?ng Nam ,Bà R?a  Vung Tàu 
+30,Bandar Seri Begawan là th? dô c?a qu?c gia nào?,Brunei,Brazil,Bolivia,Bangladesh
+31,"Ð?u tuong, l?c, thu?c lá du?c tr?ng nhi?u nh?t trên lo?i d?t nào?",Ð?t b?c màu ,Ð?t nhi?m m?n ,Ð?t phù sa,Ð?t xám 
+32,Th?i Ti?n Lê trong l?ch s? Vi?t Nam do ai l?p nên?,Lê Hoàn ,Lê L?i ,Lê Thái T? ,Lê Thánh Tông 
+33,Ðu?ng xích d?o ch?y qua bao nhiêu qu?c gia?,12,13,14,15
+34,Vi?t Nam tr? thành thành viên c?a Liên H?p Qu?c vào nam nào?,1976,1974,1975,1977
+35,Hi?p u?c nào ch?m d?t chi?n tranh th? gi?i th? hai?,Versailles,Warsaw,Paris,Geneve
+36,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa hè Olympic nam 1964?,Nh?t B?n ,Mexico ,Canada,Liên Xô 
+37,Mandalay là c? dô c?a d?t nu?c Châu Á nào?,Myanmar,Sri Lanka,Butan,Nepal
+38,Sông nào không ph?i c?a khu v?c Ðông Á?,O  phrat ,Amua ,Hoàng Hà ,Tru?ng Giang 
+39,Qu?c k? Indonesia có 2 màu tu?ng trung cho di?u gì?,"G?o, du?ng","G?o, hoa ","G?o, mu?i ","Ðu?ng, hoa "
+40,Sofia là th? dô c?a qu?c gia nào?,Bulgaria,Brunei,Bangladesh,Hungaria
+41,H? nu?c nào có du?ng xích d?o ch?y qua?,H? Victoria ,H? Ladoga ,H? Baikal ,H? Tonglesap 
+42,"Trong cu?c khai thác thu?c d?a l?n 2, th?c dân Pháp d?u tu v?n nhi?u nh?t vào ngành nào?",Nông nghi?p và khai thác ,Công nghi?p ch? bi?n ,Nông nghi?p và thuong m?i ,Giao thông v?n t?i 
+43,Máy vi tính vào giai do?n d?u du?c dùng cho?,Quân s? ,Ði?n toán ,Kinh t? ,Khoa h?c 
+44,Nu?c nào sau dây n?m gi?a Ba Lan và Hungary?,Slovakia ,Bungary,Ph?n Lan,Latvia
+45,Th? dô nào lâu d?i nh?t Ðông Nam Á?,Hà N?i ,Bang C?c,Phnom Penh,Viên Chan
+46,Ðàn Talu là c?a dân t?c nào ? nu?c ta?,Vân Ki?u ,Thái ,Raglai ,HMông
+47,Áo không giáp nu?c nào sau dây ?,Romani ,Slovakia , CH Séc ,Ð?c
+48,Ngu?i châu Âu d?u tiên thám hi?m sông Mekong là ngu?i qu?c gia nào?,B? Ðào Nha ,Pháp,Hà Lan ,Tây Ban Nha
+49,Ð?n nam 2002 t? ch?c ASEAN g?m bao nhiêu qu?c gia?,10,9,8,7
+50,"Chi?n th?ng Gi?ng Th? Ðam , Gò Qu?ng Cung là m? màn c?a cu?c kh?i nghia nào?",Ð?ng kh?i B?n Tre ,Kh?i nghia Nam K? ,Kh?i nghia Lam Son ,Kh?i nghia Hai Bà Trung 
+51,"Món gà quay có ý nghia là xin chúc s?c kho? anh, tuong ?ng v?i quan ni?m c?a ngu?i nu?c nào khi an?",Ai Len ,Pháp ,Ð?c ,Hà Lan 
+52,Ngu?i d?u tiên thám hi?m vòng quanh trái d?t là ngu?i nu?c nào?,B? Ðào Nha ,Anh ,Tây Ban Nha ,Ð?c 
+53,Nu?c nào sau dây n?m gi?a Ð?c và Ba lan ?,CH Séc ,Ðan M?ch,Hà Lan ,Ph?n Lan
+54,Nu?c Ð?c không giáp v?i qu?c gia nào sau dây?,Italy ,CH Séc, Ba Lan ,Pháp
+55,Nhà bác h?c d?u tiên dua ra khái ni?m nguyên t? là?,Ðêmôcrit ,Mendêlêép ,Lavoadiê,Rodopho
+56,Brazil không giáp v?i qu?c gia nào sau dây?,Ecuador ,Peru ,Venezuela ,Paraguay
+57,Qu?c h?i khoá m?y là qu?c h?i ng?n nh?t nu?c ta?,V,II,III,VI
+58,Kênh dào Panama du?c m? c?a vào nam nào ?,1914,1924,1894,1884
+59,L?n d?u tiên con ngu?i d?t chân lên m?t trang vào nam nào?,Nam 1969 ,Nam 1966 ,Nam 1967,Nam 1968
+60,Kênh dào Suez dài kho?ng bao nhiêu?,195km,225km,165km,125km
+61,"Trong truy?n thuy?t Á Ðông tru?c dây, Phu?ng Hoàng là?",C?p tr?ng mái ,Con mái ,Con tr?ng ,Không xác d?nh 
+62,"T?ng vang danh m?t th?i, nhóm nh?c Bee Gees g?m m?y thành viên?",3,1,2,4
+63,"S?n xu?t axit vô co, phân bón, thu?c tr? sâu, thu?c nhu?m thu?c vào?",Hoá ch?t co b?n ,Hoá t?ng h?p h?u co ,Hoá d?u,Hoá h?c vô co 
+64,"Trong các v? danh nhân l?ch s? Vi?t Nam, ngu?i nào sau dây t?ng là Ti?t Ð? S?",Khúc Th?a D?,Tr?n Qu?c Tu?n,Ngô Quy?n,Ðinh B? Linh
+65,Electron du?c tìm th?y vào nam nào?,1987,1984,1985,1986
+66,Ai là ngu?i d?u tiên phát hi?n: Ánh sáng có v?n t?c h?u h?n?,Christensen Roeme,Issac Newton,Galileo,Anbe Einstein
+67,Sao La là loài d?ng v?t quý hi?m ch? xu?t hi?n ? Vi?t Nam và Lào và du?c phát hi?n ra nam nào?,1992,1990,1996,1994
+68,"Qu?c gia nào là quê huong c?a di?u, m?t trò choi dân gian n?i ti?ng?",Trung Qu?c ,Vi?t Nam ,Mông C? ,Lào
+69,Tên g?i Ba Ðình xu?t phát t? d?a danh nào?,Thanh Hoá ,Hà Nam,Ngh? An ,Ngh? Tinh 
+70,Hành tinh nào sau dây trong h? m?t tr?i có vành dai v?t ch?t bao quanh?,Sao Th?,Sao Kim,Sao M?c,Sao H?i Vuong
+71,Kh?i nghia Lam Son kéo dài trong kho?ng th?i gian nào?,T? nam 1418 - 1427,T? nam 1418 - 1428,T? nam 1417 - 1427,T? nam 1417- 1428
+72,"Tính d?n nam 2013 Tòa nhà Burj khalifa là tòa nhà cao nh?t th? gi?i, nó du?c khánh thành nam nào?",2010,2011,2009,2008
+73,Nu?c nào sau dây không giáp bi?n?,Zambi,Namibia,Gabon,Ghana
+74,"Trong các d?ng vu?n ngu?i, loài vu?n nào có d?c di?m g?n gi?ng v?i con ngu?i nh?t?",Kh? Gôrila,Vu?n,Tinh tinh ,Ðu?i uoi
+75,Electron du?c ai tìm ra?,Tômxon ,Rodopho,Chatwich,Culông
+76,"Trong các tia sau dây, tia nào có bu?c sóng ng?n nh?t?",Tia Gamma,Tia H?ng Ngo?i ,Tia X,Tia t? ngo?i 
+77,Hatikva bài ca hy v?ng là tên b?n qu?c ca c?a nu?c nào?,Israel ,Conggo ,Mông C?,Hy L?p 
+78,Cu?c kh?i nghia Huong Khê b?t d?u và k?t thúc nam nào?,1885  1896,1884  1896,1885  1986,1858  1896
+79,Sông Tô L?ch Hà N?i là tên g?i b?t ngu?n t? dâu?,Tên 1 ngu?i dân ,Tên 1 ng?n núi ,Tên 1 cái h? ,Tên 1 loài chim 
+80,"T? 6 gi? sáng d?n 6 gi? chi?u, kim gi? và kim phút trùng nhau bao nhiêu l?n?",11,10,12,13
+81,Nu?c nào sau dây n?m gi?a Sudan và Somalia?,Ethiopia,Tazania,Niger,Angola
+82,S? hi?u chi?c xe tang dã húc d? c?ng dinh d?c l?p ngày 30 tháng 4 nam 1945?,390,380,843,348
+83,Công th?c hóa h?c c?a khí cu?i?,N2O,NO2,N2O3,HNO3
+84,C?t s?ng hình ch? S ? ngu?i có liên quan d?n ho?t d?ng nào sau dây?,"Ði, d?ng th?ng",Phát tri?n ti?ng nói ,S? d?ng công c? ,Tu duy tr?u tu?ng
+85,Enzym Pepsin do co quan nào ti?t ra?,D? dày ,Gan ,M?t ,Ru?t 
+86,Chuy?n bay d?u tiên c?a con ngu?i vào vu tr? ti?n hành vào nam nào?,1961,1946,1954,1975
+87,Tr?n Hi?u Ngân là v?n d?ng viên d?u tiên c?a Vi?t Nam nh?n Huy chuong B?c ? Olympic nam nào?,2000,1996,2004,2008
+88,Thành ph? c? nh?t c?a tân th? gi?i là thành ph? nào?,Mexico ,Ulan Bato ,New Deli ,Panama 
+89,Ai là ngu?i d?u tiên phát hi?n ra khí cu?i?,Humphry Davy,Neil Bohr,Hans Fischer,Lavoadie
+90,Ðánh d?u m?t th? h? m?i c?a virus máy tính là virus nào?,Sasser ,Melisa,Love Bug ,Slammer 
+91,T? báo d?u tiên ? Vi?t Nam du?c in b?ng ch? qu?c ng? là t? báo nào?,Gia Ð?nh báo,Ngu?i cùng kh? ,Thanh niên ,Sài Gòn gi?i phóng 
+92,Huy?n Giao Thu? tr?c thu?c t?nh nào c?a nu?c ta?,Nam Ð?nh ,Ninh Bình ,Thái Bình ,Hà Nam 
+93,Ai là ngu?i d?u tiên ch?ng minh trái d?t có d?ng hình c?u?,Aristole,Copecnic,Galileo,Acsimet
+94,Vi?t Nam và M? chính th?c l?p l?i quan h? bình thu?ng vào nam nào?,1995,1993,1994,1996
+95,Nguy?n Kh?c Hi?u  là tên th?t c?a nhà tho nào?,T?n Ðà,T? H?u ,Nguy?n Ðình Chi?u ,Tú Xuong 
+96,"Bracoc là c? dô ít b? tàn phá nh?t ? châu Âu, nó thu?c qu?c gia nào?",Ba Lan ,Hà Lan ,Ph?n Lan ,Thu? Si 
+97,C?u th? d?u tiên ghi bàn trong l?ch s? bóng dá World Cup?,Lucien Laurent,Hakan Sukur,Just Fontaine,Sandor Kocsis
+98,V?n t?c c?a trái d?t bay xung quanh m?t tr?i là bao nhiêu?,107.000 Kmh,177.000 Kmh,707.000 Kmh,101.000 Kmh
+99,Bayon là ngôi d?n ?n tu?ng nh?t c?a ki?n trúc d?n núi do s? hùng vi v? qui mô cung nhu v? c?m xúc mà nó dem l?i cho ngu?i xem?,Campuchia ,?n Ð? ,Thái Lan ,Lào 
+100,Võ su sáng l?p ra môn võ Vovinam tên là gì?,Nguy?n L?c ,Nguy?n Van ,Nguy?n Tu?n ,Nguy?n Ng?c 
+101,Huy?n Ki?n Xuong tr?c thu?c t?nh nào c?a nu?c ta?,Thái Bình ,H?i Phòng ,Nam Ð?nh ,Hà Nam 
+102,Th? nào sau dây không du?c nh?c d?n trong bài tho Ðây thôn V? D? c?a Hàn M?c T??,Tr?u,Áo,Mang,Mây
+103,Ngô Quy?n có quan h? gì v?i Duong Ðình Ngh? ,Con r?,B?n,Cháu ,Con 
+104,Bài tho Lu?m du?c T? H?u sáng tác vào nam nào?,1949,1952,1959,1944
+105,Bác H? dã ra di tìm du?ng c?u nu?c vào ngày tháng nam nào ?,Ngày 5 tháng 6 nam 1911,Ngày 6 tháng 5 nam 1911,Ngày 7 tháng 6 nam 1911,Ngày 6 tháng 7 nam 1911
+106,Bác H? l?n d?u tiên t?i Pháp nam 1911 ? thành ph? nào sau dây?,Le Havre,Toulouse,Normandie,Marseille
+107,Ð?o ph?c sinh n?m ? vùng nào sau dây?,Thái Bình Duong,Ð?a trung h?i,Caribe,?n Ð? Duong
+108,Ðàn b?u xu?t hi?n ? Vi?t Nam vào kho?ng th?i gian nào?,Th? k? th? 7 ,Th? k? th? 9 ,Th? k? th? 11 ,Th? k? th? 17 
+109,Huy?n Ti?n H?i tr?c thu?c t?nh nào c?a nu?c ta?,Thái Bình ,Nam Ð?nh ,H?i Phòng ,H?i Duong 
+110,Hành tinh nào không có b?u khí quy?n?,Kim tinh ,M?c tinh,Thu? tinh ,Trái d?t
+111,Qu?c gia nào s? t? ch?c th? v?n h?i mùa hè Olympic nam 2012?,Anh ,Brazil ,Hoa K? ,Nh?t B?n
+112,"Guom mài dá, dá núi cung mòn có trong tác ph?m nào c?a Nguy?n Trãi?",Bình Ngô d?i cáo ,?c Trai thi t?p ,H?ch tu?ng si ,L?c Vân Tiên
+113,B? phim Cánh d?ng hoang d?a trên tác ph?m c?a nhà van nào?,Quang Sáng ,Th?ch Lam ,Nam Cao ,H?ng Phát 
+114,Thành ph? nào có nhi?u d?n th? nh?t th? gi?i?,Pushkar ?n Ð? ,Thimpu Butan,Rangon Myanmar,Viêng Chan Lào
+115,"Chu?t Micky là nhân v?t ho?t hình c?a di?n ?nh Hoa K?, b?n cho bi?t chú chu?t này ra d?i nam nào?",1928,1940,1956,1917
+116,"Hành l? nan, Tinh d? thu, Thái liên khúc là nh?ng bài tho c?a tác gi? nào sau dây?",Lý B?ch ,T? Ngung ,Ngô Quân ,Ð? Ph? 
+117,Ð?ng ti?n d?u tiên trong l?ch s? nu?c ta du?c dúc du?i th?i nào?,Nhà Ðinh ,Nhà Tr?n ,Nhà h?u Lê ,Nhà Nguy?n 
+118,Chi?n th?ng nào c?a nu?c ta dã ch?m d?t vinh vi?n n?n xâm lang c?a phong ki?n phuong B?c v?i nu?c ta?,Ng?c H?i  Ð?ng Ða ,B?ch Ð?ng Giang ,Chi Lang  Xuong Giang ,Ði?n Biên Ph? 
+119,Qu?c gia nào là quê huong c?a bia Heiniken?,Hà Lan ,Thu? Ði?n,Thu? Si,Ba Lan 
+120,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa hè Olympic nam 2008?,Trung Qu?c,Australia,Hy L?p ,0
+121,T?t c? các d?ng v?t có vú d?u có m?y d?t s?ng c??,7,6,8,9
+122,Tri?u Tiên b? chia làm 2 mi?n Nam B?c t?i vi tuy?n s? bao nhiêu?,38,27,45,61
+123,Thành ph? yên tinh nh?t th? gi?i là thành ph? nào?,Algie Algeria,Hu? Vi?t Nam ,Paris Pháp,Ulan Bato Mông C? 
+124,"Ð?a ch?n k?, m?t công c? d? phát hi?n nh?ng ch?n d?ng c?a trái d?t, d?u tiên du?c phát minh vào th? k? th? nh?t tru?c công nguyên, t?i?",Trung Qu?c ,?n Ð? ,Hy L?p ,Ai C?p 
+125,Ngu?i hi?n thân cho s?c m?nh và v? d?p c?a ngu?i Hy L?p trong tru?ng ca Illiat và Odyssey?,Asin ,Th?n D?t ,Odixe ,Hecquyn 
+126,H? Bi?u Chánh là tác gi? c?a tác ph?m nào du?i dây?,Ng?n c? gió dùa ,N?ng trong vu?n ,Sông Côn mùa lu ,Lão H?c 
+127,Câu nói n?i ti?ng: M?t bu?c nh? c?a ngu?i là bu?c nh?y v?t kh?ng l? c?a nhân lo?i là c?a ai?,Neil Amstrong,John Boyd Dunlop,John Davison Rockefeller,Henry Ford
+128,Trong bàn c? vua có t?t c? bao nhiêu quân mã?,4,3,2,5
+129,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa hè Olympic nam 2004?,Hy L?p ,Trung Qu?c,Brazil,Anh 
+130,Cá rô phi ?p tr?ng ? dâu?,Trong mi?ng ,Trong mang ,Du?i cát ,Trên t?o 
+131,Th?i gian d? m?t tr?i quay quanh tâm Thiên Hà c?a chúng ta?,225 tri?u nam ,225 nghìn nam ,225 v?n nam ,225 t? nam 
+132,"Ðon v? nào sau dây du?c dùng d? do ti?ng ?n, ti?ng d?ng?",Deciben,Decimet,Decagam,Không có 
+133,Nu?c nào s?n xu?t ô tô nhi?u nh?t th? gi?i?,Nh?t B?n ,M? ,Ð?c ,Hàn Qu?c 
+134,V? Giáo Hoàng d?u tiên là ai?,Thánh Peter,Thánh Paul ,Thánh John ,Thánh Marc
+135,"Trong truy?n 7 viên ng?c r?ng n?i ti?ng, r?ng thiêng xu?t hi?n l?n d?u tiên ? t?p bao nhiêu?",T?p 3 ,T?p 2 ,T?p 6 ,T?p 9 
+136,Giao hu?ng tho N? anh hùng mi?n Nam là sáng tác c?a nh?c si nào?,Nguy?n Th? Nhung ,Hoàng Vi?t ,Nguy?n  Ðình Tân ,Nguy?n Xinh 
+137,Siêu sao di?n ?nh Thành Long c?a Trung Qu?c có h? là gì?,Tr?n,Lý ,Tri?u ,H? 
+138,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa hè Olympic nam 2000?,Australia,Hy L?p ,Trung Qu?c,Tây Ban Nha
+139,Di s?n nào c?a Vi?t Nam du?c UNESCO công nh?n là di s?n van hoá phi v?t th? 2005?,C?ng  chiêng ,Áo dài ,Tranh Ðông H? ,Tr?ng d?ng
+140,Ai là ngu?i phát hi?n ra khí quy?n trên sao Kim?,Lomonosov,Kepler,Copernicus,Galileo
+141,Nu?c có kh?i lu?ng riêng l?n nh?t ? bao nhiêu d? C?,4 d? C ,100 d? C ,7 d? C ,0 d? C 
+142,Thành ph? cao nh?t th? gi?i là thành ph? nào trong các thành ph? sau?,Lapaz Bolivia,Thimpu Butan,Santiago Chile,Panama Panama
+143,Tr? s? c?a ngân hàng th? gi?i n?m ? thành ph? nào c?a M??,Washington,New York,New Mexico,Texas
+144,Ngu?i anh hùng dã làm nên chi?n công d?t cháy tàu Hy V?ng c?a Pháp trên sông Nh?t T?o là ai?,Nguy?n Trung Tr?c ,Truong Ð?nh,Thi?n H? Duong ,Th? Khoa Huân 
+145,Rabindranath Tagore dã nh?n gi?i Nobel ? linh v?c nào?,Van h?c ,Toán h?c ,Hoá h?c ,Y h?c 
+146,Kê rô sin là nguyên li?u thu?ng du?c dùng ? dâu?,Máy bay ph?n l?c,Ch? bi?n th?c ph?m,In ?n,S?n xu?t vi m?ch
+147,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa hè Olympic nam 1996?,Hoa K?,Brazil ,Australia,Anh 
+148,Nguy?n Van Tài là tên th?t c?a nhà van nào?,Kim Lân ,Nam Cao ,Th?ch Lam ,Vu Tr?ng Ph?ng
+149,Charlemange là tên th?t c?a v? vua nào?,Karl d?i d?, Alexander d?i d? ,Heirich d? t? ,Otto d?i dê
+150,Su doàn 308 có tên là Ð?i doàn tiên phong du?c thành l?p vào nam nào?,1969,1966,1967,1968
+151,Thành ph? có nhi?u bia nh?t th? gi?i là thành ph? nào?,Dublin Ailen,London Anh,Paris Pháp ,Stockhom Thu? Ði?n 
+152,Karaoke du?c phát minh vào nam nào?,1971,1970,1972,1973
+153,Th? linh c?a cu?c kh?i nghia Huong Khê là ai?,Phan Ðình Phùng,Nguy?n Quang Bích ,Ðinh Công Tráng ,T?ng Duy Tân 
+154,"Truy?n 7 viên ng?c r?ng n?i ti?ng, t?p cu?i cùng tên là gì?",T?m bi?t ng?c r?ng ,Th?i th? t?o anh hùng ,Bí m?t Ma Bu ,Ca khúc kh?i hoàn 
+155,"Rabindranath Tagore là ngu?i nh?n gi?i Nobel van h?c, ông là ngu?i nu?c nào?",?n Ð? ,Trung Qu?c ,Ai C?p ,Hy L?p 
+156,Ðàn Ðáy có m?y dây?,0,1,2,3
+157,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa hè Olympic nam 1992?,Hoa K?,Brazil ,Australia,Anh 
+158,Ðàn L?c huy?n c?m thu?c lo?i dàn nào?,Guitar ,Piano ,Ðàn tranh ,Violon 
+159,Ánh sáng m?t tr?i ph?n x? t? Thiên vuong tinh có màu gì?,Màu xanh bi?c ,Màu d? ,Màu tím ,Màu vàng 
+160,Thành ph? nào du?c xem là thành ph? h?nh phúc nhà nu?c quan tâm d?n ngu?i Nghèo?,Stockhom Thu? Ði?n ,Oslo Nauy,Hensinki Ph?n Lan,Ankara Th? Nhi Kì
+161,Email có t? nam nào?,1971,1981,1960,1990
+162,Lãnh d?o cu?c kh?i nghia Bãi S?y là ai?,Nguy?n Quang Bích ,Nguy?n Thi?n Thu?t ,Hoàng Hoa Thám ,Phan Ðình Phùng 
+163,Ban nh?c n?i ti?ng nào sau dây dã t?ng d?n Vi?t Nam trình di?n?,Boney M,ABBA,Pussy cat dolls,MTV 
+164,Luong Th? Vinh thu?ng du?c nhân gian g?i là tr?ng gì?,Tr?ng Lu?ng,Tr?ng Qu?nh ,Tr?ng Trình ,Tr?ng L?n 
+165,Hành tinh nào nóng nh?t trong h? m?t tr?i?,Sao Thu? ,Sao Kim ,Sao Ho? ,Sao M?c 
+166,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa hè Olympic nam1988?,Hàn Qu?c,Hoa K? ,Australia,Brazil
+167,Bài tho nào không n?m trong chùm tho mùa thu c?a Nguy?n Khuy?n?,Thu ng?m ,Thu ?m ,Thu v?nh,Thu di?u 
+168,"Trong các ch?t sau dây, ch?t nào có nhi?t d? sôi cao nh?t?",NAmyl axetat,NAmylic,Propionic,NValeric
+169,Thành ph? có h? th?ng giao thông công c?ng t?t nh?t th? gi?i là thành ph? nào?,London Anh ,Tokyo Nh?t B?n ,B?c Kinh Trung Qu?c ,Berlin Ð?c 
+170,Máy in du?c phát minh vào nam nào?,1730,1450,1340,1560
+171,Anh hùng áo v?i là nói d?n v? anh hùng dân t?c nào?,Nguy?n Hu? ,Tr?n Qu?c To?n ,Lê L?i ,Lê Lai 
+172,"Khi tan v?, Liên bang Xô Vi?t có bao nhiêu nu?c thành viên?",15 nu?c thành viên ,8 nu?c thành viên ,10 nu?c thành viên ,16 nu?c thành viên 
+173,Nam nào du?c g?i là Nam Châu Phi?,1960,1959,1958,1961
+174,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa hè Olympic nam 1984?,Hoa K?,Hàn Qu?c ,Tây Ban Nha,Anh
+175,"Vào th? chi?n th? 2, tu?ng Oscar du?c làm b?ng gì?",Th?ch cao ,Vàng,Thu? tinh ,Ð?ng 
+176,Nhà toán h?c Turing là ngu?i nu?c nào?,Anh ,Pháp ,M?,Ð?c 
+177,Toán lính Pháp cu?i cùng r?i kh?i mi?n B?c nu?c ta vào ngày tháng nam nào?,10051955,5051955,10101955,5101955
+178,Thành ph? nào sau dây có các công trình gi?ng Paris c?a nu?c Pháp nh?t th? gi?i?,Bucares Rumania,Budapest Hungaria,Sofia Bungaria,Viên Áo 
+179,Tàu ho? hoi nu?c ra d?i vào nam nào?,1825,1980,1845,1875
+180,"Theo truy?n thuy?t Ai C?p, Nhân Su an th?t h?t t?t c? nh?ng ai?",Không gi?i du?c câu d? c?a nó ,Ai mà nó thích ,Không n?p c?ng v?t cho nó ,Ai mà nó b?t g?p 
+181,Con ?ch du?c ngành v?t lý nào sau dây s? d?ng làm v?t thí nghi?m d?u tiên?,Ði?n h?c ,Âm h?c ,Quang h?c ,Nhi?t h?c 
+182,Ông già B?n Ng? là ai?,Phan B?i Châu ,Bác H? ,Phan Ðình Phùng ,Phan Chu Trinh 
+183,Quê huong c?a Ð?c Ph?t?,Nepal ,?n Ð? ,Pakistan ,Iran 
+184,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa hè Olympic nam 1980?,Liên Xô,Hàn Qu?c,Thái Lan ,Vi?t Nam 
+185,Ai là ngu?i d?u tiên s? d?ng thu?t ng? phép chia vàng?,Leonardo de Vinci,Fibonacci,Pithagor,Euclid
+186,Gi?i vô d?ch bóng r? th? gi?i l?n th? 15 nam 2006 du?c t? ch?c ? nu?c nào?,Nh?t B?n ,M? ,Hy L?p ,Hàn Qu?c 
+187,Bi?n Ba Ð?ng thu?c t?nh nào c?a nu?c ta?,Trà Vinh ,Kiên Giang ,Cà Mau ,Sóc Trang 
+188,Lapaz là th? dô c?a qu?c gia nào?,Bolivia,Brazil,Bhutan,Belarus
+189,Tháp Eiffel du?c hoàn t?t vào nam nào?,1889,1905,1883,1911
+190,Chi?c máy tính d?u tiên trên th? gi?i có tên g?i là gì?,ENIAC ,ENICA,ENCA,ENICAC
+191,Khi tr?i mua trong nu?c mua có ch?t gì làm cho s?t chóng g? sét?,Acid Nitric,Acid Oleic,Acid Oxalic,Acid Glutamic
+192,Báo Ngu?i cùng kh? ra d?i nam nào?,1922,1920,1921,1923
+193,Phong trào vô s?n hóa c?a H?i Vi?t Nam cách m?ng Thanh niên b?t d?u vào?,Tháng 9/1928,Tháng 6/1925,Tháng 12/1927,Tháng 1/1930
+194,"Lý Bí lên ngôi, d?t qu?c hi?u nu?c ta là gì?",V?n Xuân,Ð?i C? Vi?t,Ð?i Vi?t,Ð?i Ngu
+195,Vua phá lu?i Gi?i ngo?i h?ng Anh mùa bóng 2008  2009 là c?u th? nào?,Nicolas Anelka,Christiano Ronaldo,Fornando Torres,David Beckham
+196,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 1994?,Na Uy ,Nh?t B?n ,Hoa K? , Ph?n Lan
+197,Ði?m d?c trung nh?t c?a các sinh v?t trong gi?i nguyên sinh là gì?,Nhân th?c ,Nhân so,S?ng kí sinh ,S?ng ho?i sinh
+198,Tuy?n du?ng s?t d?u tiên du?c xây d?ng ? nu?c nào?,Anh ,Tây Ban Nha ,Pháp ,Nga 
+199,Vi?t Nam chính th?c gia nh?p t? ch?c ASEAN vào th?i gian nào?,Tháng 7  1995 ,Tháng 7  1992 ,Tháng 9  1994 ,Tháng 9  1997 
+200,Pin nang lu?ng m?t tr?i do ngu?i nu?c nào phát minh ra?,Pháp ,Nh?t ,Anh ,M? 
+201,B?n cho bi?t b?c tu?ng Ph?t b?ng dá cao nh?t th? gi?i ? dâu?,Trung Qu?c ,Thái Lan ,?n Ð? ,Indonesia
+202,"Trong tri?u d?i nhà Tr?n, viên tu?ng nào sau dây thành công trong ngh? kinh doanh?",Tr?n Khánh Du ,Lý An Khánh ,Tr?n Nguyên Hán ,Tr?n Ð?i la 
+203,Huy?n B?ch Long Vi tr?c thu?c t?nh nào c?a nu?c ta?,H?i Phòng ,Qu?ng Ninh ,H?i Duong ,Thái Bình 
+204,Xuân chi?n khu là sáng tác c?a nh?c si nào?,Xuân H?ng ,Hoàng Vi?t ,Tri?u Dâng ,Tr?n Long ?n 
+205,Th? vàng l?n d?u tiên du?c s? d?ng vào World Cup nam nào?,1970,1954,1956,1982
+206,Th? v?n h?i mùa dông nam 1992 du?c t? ch?c ? qu?c gia nào?,Pháp ,Th?y Ði?n,Na Uy ,Nh?t B?n 
+207,Ði?m d?c trung nh?t c?a các sinh v?t trong gi?i kh?i sinh là gì?,Nhân so ,Nhân th?c ,S?ng kí sinh ,S?ng ho?i sinh 
+208,Nguyên th? qu?c gia nào d?u tiên nào d?u tiên d?n tham Vi?t Nam sau CMT8 thành công?,?n Ð? ,Liên Xô ,Cuba ,Trung Qu?c 
+209,Nu?c c?ng hoà nhân dân Trung Hoa ra d?i vào nam nào?,1949,1947,1951,1953
+210,Ðia c?ng máy tính du?c phát minh vào nam nào?,1955,1975,1935,1965
+211,B?n cho bi?t vua Lê nào du?c l?ch s? tôn làm anh hùng?,Lê Thái T? ,Lê Hi?n Tông ,Lê Chiêu Tông ,Lê Thánh Tông 
+212,"? các loài d?ng v?t có vú, các d?t xuong c? d?u hi?m khi vu?t qua con s? m?y?",7,10,32,15
+213,Huy?n Cát H?i tr?c thu?c t?nh nào c?a nu?c ta?,H?i Phòng,Qu?ng Ninh ,Thái Bình ,H?i Duong 
+214,Cô gái m? du?ng là sáng tác c?a nh?c si nào?,Xuân Giao ,Ph?m Minh Tu?n ,Huy Th?c ,An Thuyên 
+215,Cúp C1 du?c UEFA d?i tên thành Champions League vào nam nào?,1992,1990,1994,1996
+216,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 1988?,Canada,Nam Tu,Pháp,Nh?t B?n 
+217,"Trong h? s?ng, m?i quan h? v? dinh du?ng bi?u hi?n rõ nh?t ? c?p d? t? ch?c nào?",Qu?n xã ,T? bào,Qu?n th? ,Loài 
+218,Cách m?ng tu s?n d?u tiên trên th? gi?i n? ra t?i nu?c nào?,Hà Lan ,Anh ,Ð?c ,Pháp 
+219,Ngu?i th?ng nh?t ba t? ch?c C?ng s?n Vi?t Nam nam 1930 là ai?,Nguy?n Ái Qu?c ,Nguy?n Van C? ,Tr?n Phú ,Nguy?n Thái H?c 
+220,Xe máy mô tô là phuong ti?n di l?i do nu?c nào phát minh ra?,Ð?c ,Anh ,Pháp,Nh?t 
+221,B?n cho bi?t vua Lê nào có tên tu?i r?c r? nhât trong th?i k? tru?c?,Lê Thánh Tông ,Lê Hi?n Tông,Lê Thái T? ,Lê Nhân Tông 
+222,T? ch?c Vi?t Nam Thanh Niên cách m?ng Ð?ng Chí H?i du?c thành l?p t?i dâu?,Qu?ng Châu ,Thiên Tân ,Tri?u Châu ,Qu?ng Ðông 
+223,Huy?n Tiên Lãng tr?c thu?c t?nh nào c?a nu?c ta?,H?i Phòng ,Thái Bình ,Qu?ng Ninh ,H?i Duong
+224,Máu con ngu?i chi?m kho?ng bao nhiêu ph?n tram nu?c?,78,30,48,85
+225,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 1984?,Nam Tu ,Canada,Nh?t B?n ,Na Uy 
+226,Ðon v? phân lo?i co b?n c?a sinh gi?i là gì?,Qu?n xã ,T? bào ,Qu?n th? ,Loài 
+227,"Tru?c Washington, thành ph? nào dã t?ng là th? dô c?a M??",Philadelphia,Los Angeles,Boston,New York
+228,Trung tâm ch? t?o pháo hoa c?a châu Âu vào kho?ng th? k? XV là ? dâu?,Florencia Italia,Berlin Ð?c,Paris Pháp,London Anh
+229,Máy tính xách tay laptop du?c phát minh vào nam nào?,1981,1975,1990,1995
+230,B?n cho bi?t b?c ho? B?a an t?i cu?i cùng là c?a danh ho? nào?,Leonardo da Vinci,Pablo Picasso,Vincent VanGogh,Walt Disney
+231,"? châu Âu, nu?c nào là nu?c xây d?ng vu?n c?m qu?c gia d?u tiên nam 1969?",Thu? Ði?n,Ba Lan,Ðan M?ch ,Úc 
+232,Huy?n Chí Linh tr?c thu?c t?nh nào c?a nu?c ta?,H?i Duong ,H?i Phòng ,Thái Bình ,Hung Yên 
+233,"Khi ? m?t mình trên d?o hoang, d?ng v?t nào du?c Robinson s? d?ng nhi?u nh?t?",Dê,L?n r?ng,Bò s?a,C?u
+234,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 1980?,Hoa K? ,Na Uy ,Pháp,Nga 
+235,Trung tâm tài chính l?n nh?t nu?c Ð?c n?m ? thành ph? nào?,Frankfurt,Hamburrg,Bremen,Munich
+236,Núi Ngu Hành Son ? Ðà N?ng du?c d?t tên vào th?i vua nào?,Nhà Nguy?n ,Nhà Lý ,Nhà Thanh,Nhà Ðinh 
+237,Qu?c gia nào có th? tru?ng ch?ng khoán l?n th? 2 th? gi?i?,Nh?t B?n ,M? ,Trung Qu?c ,Ð?c 
+238,B?c tu?ng bà d?m xoè là tên ngu?i dân Hà N?i thu?ng g?i m?t b?n sao c?a tu?ng nào?,N? th?n t? do ,Tu?ng V? n? thành Milo ,Th?n Hera,Th?n Gaia
+239,Qu?c hi?u nhà nu?c ta Vi?t Nam có t? th?i Nguy?n Ánh nam nào?,1804,1802,1803,1805
+240,Huy?n Di?n Châu tr?c thu?c t?nh nào c?a nu?c ta?,Ngh? An ,Thanh Hoá ,Qu?ng Tr? ,Hà Tinh 
+241,Ði?u khi?n t? xa du?c phát minh vào nam nào?,1788,1918,1898,1828
+242,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 1976?,Áo ,Canada,Nam Tu ,Hoa K? 
+243,Cây c?u dài th? 2 châu Âu n?m ? qu?c gia nào?,B? Ðào Nha,Anh,Ð?c ,Pháp 
+244,Núi Ngu Hành Son ? Ðà N?ng du?c vua Minh M?ng  nhà Nguy?n d?t tên vào th? k? nào?,Th? k? XIV,Th? k? XII,Th? k? XIII,Th? k? XV
+245,Lò vi sóng còn g?i là lò vi ba có m?t trên th? tru?ng vào nam nào?,1967,1984,1956,1800
+246,Tri?u d?i nhà Nguy?n b?t d?u t? nam nào?,1802,1790,1845,1860
+247,Huy?n Ðô Luong tr?c thu?c t?nh nào c?a nu?c ta?,Ngh? An ,Thanh Hoá ,Hà Tinh ,Qu?ng Bình 
+248,Máy bay tr?c thang du?c phát minh vào nam nào?,1936,1880,1914,1945
+249,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 1972?,Nh?t B?n ,Áo ,Pháp,Na Uy 
+250,Ðon v? ti?n hoá co b?n c?a sinh gi?i là gì?,Loài,T? bào ,Qu?n th? ,Qu?n xã
+251,L?n g?n dây nh?t sao ch?i Halley xu?t hi?n vào nam nào?,1986,1984,1985,1987
+252,Núi có ngôi m? c? c?a Vua t? Hùng Vuong là núi nào?,Núi Nghia Linh ,Núi H?ng Linh ,Núi Ngu Hành Son ,Phansiphang
+253,Ðàn Piano du?c phát minh vào nam nào?,1709,1680,1799,1820
+254,Thang máy d?u tiên du?c ch? t?o vào nam nào?,1843,1543,1743,1943
+255,Cây lô h?i nha dam thu?c h? nào?,Agaveceae,Fabaceae,Poaeage,Sonneratiaceae
+256,Qu?n Ngu Hành Son tr?c thu?c thành ph? nào c?a nu?c ta?,Tp. Ðà N?ng ,Tp. Vinh ,Tp. Hà N?i ,Tp. H? Chí Minh 
+257,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 1968?,Pháp ,Áo ,Na Uy ,Nh?t B?n 
+258,Ðon v? co b?n c?a qu?n th? s?ng là gì?,T? bào ,Qu?n th? ,Co th? ,Loài 
+259,"Tính d?n nam 2012, Thành ph? nào c?a Afghanistan có n?n kinh t? phát tri?n nh?t?",Kandahar,Ghaza,Heart,Kabul
+260,Nguy?n B?nh Khiêm dã thi d?u tr?ng nguyên vào tri?u nhà nào?,Nhà M?c ,Nhà Nguy?n ,Nhà Lê ,Nhà Ðinh 
+261,"T?p doàn l?n c?a Hàn Qu?c  LG, du?c thành l?p vào nam nào?",1947,1946,1948,1949
+262,Cân du?c phát minh d?u tiên b?i các cu dân nào?,Ai C?p ,Vi?t C? ,Trung Qu?c ,La Mã 
+263,Huy?n Mu?ng Lay thu?c t?nh nào c?a nu?c ta?,Lai Châu ,Son La ,L?ng Son ,Lào Cai 
+264,"Tên th?t c?a Thành Cát Tu Hãn, vua Mông C? th? k? th? 13 là gì?",Thi?t M?c Chân ,Sát H?p Ðài ,Tru?t Xích ,Oa Khoát Ðài 
+265,Núi l?a ho?t d?ng l?n nh?t th? gi?i n?m ? dâu?,Hawai,Indonesia,Nh?t B?n,Chile
+266,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 1964?,Áo ,Pháp ,Nh?t B?n,Canada
+267,Th? v?n h?i Mùa Ðông l?n d?u tiên du?c t? ch?c  ? dâu?,Pháp,Anh,Nga,M?
+268,Ngôn ng? chính c?a Pakistan là gì?,Urdur,Kurd,Dari,Pushtu
+269,Hoài Van H?u là tên hi?u c?a ai?,Tr?n Qu?c To?n ,Tr?n Qu?c Tu?n ,Nguy?n Hu? ,Nguy?n B?nh Khiêm 
+270,"LG là t?p doàn l?n c?a Hàn Qu?c, b?n có bi?t ý nghia c?a t? này?",Lucky Goldstar,Lifes Good,Leader Group,Little Girl 
+271,Ai là nhà toán h?c n?i ti?ng ngu?i Pháp dã b? m?ng trong m?t cu?c d?u súng?,Évariste Galois,Laurent Schwartz,Oliver Heavisde,Henri Paul Cartan
+272,Huy?n Na Hang thu?c t?nh nào c?a nu?c ta?,Tuyên Quang ,Yên Bái ,B?c K?n ,Thái Nguyên 
+273,Ð?i quân nào du?c xem là m?nh nh?t trong quân d?i c?a Mông C? th?i phong ki?n?,K? binh ,B? binh ,Thu? binh ,Tu?ng binh 
+274,Thành ph? dông dân nh?t Ðông Nam Á?,Tp. Bang C?c,Tp. H? Chí Minh ,Tp. Jakarta,Tp. Phnom Penh
+275,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 1960?,Hoa K? ,Áo ,Pháp ,Nh?t B?n 
+276,Ký hi?u nào sau dây không ph?i là ký hi?u c?a m?ng di d?ng?,ERP,CDMA,GSM,DAMPS
+277,Lo?i hình âm nh?c dân gian c? truy?n Vi d?m là c?a vùng nào?,Nghê Tinh ,Hà N?i ,Hu? ,B?c Ninh 
+278,"? Indonesia, khi chú r? v?ng m?t thì s? dùng v?t gì d? làm tin?",Con dao ,Ti?n cu?i ,L? v?t ,B? qu?n áo 
+279,H?a si l?ng danh Picasso du?c sinh ra ? dâu c?a Tây Ban Nha?,Málaga,Real Madrid,Barcelona ,Valladolid
+280,"Tác gi? bài hát m?t d?i ngu?i, m?t r?ng cây là ai?",Tr?n Long ?n,Phan Hu?nh Ði?u ,Tr?n Minh Phi ,Tr?nh Công Son 
+281,Huy?n Chiêm Hoá thu?c t?nh nào c?a nu?c ta?,Tuyên Quang ,B?c K?n,Thái Nguyên ,Yên Bái 
+282,Ca ghép gan d?u tiên t?i Vi?t Nam du?c th?c hi?n ? dâu?,H?c Vi?n Quân Y,B?nh vi?n Ch? R?y ,B?nh vi?n Nhi trung uong,B?nh vi?n B?ch Mai 
+283,Ðâu là m?t gi?ng thu?c loài R?t?,Scolopendra,Scolodra,Colopen,"Scolopen
+"
+284,Th? v?n h?i mùa dông nam 1964 du?c t? ch?c ? qu?c gia nào?,Áo ,Pháp,Nga ,Hoa K? 
+285,Ðây không ph?i là ngôn ng? l?p trình?,D,C,Java,Visual Basic
+286,Ph? n? ngu?i Myanmar khi mang b?u s? kiêng an qu? gì?,Chu?i ,Cà chua ,Cam ,S?u riêng 
+287,"Trong quá trình phát tri?n c?a phôi ngu?i, l?p lông m?n trên b? m?t c?a phôi s? r?ng di vào lúc nào?",Phôi du?c 6 tháng ,Sau khi sih ,Phôi du?c 2 tháng ,Phôi du?c 8 tháng 
+288,Chi?n tranh th? gi?i l?n th? nh?t có kho?ng bao nhiêu ngu?i thi?t m?ng?,10 tri?u ,5 tri?u ,15 tri?u ,20 tri?u 
+289,Huy?n Ch? M?i thu?c t?nh nào c?a nu?c ta?,B?c K?n ,Thái Nguyên ,Tuyên Quang ,Yên Bái 
+290,Ð?o kh? là noi duy nh?t ? Vi?t Nam nuôi kh? d? s?n xu?t v?c xin thu?c vùng nào?,Qu?ng Bình ,Nha Trang ,Qu?ng Ninh ,C?n Gi? 
+291,Sa m?c nào l?n nh?t th? gi?i?,Sa m?c Sahara,Sa m?c Gobi,Sa m?c Great Victoria,Sa m?c Great Sandy 
+292,Th? v?n h?i mùa dông nam 1952 du?c t? ch?c ? qu?c gia nào?,Na Uy ,Áo,Italia,Pháp 
+293,Nam nào du?c coi là nam ra d?i c?a Di truy?n h?c?,1900,1600,1700,1800
+294,Lý Thu?ng Ki?t xây d?ng phòng tuy?n ch?ng quân T?ng th? k? XI t?i dâu?,D?c sông C?u ,?i Chi Lang ,D?c sông Cà L? ,C?a sông B?ch Ð?ng 
+295,"Nam 2010, thành ph? Ðà L?t k? ni?m bao nhiêu nam?",117 nam ,118 nam ,119 nam ,120 nam 
+296,Co quan nào thu?c h? th?n kinh dóng vai trò gi? thang b?ng trong co th? ngu?i?,Ti?u não ,Ð?i não ,Bán c?u não ph?i ,Thu? não 
+297,Cu?c kh?i nghia c?a Bà Tri?u Tri?u Th? Trinh nh?m ch?ng l?i tri?u d?i phong ki?n nào?,Nhà Ngô ,Nhà T?n,Nhà Th?c ,Nhà Nguy?n 
+298,Huy?n Ð?nh Hoá thu?c t?nh nào c?a nu?c ta?,Thái Nguyên ,L?ng Son ,Vinh Phúc ,B?c Giang 
+299,Chi?n tranh Nga  Nh?t di?n ra trong bao lâu?,1 nam ,2 nam ,3 nam ,4 nam 
+300,Qu?c gia nào là quê huong c?a hoa h?u th? gi?i nam 2006?,CH Séc,Venezuela,Ba Lan ,Th? Nhi K?
+301,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 1948?,Thu? Si ,Na Uy ,Italia,Hoa K?
+302,Ð?i Robocon Vi?t Nam 1 l?t vào t?i vòng m?y trong cu?c thu Robocon 2007?,Vòng t? k?t ,Vòng lo?i ,Vòng bán k?t ,Vòng chung k?t 
+303,Tr?n dánh quy?t d?nh th?ng l?i hoàn toàn c?a cu?c kh?i nghia Lam Son là?,Chi Lang  Xuong Giang,Tân Bình  Thu?n Hoá ,T?t Ð?ng  Chúc Ð?ng ,C?n Tr?m  Ph? Cát 
+304,"Trong các s? nguyên duong nh? hon 100, có bao nhiêu s? không chia h?t cho 3 và 4?",50,25,75,100
+305,Trò choi ô ch? xu?t hi?n l?n d?u tiên ? New York vào nam nào?,1913,1902,1908,1916
+306,Huy?n Ph? Yên thu?c t?nh nào c?a nu?c ta?,Thái Nguyên ,Vinh Phúc ,L?ng Son ,Tuyên Quang 
+307,"Mu?n d?n tham di tích l?ch s? Dinh h? Vuong, b?n ph?i d?n d?a danh nào?",Hà Giang,Lào Cai ,Hoà Bình ,Tuyên Quang 
+308,Môn bóng bàn có ngu?n g?c ? qu?c gia nào?,Anh ,Trung Qu?c,Singapore,Ð?c
+309,Th? v?n h?i mùa dông nam 1936 du?c t? ch?c ? qu?c gia nào?,Ð?c ,Pháp ,Thu? Si ,Na Uy 
+310,Album d?u tiên c?a Michael Jackson tên là gì,Ben,Got to be there,Off the wall,Thirller
+311,Ch? qu?c ng? l?n d?u tiên xu?t hi?n ? nu?c ta vào th? k? th? m?y?,Th? k? VII ,Th? k? XV,Th? k? XVI,Th? k? VIII
+312,S? thi dài nh?t nu?c ta là c?a dân t?c nào?,Mu?ng,Tày ,Nùng ,Cham 
+313,B? ph?n nào có ch?c nang là giá d? và h? tr? ho?t d?ng co giãn c?a 2 lá ph?i?,Co hoành ,Xuong s?ng ,L?ng ng?c ,Xuong su?n 
+314,"Phuong pháp in b?ng ch? n?i do ngu?i Ð?c sáng ch? nam 1440, g?i là gì?",In typô,In litô k?m ,In ?ng d?ng ,In hoà m?u 
+315,Huy?n Võ Nhai thu?c t?nh nào c?a nu?c ta?,Thái Nguyên ,B?c K?n ,Vinh Phúc ,B?c Giang 
+316,Ð?a d?o Vinh M?c n?m ? t?nh nào?,Qu?ng Tr? ,C? Chi ,C?n Tho ,Qu?ng Bình 
+317,Tr?n d?ng d?t có cu?ng d? l?n nh?t 9.5 richte t?ng x?y ra ? qu?c gia nào?,Chile,Indonesia,Nh?t B?n ,Nga 
+318,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 1932?,Hoa K? ,Na Uy ,Áo ,Nh?t B?n 
+319,"Vào th? k? XVI, ? nu?c ta dã xu?t hi?n tôn giáo m?i là?",Thiên chúa giáo ,Ph?t giáo ,Nho giáo ,Ð?o giáo 
+320,Chùa Diên H?u chùa M?t C?t du?c xây d?ng theo gi?c mo c?a v? vua th?i nào?,Nhà Lý ,Nhà Thanh ,Nhà Minh ,Nhà Nguy?n 
+321,"Ch? Hoà, M?t Ð?ng viên, Nicô Ðàm Vân d?u là nh?ng v? k?ch c?a tác gi? nào?",H?c Phi,Nguy?n Huy Tu?ng ,Th? L? ,Nguy?n Ðình Nghi 
+322,Huy?n B?c Son thu?c t?nh nào c?a nu?c ta?,L?ng Son ,Qu?ng Ninh ,B?c Giang ,Thái Nguyên 
+323,Vu?n qu?c gia Pù Mát n?m ? t?nh nào?,Ngh? An ,Hoà Bình ,H?i Duong ,Ninh Bình 
+324,Qu?c gia nào s? t? ch?c Th? v?n h?i mùa dông nam 2014?,Nga ,Pháp ,Hoa K?,Canada
+325,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 1928?,Thu? Si ,Hoa K? ,Ð?c ,Nam Tu 
+326,Bài tho Nam Qu?c Son Hà ra d?i nam nào?,1077,931,938,1478
+327,Ông vua nào dã coi ch? Nôm là ch? vi?t chính th?c c?a nu?c ta?,H? Quý Ly ,Tr?n Thánh Tông ,Lê Thánh Tông,Quang Trung
+328,Danh nhân Tr?n Nguyên Ðán là ông ngo?i c?a ai?,Nguy?n Trãi ,Nguy?n Khuy?n ,Nguy?n Ðình Chi?u ,Nguy?n Du 
+329,V? tr?ng nguyên nh? tu?i nh?t trong l?ch s? thi c? Vi?t Nam?,Nguy?n Hi?n ,Lê  Van Th?nh ,Vu Tu?n Chiêu ,Nguy?n Kì 
+330,"Hai câu tho: Quê huong khu?t bóng hoàng hôn, trên sông kh?i sóng cho bu?n lòng ai du?c d?ch ra t? tho c?a ai?",Thôi Hi?u ,Lý B?ch ,B?ch Cu D? ,Ð? Ph? 
+331,Huy?n Chi Lang thu?c t?nh nào c?a nu?c ta?,L?ng Son ,Thái Nguyên ,B?c Giang ,Qu?ng Ninh 
+332,Trong tác ph?m Vi hành Nguy?n Ái Qu?c dã châm bi?m v? vua nào c?a tri?u Nguy?n?,Kh?i Ð?nh ,T? Ð?c,B?o Ð?i ,Duy Tân 
+333,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 2010?,Canada,Nga ,Áo ,Hoa K?
+334,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 1924?,Pháp ,Thu? Si ,Hoa K? ,Ð?c 
+335,"Trong môn th? thao bóng bàn, chi?u dài c?a bàn bóng bàn là bao nhiêu?","2,7m",2.8m,"2,6m","2,9m"
+336,Ông hoàng nh?c Pop Michael Jackson là con th? m?y trong gia dình?,8,9,6,7
+337,Bi?n B?ch H?i thu?c d?i duong nào?,B?c Bang Duong ,Ð?a Trung H?i ,?n Ð? Duong ,Thái Bình Duong 
+338,Tr?ng nguyên cu?i cùng trong l?ch s? nu?c ta?,Tr?nh Tu? ,Nguy?n Ð?ng Ð?o,Tr?n T?t Van ,Tr?ng Qu?nh 
+339,Tr?n Ði?n Biên Ph? trên không di?n ra trong bao nhiêu ngày dêm?,12,11,13,14
+340,? Hu? có m?y lang t?m c?a các vua nhà Nguy?n?,7,4,5,6
+341,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 2006?,Italia,Nh?t B?n ,Hàn Qu?c,Nga 
+342,Ð?ng v?t nguyên sinh thu?c gi?i gì?,Nguyên sinh ,Kh?i sinh ,N?m ,Ð?ng v?t
+343,"Cho dãy s? 6, 24, 60, 120,  Hãy tìm s? ti?p theo?",420,104,180,920
+344,Quê g?c c?a ca si Ðàm Vinh Hung huy?n nào Qu?ng Nam?,Ði?n Bàn,Ð?i L?c,Phú Ninh,Nông Son
+345,H?c H?i thu?c d?i duong nào?,Ð?a Trung H?i ,Thái Bình Duong ,?n Ð? Duong ,B?c Bang Duong 
+346,H?i Vi?t Nam cách m?ng thanh niên ra d?i vào th?i gian nào?,Tháng 6 nam 1925 ,Tháng 6 nam 1922 ,Tháng 7 nam 1927 ,Tháng 7 nam 1929 
+347,Nam di?n viên dóng vai chính trong phim L?y v? Sài Gòn là ai?,Nguyên Vu ,Quang Dung ,Lam Tru?ng ,Ðan Tru?ng 
+348,Huy?n Mu?ng La thu?c t?nh nào c?a nu?c ta?,Son La ,Lai Châu ,Hoà Bình ,Thanh Hoá
+349,Nhà thiên van h?c vi d?i Nicolas Copernicus là ngu?i nu?c nào?,Ba Lan ,Anh,Hy L?p ,Hà Lan 
+350,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 2002?,Hoa K? ,Italia,Thu? Si ,Canada
+351,Ði?m d?c trung nh?t c?a các sinh v?t trong gi?i d?ng v?t là gì?,Nhân so,Nhân th?c ,S?ng kí sinh ,Có kh? nang di chuy?n
+352,Tên c?a ngu?i l?p ra nhà Hán?,Luu Bang ,T?n Thu? Hoàng ,Gia Cát Lu?ng ,Lã B?t Vi 
+353,H?ng H?i thu?c d?i duong nào?,?n Ð? Duong ,B?c Bang Duong ,Ð?a Trung H?i ,Ð?i Tây Duong
+354,"? Vi?t Nam, Ph?t Giáo và Ð?o giáo suy y?u vào th?i gian nào?",T? th? k? XIV,T? th? k? XV,T? th? k? XVI,T? th? k? XVII
+355,Ngu?i th?ng nh?t các b? l?c Mông C? là ai?,Thành Cát Tu Hãn ,Ái Nhi Cáp T? ,Tu Mã ,Ngu T? Tu 
+356,Huy?n Yên Th? thu?c t?nh nào c?a nu?c ta?,B?c Giang ,B?c Ninh ,Qu?ng Ninh ,L?ng Son 
+357,Lênin sinh nam bao nhiêu?,1865,1866,1867,1868
+358,Qu?c gia nào dã t? ch?c Th? v?n h?i mùa dông nam 1998?,Nh?t B?n ,Vi?t Nam,Nga ,Canada
+359,"Trong h? s?ng, m?i quan h? v? sinh s?n bi?u hi?n rõ nh?t ? c?p d? t? ch?c nào?",Qu?n th? ,T? bào ,Qu?n xã ,Loài 
+360,"Mê Linh, kinh dô th?i Trung Vuong, nay thu?c t?nh nào?",Vinh Phúc ,Ðà N?ng ,Th?a Thiên Hu? ,Phú Th?
+361,Nh?c si Sôpanh là ngu?i nu?c nào?,Ba Lan ,Nga ,Ð?c ,Áo 
+362,V? tu?ng tài ba Mông C? Thành Cát Tu Hãn l?y v? nam bao nhiêu tu?i?,16,17,15,19
+363,Gi? k? l?c chi?n tranh ng?n nh?t trong l?ch s? mà ph?n th?ng thu?c v? nu?c nào?,Anh ,Ð?c ,Nh?t ,M? 
+364,Ai là ngu?i theo Phan Ðình Phùng dúc súng ch?ng Pháp?,Cao Th?ng ,Lê Vu C?u ,La Van C?u ,Tr?n Hung Ð?o 
+365,Qu?n H?ng Bàng tr?c thu?c thành ph? nào c?a nu?c ta?,Tp. H?i Phòng ,Tp. Hà N?i ,Tp. Hu? ,Tp. C?n Tho 
+366,Vi?t Nam trên du?ng chúng ta di là sáng tác c?a nh?c si nào?,Huy Du ,Tr?n Chung ,Tri?u Dâng,Bùi Ð?c H?nh
+367,Imagine Cup là cu?c thi dành cho Sinh viên v? linh v?c gì?,Công Ngh? Thông Tin,Sân Kh?u Ði?n ?nh,Ði?n t? Vi?n Thông,Kinh t? Qu?n lý
+368,Ð?t nu?c nào là quê huong c?a ông già Tuy?t?,Ph?n Lan,Ðan m?ch,Nauy,Th?y Ði?n
+369,Nhân v?t chu?t Mickey c?a Watl Disney du?c t?o ra vào nam nào?,1928,1925,1926,1932
+370,H?p ch?t nào sau dây bao hàm các thu?t ng? còn l?i?,Cacbonhydrat,Tinh b?t ,Gluco,Sacarozo
+371,"Quan sát 1 h?p t? c?a 1 loài d?ng v?t dang th?c hi?n nguyên phân, cho bi?t s? t? bào có ? k? sau c?a l?n nguyên phân th? ba?",4 t? bào,2 t? bào ,6 t? bào ,8 t? bào 
+372,Ti?ng Anh và ti?ng Pháp có ngu?n g?c t??,Ti?ng Ð?c ,Ti?ng Hy L?p ,Ti?ng Tây Ban Nha ,Ti?ng B? Ðào Nha
+373,Tên th? tru?ng b? giáo d?c và cung là m?t thi?u tu?ng trong kháng chi?n ch?ng M??,H?ng Phát,Lê Tru?ng ,Tr?n Quy?n ,Bùi Bình
+374,Piano ti?ng  có nghia là gì?,Êm d?u ,Thang tr?m ,L?ng l? ,Du duong 
+375,T?ng th?ng nào t?ng là m?t phi công h?i quân du?c t?ng thu?ng huy chuong?,George H. W. Bush,Ronald Reagan,Richard Nixon,John F. Kennedy
+376,Sông Mêkông dài kho?ng bao nhiêu km?,4200Km,4000Km ,5800Km,4500Km
+377,Nh?ng ánh sao dêm là sáng tác c?a nh?c si nào?,Phan Hu?nh Ði?u ,Ð? Nhu?n ,Hu?nh Tho ,Th? Song 
+378,Ðu?ng Fructozo là gì?,Ðu?ng don ,Axit béo ,Ðu?ng dôi ,Ðu?ng da
+379,"Nguyên phân, cho bi?t s? t? bào có ? k? sau c?a l?n nguyên phân th? ba?",4 t? bào,2 t? bào ,6 t? bào,8 t? bào 
+380, Ai là ngu?i gi? d?ng phóng viên d? muu sát Toàn quy?n Ðông Duong?,Ph?m H?ng Thái ,Ph?m Van Ð?ng ,H? Tùng M?u ,Tôn Ð?c Th?ng 
+381,"Ph? du?c mang vào mi?n Nam, c? th? ? Sài Gòn vào nam nào?",1954,1554,1994,1945
+382,S? tích Tr?u cau theo truy?n thuy?t dã x?y ra vào d?i vua Hùng th? bao nhiêu?,12,10,14,16
+383,V? nhi?m d?c thu? ngân ? v?nh Minamata Nh?t do nu?c th?i x?y ra vào nam nào?,1952,1996,1946,1899
+384,Loài Sao La du?c phát hi?n t?i Vi?t Nam vào nam nào?,1993,1991,1992,1994
+385,Xuân chi?n khu là sáng tác c?a nh?c si nào?,Xuân  H?ng ,Ð? Nhu?n ,Ánh Duong ,Lu Nh?t Vu 
+386,H?p ch?t nào sau dây không ph?i là ch?t h?u co?,Mu?i Cacbonat,Lipit,Ðu?ng Gluco,Protein 
+387,L?n d?u tiên nu?c ta dùng qu? b?c phá g?m 1000kg thu?c n? d? dánh gi?c ? dâu?,Ði?n Biên Ph? ,Ðà N?ng ,Buôn Mê Thu?t ,Sài Gòn 
+388,Ðon v? d?u tiên c?a co s? ti?n hoá?,Qu?n th? ,T? bào ,H? sinh thái ,Qu?n xã
+389,"C? vây là lo?i c? c?, du?c choi cách dây kho?ng bao nhiêu nam?",4000 nam ,5000 nam ,3000 nam ,2000 nam 
+390,"L?n d?u tiên trong l?ch s? Vi?t Nam, tác ph?m nào dã thay th? l?i k?t c?u chuong h?i b?ng k?t c?u theo quy lu?t tâm lý?",T? Tâm,S? Ð? ,B? V? ,Ðáp án khác
+391,Nhà sinh v?t h?c ngu?i Ð?c Ernst Haeckel dã d? xu?t thu?t ng? Ecology vào nam nào?,1869,1870,1871,1872
+392,Semiramis là tên g?i khác c?a d?a danh nào sau dây?,Vu?n treo Babylon,Ð?o Ph?c sinh,Machu picchu,Lang m? Giza
+393,Ti?ng chày trên Sóc Bombo là sáng tác c?a nh?c si nào?,Xuân H?ng ,Lu Nh?t Vu ,Ánh Duong ,Thu?n Y?n
+394,Hình th?c sinh s?n nào không có ? n?m?,B?o t? h?u tính ,Phân dôi ,N?y ch?i,B?o t? vô tính 
+395,Co s? v?t ch?t ch? y?u c?a s? s?ng là gì?,Protein và Axit nucleic,Protein ,Axit nucleic,Cacbohydrat 
+396,Ai là ngu?i d?u tiên ch? t?o súng d?i bác cho dân t?c ta?,H? Nguyên Tr?ng,M?c Ðinh Chi,Nguy?n Trãi,Tr?n Nh?t Du?t 
+397,Linh T? Qu?c M?u là m? c?a v? vua nào nu?c ta?,Lý Chiêu Hoàng ,Quang Trung ,Hàm Nghi ,B?o Ð?i 
+398,B?n cho bi?t cha d? c?a trò choi di?n t? - m?t lo?i trò choi r?t ph? bi?n hi?n nay?,Ralph Bear,Bill Gates,Paul Allen,Michael Dell
+399,Taj Mahal ? ?n Ð? là?,Lang m? ,Ð?n th? ,Tháp canh ,Cung di?n 
+400,Ðu?ng s?t B?c  Nam không di qua t?nh nào trong các t?nh nào sau dây?,Tây Ninh ,Tp. H? Chí Minh ,Ð?ng Nai ,Bình Thu?n 
+401,"Theo Hi?n pháp Vi?t Nam, ch? t?ch nu?c có bao nhiêu quy?n h?n?",12,13,14,15
+402,Hình th?c sinh s?n nào không có ? vi khu?n?,B?o t? h?u tính ,Phân dôi ,N?y ch?i,B?o t? vô tính 
+403,"Nam châu Phi 1960, có bao nhiêu nu?c ? Châu Phi giành du?c d?c l?p dân t?c?",17,6,38,59
+404,B?n cho bi?t ai tìm ra v?c xin ch?a b?nh d?i?,Louis Pasteur,Edward Jenner,Hippocrates,Alexandre Yersin
+405,B? lu?t H?ng Ð?c du?c xây d?ng và ban hành du?i th?i nào?,Lê Thánh Tông ,Lê Thái T? ,Lê Thái Tông ,Lê Nhân Tông 
+406,Ðu?ng s?t B?c  Nam không di qua t?nh nào trong các t?nh nào sau dây?,Lâm Ð?ng,Ninh Thu?n ,Bình Thu?n ,Ð?ng Nai 
+407,Hi?p d?nh Chính ph? Pháp còn du?c g?i là n?n C?ng hoà th? m?y?,5,2,3,4
+408,"Ðóng gói, ch? bi?n và phân ph?i s?n ph?m là ch?c nang c?a?",B? máy golgy ,L?c l?p ,Ty th? ,Lu?i n?i ch?t
+409,H?p ch?t dóng vai trò quan tr?ng nh?t trong sinh s?n và di truy?n là?,Axit nucleic,Protein ,Gluxit,Lipit
+410,"Trong l?ch s? t? ch?c các don v? hành chính ? Vi?t Nam, c?p t?nh xu?t hi?n t? khi nào?",1831,1658,1900,1945
+411,Cu?c kh?i nghia nông dân tiêu bi?u nh?t ? th? k? XVI là?,Tr?n C?o ,Tây Son ,Tr?n Tuân ,"Lê Hy, Tr?nh Hung "
+412,Ai là cha d? c?a ngành vi sinh h?c?,Louis Pasteur,Edward Jenner,Hippocrates,Alexandre Yersin
+413,Chi?n th?ng có ý nghia l?n lao c?a nghia quân Tây Son ? Ðàng Trong nam 1785 là chi?n th?ng gì?,Ðánh b?i quân Xiêm ,H? thành Quy Nhon ,Chi?m d?t Gia Ð?nh ,Gi?i phóng Qu?ng Ninh 
+414,Ðu?ng bi?n t? H?i Phòng di H?ng Kông dài kho?ng bao nhiêu kilômet?,900Km,90Km ,100Km ,1000Km
+415,Ai là ngu?i sáng l?p ra h?c thuy?t v? ch? nghia xã h?i khoa h?c?,Karl Mark,Aristotle,Voltaire,Vladimir Lenin
+416,Kho?ng cách m?i múi gi? r?ng kho?ng bao nhiêu?,15 d? kinh tuy?n ,5 d? kinh tuy?n ,10 d? kinh tuy?n ,20 d? kinh tuy?n 
+417,C?u trúc c?a phân t? protein có th? b? bi?n tính b?i?,Nhi?t d? ,Nu?c,Cacbonic,Oxi
+418,T? sao chép AND c?a sinh v?t nhân chu?n du?c sao chép nhu th? nào?,Nhi?u vòng sao chép ,M?t vòng sao chép ,Hai vòng sao chép ,D?ng m?ch th?ng
+419,Ai du?c m?nh danh là ông t? ngành quân gi?i Vi?t Nam?,Cao Th?ng ,Phan Ðình Phùng ,H? Tùng D?u ,Võ Nguyên Giáp
+420,Xã h?i phong ki?n Pháp tru?c cách m?ng có m?y d?ng c?p?,3 d?ng c?p ,4 d?ng c?p ,2 d?ng c?p ,Không có d?ng c?p 
+421,"NATO là tên vi?t t?t thông d?ng c?a T? ch?c Hi?p u?c B?c Ð?i Tây Duong, l?c lu?ng này ban d?u là do nu?c nào thành l?p?",Canada  M? ,Anh  M? ,Nga  M? ,Anh  Nga 
+422,"Tác gi? c?a b? Thu?ng Kinh ký s?, nhà y h?c l?i l?c c?a Vi?t Nam th? k? XVIII là ai?",Lê H?u Trác ,Tu? Tinh ,Ngô Nhân Danh ,Lê Quý Ðôn 
+423,Lã Thu?ng là tên g?i khác c?a nhân v?t l?ch s? nào c?a Trung Qu?c?,Khuong T? Nha ,Kh?ng T? ,Lão T? ,M?nh T? 
+424,Con sông nào không ph?i sông ? Nam B??,Sông Ðà R?ng ,Sông Ti?n ,Sông H?u,Sông Sài Gòn 
+425,Phân t? protein c?u t?o t? chu?i?,Polopeptit,Co b?n ,Nucleoxom,Polinucleotit
+426,"Vai trò di?u ch?nh các quá trình sinh lý, sinh hoá c?a các v?t th? s?ng do dâu?",Gen trên ADB,Các ch?t h?u co,"ARN, Protein ",Các ch?t s?ng
+427,Nam 1789 don v? do lu?ng qu?c t? nào ra d?i?,Mét ,Giây ,Kilogram ,Jun 
+428,Giai c?p tu s?n và vô s?n là hai giai c?p chính c?a xã  h?i nào?,Tu b?n ,Chi?m h?u nô l?,"Nguyên thu?, phong ki?n ",Phong ki?n 
+429,Máy phát tinh di?n d?u tiên là phát minh c?a ai?,O. von Guericke,Milikhan,Ampere,Culoumb
+430,Khu v?c r?ng l?n t?i B?c M? mà Pháp bán cho M? nam 1803 là noi nào?,Louisiana Purchase,Texas,California,Florida
+431,Ch? th? 100 v? khoán s?n ph?m cu?i cùng d?n nhóm và ngu?i lao d?ng ra d?i nam nào?,1981,1980,1982,1983
+432,Quá trình làm co s? cho s? di truy?n và sinh s?n là gì?,T? sao AND,Phiên mã di truy?n ,Sao mã ARN,T?ng h?p protein
+433,Lo?i lipit nào du?i dây có vai trò c?u trúc màng sinh h?c?,Photpholipit,D?u th?c v?t ,Steroid,M? d?ng v?t 
+434,S? hình thành ADN và protein c?a phago di?n ra ? giai do?n?,L?p ráp ,H?p th? ,Xâm nh?p ,Phóng thích
+435,Ai là nhà du hành vu tr? N? d?u tiên c?a M??,Sally K. Ride,Bill FitzPatrick,Friedrich Nietzsche,Candly Ann
+436,Cu?c cách m?ng tu s?n d?u tiên trên th? gi?i di?n ra ? dâu ?,Anh ,Hà Lan ,Pháp ,M? 
+437,C?t thu lôi du?c phát minh vào kho?ng th?i gian nào?,Th? k? XVIII,Th? k? I tru?c CN ,Th? k? X,Th? k? V sau CN 
+438,Laslo Biro dã phát minh ra cái gì vào nam 1938?,Bút bi ,Bút chì ,Bút m?c ,Bút lông 
+439,Ngu?i châu Âu nào t?i Trung Qu?c vào th? k? 12 và sau dó xu?t b?n cu?n sách v? chuy?n di c?a mình?,Macro Polo,Peter Tore,Philip Ter,Columbo
+440,Tác gi? c?a phim Gái nh?y là ai?,Lê Hoàng ,Vi?t Linh ,Tr?ng Trinh ,Thanh Vân 
+441,Ð?t bi?n gen phát sinh trong quá trình gi?m phân du?c g?i là gì?,Ð?t bi?n giao t? ,Ð?t bi?n xôma ,Ð?t bi?n ti?n phôi ,Ð?t bi?n gây ch?t 
+442,Thu?t ng? nào du?i dây bao hàm t?t c? các thu?t ng? còn l?i?,Photpholipit,D?u th?c v?t ,Steroit,M? d?ng v?t
+443,Vi khu?n ua nhi?t là vi khu?n sinh tru?ng t?i uu trong di?u ki?n nhi?t d??,5565 d? C,2030 d? C,3035 d? C,6580 d? C
+444,"T? thu? d?ng nu?c cho d?n nay, nu?c ta dã có bao nhiêu b?n tuyên ngôn d?c l?p?",3,1,2,4
+445,Nh?c c? gõ c? nh?t c?a Vi?t Nam là nh?c c? nào?,Ðàn dá ,Tr?ng ,"C?ng , chiêng ",Ðàn Trung 
+446,Kính lúp du?c phát minh vào nam nào?,1250,1130,1370,1460
+447,V? vua tr? vì trong th?i gian lâu nh?t 55 nam là ai?,Lý Nhân Tông ,Lê Thánh Tông ,Tr?n Nhân Tông ,Minh M?ng 
+448,"Thành ph? nào l?n nh?t Th? Nhi K?, tru?c dây du?c g?i là Constantinople?",Istanbul,InBuder ,Galatasaray,TenPhor
+449,Ai là tác gi? c?a b? s? Ð?i Vi?t s? ký toàn thu?,Ngô Si Liên ,Lê Van Huu ,Ngô Thì Si ,Ngô Thì Nh?m 
+450,Lactozo là lo?i du?ng có trong?,S?a d?ng v?t ,M?ch nha ,Mía,Hoa qu?
+451,"Trong quá trình hô h?p n?i bào, nang lu?ng ATP du?c gi?i phóng nhi?u nh?t ? giai do?n?",Chu?i truy?n di?n t? ,Ðu?ng phân ,Chu trình Crep,Oxy hoá axit piruvic
+452,Sao Ho? có bao nhiêu v? tinh t? nhiên?,4,1,2,3
+453,Co quan di?u hoà và ph?i h?p các ho?t d?ng ph?c t?p c?a co th? là?,Ti?u não ,Tr? não ,Não trung gian ,Ð?i não 
+454,"Tom và Jerrry, b? phim ho?t hình quen thu?c v?i bao th? h? ngu?i xem dã du?c b?t d?u s?n xu?t t? nam?",1940,1950,1970,1930
+455,Cu?c chi?n tranh Tram Nam gi?a Anh và Pháp b?t d?u t? nam nào?,1937,1931,1935,1936
+456,Ði?m th?p nh?t nu?c M??,Death Valley,Death Macor,Dentoriesa,Death Metal
+457,Tác gi? c?a ti?u thuy?t Tru Tiên?,Tiêu Ð?nh ,Kim Dung ,C? Long ,Ngo? Long Sinh 
+458,Thu?t ng? nào du?i dây bao g?m t?t c? các thu?t ng? còn l?i?,Cacbonhydrat ,Ðu?ng don ,Ðu?ng dôi ,Ðu?ng da
+459,Nhi?m s?c th? con trong Nhi?m s?c th? kép tách r?i nhau ra tâm d?ng vào kì nào c?a quá trình nguyên phân?,Kì sau ,Kì trung gian ,Kì gi?a ,Kì cu?i 
+460,T?n t?i hay không t?n t?i là câu nói n?i ti?ng c?a nhân v?t nào?,Hamlet,The Ghost ,Laertes ,Claudius
+461,Tuy?n n?i ti?t quan tr?ng nh?t là?,Tuy?n yên ,Tuy?n giáp ,Tuy?n tu? ,Tuy?n trên th?n 
+462,Www ra d?i vào nam nào?,1990,1995,1985,1981
+463,Tháp nghiêng Pisa ? Italy có bao nhiêu b?c thang?,293,393,493,593
+464,Hòn d?o nào mà Indonesia chia s? v?i Malaysia và Brunei t?i Ðông Nam Á?,Bormeo,Berurio,Benpiter,Domuter
+465,Marie Curie là ngu?i dã do?t 2 gi?i Nobel thu?c 2 linh v?c nào?,"Hoá h?c, v?t lý ",Toán h?c ,"Toán h?c, hoá h?c ",V?t lý 
+466,Quy?t là th?c v?t nhu th? nào?,Th? tinh nh? nu?c,Chua có h? m?ch ,Tinh trùng không có roi ,Th? tinh nh? côn trùng
+467,Kì gi?a c?a nguyên nguyên phân Nhi?m s?c th? x?p trên m?t ph?ng xích d?o c?a thoi vô s?c thành m?y hàng?,1 hàng ,2 hàng,3 hàng ,4 hàng
+468,Tuy?n n?i ti?t l?n nh?t ? ngu?i là?,Tuy?n giáp ,Tuy?n yên ,Tuy?n tu?,Tuy?n trên th?n 
+469,Lo?i h?t nào có kh? nang t?n t?i lâu nh?t?,H?t hoa súng ,H?t ngô ,H?t ?i ,H?t tiêu 
+470, Thác Victoria du?c m?t ngu?i Anh tìm ra vào nam nào?,1855,1845,1865,1875
+471,"Thu?ng ngh? si và là phi hành gia M? d?u tiên di vào qu? d?o trái d?t, sinh ra ? Cambridge, Ohio?",John Herschell Glenn,Peter Human,Colum Sebure,Noria Hersch
+472,Pháp d? b? vào Ðà N?ng vào nam nào?,1858,1865,1895,1885
+473,Rêu là th?c v?t nhu th? nào?,Chua có h? m?ch ,Th? tinh nh? gió ,Th? tinh nh? côn trùng ,Tinh trùng không có roi 
+474,Quá trình quang h?p g?m bao nhiêu pha?,2 pha ,1 pha,3 pha ,4 pha
+475,Qu?c h?i khoá m?y quy?t d?nh l?y tên nu?c ta là CHXHCN Vi?t Nam?,Khoá IV,Khoá I ,Khoá II ,Khoá III
+476,L?p t? bào ch?t ? da là?,T?ng s?ng ,T?ng s?ng và l?p bì ,T?ng s?ng và tuy?n nh?n ,L?p bì và tuy?n nh?n 
+477,Nhà lãnh d?o ?n Ð? dem l?i t? do cho d?t nu?c mình thông qua m?t cu?c cách m?ng phi b?o l?c nào?,Mohandas Karamchand Gandhi,Mohamen Labarian,Antonir Duban,Malatur Leban
+478,Chúa nào th?i nhà Nguy?n du?c m?nh danh là chúa Ph?t?,Nguy?n Phúc Nguyên ,Nguy?n Phúc Khoát ,Nguy?n Hoàng ,Nguy?n Phúc Khao 
+479,T? m?i tinh bào b?c 1 qua gi?m phân cho ra bao nhiêu tinh trùng?,4 tinh trùng ,1 tinh trùng ,2 tinh trùng ,3 tinh trùng 
+480,S? sinh tru?ng c?a t? bào di?n ta ch? y?u ? pha nào?,Pha G1,Pha G2,Pha S,Pha G2 và pha S
+481,Loài doi s? nh?t mùi gì?,T?i ,Máu ,Hành ,Cá
+482,Tia Xquang hay còn g?i là tia Ronghen du?c phát hi?n vào nam nào?,1895,1892,1893,1894
+483,Trên th? gi?i có kho?ng bao nhiêu th? ti?ng?,6500,3500,4700,7300
+484,"M?t d?i g?m 150 hòn d?o nh?, chia tách Thái Bình Duong và bi?n Bering?",Aleutian Islands,Calibertor,Hawaii ,Granland 
+485,Lúc nh? Tr?nh Công Son s?ng ? dâu?,Hu? ,Qu?ng Bình ,Qu?ng Tr? ,Ngh? An 
+486,"Trong nguyên phân, nhi?m s?c th? v?t d?u co ng?n dóng xo?n di?n ra ? k? nào?",Sau ,Ð?u ,Gi?a ,Cu?i 
+487,M?t chu kì t? bào có m?y giai do?n rõ r?t?,2 giai do?n ,4 giai do?n ,3 giai do?n ,1 giai do?n
+488,Lê Ng?c Hân là con gái c?a vua nào?,Lê Th?n Tông ,Lê Hi?n Tông ,Lê L?i ,Lê Thánh Tông
+489,Edixon sáng ch? ra dèn chân không nóng sáng vào nam nào?,1897,1896,1898,1899
+490,Hành d?ng nào sau dây du?c coi là tuyên b? ly hôn du?i th?i Lê?,B? g?y dôi dua ,Ð?p niêu com ,Ð?p v? bát ,Xé áo 
+491,Lo?i ru?u n?i ti?ng c?a B? Ðào Nha tên gì?,Porto ,Sake ,Vodka ,B? Ðào m? t?u 
+492,Tên g?i khác c?a d?t nu?c B?c Ailen là gì?,Ulster ,Anh ,Scotland ,Nireland 
+493,Môn võ nào du?c g?i là Hi?p khí d?o?,Aikido,Pencat Silat,Judo,Karatedo
+494,Ch?t mang truy?n d?t thông tin di truy?n trong t? bào là gì?,ADN,Protein ,ARN thông tin ,ARN riboxom 
+495,Trong gi?m phân s? trao d?i do?n gi?a các cromatit trong c?p NST kép tuong d?ng di?n ra ? dâu?,Kì d?u I,Cu?i kì trung gian ,Kì d?u II ,Kì gi?a I
+496,Nh?c Jazz b?t ngu?n t? nu?c nào?,Ð?c ,Áo ,Thu? Si,Th? Nhi K? 
+497,"Theo ti?ng Ph?m, Hymalaya có nghia là gì?",Bang tuy?t ,S?ng s?ng ,Kh?ng l? ,Cheo leo 
+498,Kh?ng long xu?t hi?n vào k? nguyên nào?,Permain,Jurassic,Cretasious,Cambrian
+499,T?ng th?ng th? 38 c?a M? 1974 - 1977 nào là ngu?i duy nh?t không qua b?u c? t?ng th?ng hay phó t?ng th?ng?,Gerald R. Ford,Kenedy,Bill Clinton,G. Bush

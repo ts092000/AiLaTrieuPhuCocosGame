@@ -1,0 +1,800 @@
+id,Questions,A,B,C ,D
+1,CNN là kênh truy?n hình c?a qu?c gia nào?,Hoa K?,Vi?t Nam,Thái Lan,Ý
+2,BBC là kênh thông t?n xã c?a...?,Anh và B?c Ireland,Hoa K?,Úc,Áo
+3,Cartoon Network là kênh truy?n hình chuyên v? ch? d? nào?,Ho?t hình,Phim ?nh,Tin t?c,Khoa h?c
+4,Disney Channel có logo là hình c?a?,Chu?t Mickey,Doremon,Chú chó Scooby-Doo,Mr.Bean
+5,Ðâu là phim ho?t hình n?i b?t trên Disney Channel?,Phineas và Ferb,B?y viên ng?c r?ng,Teen Titan,Doremon
+6,MTV là kênh truy?n hình thu?c s? h?u c?a qu?c gia nào?,Hoa K?,Anh,B?,Hà Lan
+7,Broadcast là nh?ng kênh truy?n hình nhu th? nào?,Hu?ng t?i m?i ngu?i,Hu?ng t?i d?i tu?ng là tr? em,Hu?ng t?i nh?ng ngu?i yêu âm nh?c,Dành cho ngu?i tru?ng thành
+8,Ðâu là m?t series n?i ti?ng chi?u trên HBO?,Game of Thrones,The Walking Dead,Breaking Bad,The Simpsons
+9,Cha d? c?a series truy?n hình Glee là?,FOX,Disney Channel,CBS,AMC
+10,Master Chef là chuong trình truy?n hình th?c t? v?...?,?m th?c,Âm nh?c,Th?i trang,Công ngh?
+11,American Idol là chuong trình v?...?,Âm nh?c,Th?i trang,Công ngh?,Phiêu luu khám phá
+12,Discovery Channel là kênh truy?n hình v?...?,Khoa h?c,Th?i trang,Ho?t hình,Âm nh?c
+13,Animal Planet là kênh truy?n hình chuyên v?...?,Ð?ng v?t,Ho?t hình,Hài k?ch,Phim ?nh
+14,DW là kênh truy?n hình c?a qu?c gia nào?,Ð?c,Pháp,Hoa K?,Hà Lan
+15,So You Think You Can Dance là chuong trình th?c t? v?...?,Khiêu vu,Ði?n ?nh,Th?i trang,Ð?ng v?t
+16,Suicide Squad là b? phim du?c công chi?u vào nam?,2016,2015,2014,2013
+17,Ðâu là b? phim có t?ng doanh thu toàn c?u cao nh?t m?i th?i d?i?,Avatar,Titanic,Iron Man 3,Jurassic World
+18,The Apprentice là chuong trình truy?n hình do ai sáng l?p?,Mark Burnett,Donald Trump,Arnold Schwarzenegger,Bill Gates
+19,Ðâu là ti?u bang duy nh?t c?a Hoa K? có nu?c xung quanh?,Hawaii,Alaska,California,New Jersey
+20,Ðâu là ti?u bang duy nh?t không thu?c châu l?c nào c?a Hoa K??,Hawaii,Alaska,Ohio,Maine
+21,"""Ti?u bang Aloha"" là bi?t danh c?a ti?u bang nào c?a Hoa K??",Hawaii,Tây Virginia,Utah,Idaho
+22,Di?n viên th? vai nhân v?t Iron Man?,Robert Downey Jr,Chris Evans,Sebastian Stan,Hugh Jackman
+23,B? phim Warcraft du?c công chi?u vào nam nào?,2016,2015,2014,2013
+24,B? phim Avengers: Age of Ultron du?c công chi?u vào nam nào?,2015,2013,2011,2009
+25,Kh?u hi?u c?a Nike là?,Just Do It!,Do It Later!,Don't Do It!,Do Anything!
+26,"Trong phim Big Hero 6, nhân v?t Baymax là?",M?t ngu?i máy,M?t c?u bé,M?t chú mèo,M?t chú chó
+27,B? ph?n nào là quan tr?ng nh?t d? x? lý d? h?a máy tính?,Card màn hình,RAM,Chu?t,Bàn phím
+28,Ferrari là thuong hi?u n?i ti?ng chuyên s?n xu?t...?,Xe hoi th? thao,Ph?n m?m,Ði?n tho?i di d?ng,Trò choi di?n t?
+29,Gigabyte là don v? gì?,Luu tr? thông tin,Ð? dài,Cân n?ng,Nhi?t d?
+30,Bitcoin là gì?,M?t lo?i ti?n t? k? thu?t s?,Trang web thuong m?i,Công c? tìm ki?m,M?ng xã h?i
+31,Star Trek là dòng phim v? th? lo?i?,Khoa h?c vi?n tu?ng,Tình c?m,Trinh thám,Hài k?ch
+32,M?t t?ng th?ng M? du?c ph?c v? t?i da bao nhiêu nhi?m k??,2,3,4,5
+33,Ðâu là qu?c gia d?t huy chuong vàng Olympic 2016 môn bóng dá?,Brazil,Ð?c,Honduras,Nigeria
+34,Ai là ngu?i d?t HCV Olympic 2016 t?i n?i dung ch?y 200m nam?,Usain Bolt,Andre De Grasse,Christophe Lemaitre,Adam Gemili
+35,Michael Phelps là VÐV có qu?c t?ch?,Hoa K?,Trung Qu?c,Anh,Pháp
+36,VÐV nam d?t huy chuong vàng Olympic 2016 môn c?u lông don?,Chen Long,Lee Chong Wei,Lâm Ðan,Viktor Axelsen
+37,NBA là hi?p h?i c?a môn th? thao nào?,Bóng r?,Bóng dá,Bóng chày,Bóng chuy?n
+38,S? ngu?i choi m?i d?i c?a môn bóng chày?,9,10,11,12
+39,Google Drive là gì?,Công c? luu tr? d? li?u c?a Google,Công c? tìm ki?m,H? di?u hành c?a Google,H? th?ng b?n d? c?a Google
+40,Ðâu là m?t hãng không làm v? game?,Toyota,Ubisoft,Activision,Valve
+41,Nvidia là hãng chuyên s?n xu?t?,Công ngh? x? lý d? h?a,Ð? an nhanh,Qu?n áo th?i trang,Xe hoi
+42,Ðâu là thành ph? dông dân nh?t nu?c M? nam 2016?,New York,Texas,California,Washington
+43,1 MB b?ng bao nhi?u KB?,1024,128,256,512
+44,Nói d?n Tesla là chúng ta nghi d?n ngay công ngh?…?,Xe t? lái,Xe t?i,Xe khách,Xe máy
+45,H?i tr? trung bày s?n ph?m v? công ngh? l?n nh?t th? gi?i là?,CES,CEO,CEE,SEO
+46,Microsoft mua l?i thuong hi?u Nokia vào nam nào?,2014,2000,2008,2009
+47,Ai không ph?i là ngu?i sáng l?p ra t?p doàn Apple?,Musk,Steve Job,Steve Wozniak,Mike Markkula
+48,Tr? s? chính c?a t?p doàn Apple là ? nu?c nào?,M?,Anh,Úc,Tây Ban Nha
+49,Ch? Tech trong t? Hi-tech là vi?t t?t c?a t?…?,Technology,Technical,Tech,Technic
+50,Tr? s? chính c?a t?p doàn ô tô Tesla ? dâu?,M?,Anh,Canada,Pháp
+51,T?p doàn da qu?c gia Samsung là c?a nu?c nào?,Hàn Qu?c ,Nh?t B?n,M? ,Thái Lan
+52,Tr? s? chính c?a Samsung ? Hàn Qu?c d?t t?i thành ph?….?,Seoul ,Sejong,Seosan,Suwon
+53,Code là thu?t ng? du?c s? d?ng trong linh v?c?,Công ngh? thông tin,Van hóa,Th? thao,Kinh t?
+54,Trí tu? nhân t?o du?c vi?t t?t là gì?,AI,AK,AC,AG
+55,Tr? s? chính c?a Facebook là ? nu?c nào?,M?,Anh,Úc,Pháp
+56,iPhone SE du?c Apple cho ra d?i vào nam nào?,2016,2015,2014,2010
+57,Lexus là dòng xe h?ng sang c?a hãng nào?,Toyota,Ford,Mercedes,Honda
+58,Công ngh? b?o m?t b?ng vân tay du?c tích h?p trong dòng iPhone nào?,iPhone 5s,iPhone 4,iPhone 3s,iPhone 5
+59,Dòng iPhone nào không du?c h? tr? công ngh? b?o m?t vân tay?,iPhone 4s,Iphone 5,iPhone 5s,C? A và B
+60,Dòng chip Core i do hãng nào s?n xu?t?,Intel,IBM,Microsoft,Nvidia
+61,Hãng nào là hãng s?n xu?t ph?n m?m?,Microsoft,IBM,Intel,Nvidia
+62,Loài hoa nào l?n d?u tiên du?c tr?ng ngoài vu tr??,Hoa cúc,Hoa h?ng,Hoa lan,Hoa hu?ng duong
+63,Màn hình 4K có d? phân gi?i là bao nhiêu?,4096x2190,3840x2160,1280x720,2048x1920
+64,Ðâu là m?t lo?i bàn phím?,QWERTY,QEWRTY,QTRYEW,WQTRY
+65,Ðâu là tên m?t lo?i ? c?ng?,HDD,HHD,DDH,HHH
+66,S?i cáp quang có c?u trúc hình gì?,Hình tr?,Hình tam giác,Hình vuông,Hình ch? nh?t
+67,Tàu vu tr? có t?c d? lên t?i…?,Nghìn km/h,Tram km/h,Ch?c km/h,Tri?u km/h
+68,AND có d?ng hình gì?,Xo?n ?c,Hình vuông,Tam giác,Tròn
+69,Galaxy Note 7 ra du?c samsung cho ra d?i vào nam nào?,2016,2013,2014,2015
+70,"Tính d?n nam 2016, OLED là công ngh? màn h?nh hi?n th?….?",Cao c?p,Bình thu?ng,Kém,C?c kém
+71,Smart Watch là lo?i d?ng h? gì?,Ð?ng h? thông minh,Ð?ng h? co,Ð?ng h? giây cót,Ð?ng h? qu? l?c
+72,Uber là tên c?a m?t hãng….?,Taxi,Ði?n tho?i,Ð?ng h?,Ô tô
+73,H? th?ng d?nh v? toàn c?u vi?t t?t là gì?,GPS,GPA,GPP,GSS
+74,Th?i gian phân h?y c?a túi Nilon m?t kho?ng bao lâu?,Vài nam,Vài nghìn nam,Vài tram nam,Vài nghìn nam
+75,400 d?n 600 nam là th?i gian phân h?y trung bình c?a…?,Túi Nilon,Xác d?ng v?t,Xác th?c v?t,Gi?y
+76,"Tính d?n nam 2016, công ngh? truy?n thông không giây nào là m?i nh?t?",4G,2G,3G,5G
+77,Chi?c di?n tho?i nào nào không có phím home v?t lý?,Oppo F1,iPhone 3S,Samsung Galaxy s7,iPhone 6s
+78,C?ng s?c dùng trên iPhone 5s là k?t n?i…?,Lightning,MicroUSB,Không dây,S?c tròn 3.5
+79,H? di?u hành Windows 10 ra d?i nam nào?,2015,2013,2014,2016
+80,B? nh? truy c?p ng?u nhiên trên máy tính vi?t t?t là gì?,RAM,RAA,RMM,RRM
+81,Macbook là dòng máy tính c?a hãng nào?,Apple,IBM,Sony,Samsung
+82,Huawei là hãng di?n tho?i c?a nu?c nào?,Trung Qu?c,Hàn Qu?c ,Nh?t B?n,M?
+83,H? di?u hành Windows không du?c s? d?ng ? máy tính nào?,MacBook,Hp,Dell,Sony
+84,Công ngh? nào du?c coi nhu là công ngh? 4G?,LTE,LTT,LEE,ETE
+85,Co quan Hàng không và Vu tr? Hoa K? vi?t t?t là…?,NASA,NATO,WHO,WTO
+86,Friendship 7 là tàu không gian có ngu?i lái d?u tiên c?a…?,Hoa K?,Úc,Nga,Anh
+87,iMac c?a Apple là thi?t b?…?,Máy tính bàn,Laptop,Máy tính b?ng,Ði?n tho?i
+88,Yahoo Messenger chính th?c b? khai t? vào nam nào?,2016,2013,2014,2015
+89,Yahoo Messenger du?c ra m?t d?u tiên vào nam…?,1998,2000,2002,2004
+90,Th?c hi?n thành công công ngh? ghép gan d?u tiên trên th? gi?i cho ngu?i HIV ??,M?,Nh?t B?n,Vi?t Nam,Hàn Qu?c
+91,Tính nang di?u khi?n b?ng gi?ng nói trên iPhone là?,Siri,Siru,Sira,Sisi
+92,H? di?u hành iOS là c?a hãng nào?,Apple,Samsung,Sony,Nokia
+93,Kính th?c t? ?o Gear VR là c?a hãng nào?,Samsung,Sony,Apple,Google
+94,"Ðâu không ph?i là ph?n m?m chát, nh?n tin, g?i di?n?",Safari,Skype,Viber,Facebook Messenger
+95,Trình duy?t web m?c d?nh trên iPhone là…?,Safari,Chrome,Firefox,Opera
+96,Nhà sáng l?p Apple Steve Jobs m?t nam nào?,2011,2012,2013,2014
+97,Oppo là thuong hi?u d?n t? nu?c nào?,Trung Qu?c,Hàn Qu?c ,Nh?t B?n,Thái Lan
+98,Lollipop là Android th? h? nào sau dây?,Android 5.0,Android 4.4,Android 1.6,Android 6.0
+99,Kho ?ng d?ng c?a Apple là?,App Store,Opera Store,Amazon Store,Google Play
+100,H? th?ng thông tin di d?ng toàn c?u vi?t t?t là…?,GSM,GSS,GPS,GMM
+101,D?ch v? gi? li?u m?ng d?ng gói dành cho ngu?i dùng g?i là?,GPRS,GGPS,GGSS,GPS
+102,Bách khoa toàn thu m? b?ng nhi?u lo?i ngôn ng? trên Internet là?,Wikipedia,Wikimedia,Wikepedia,Wekepedia
+103,Ðâu là ph?n m?n d? nén và gi?i nén?,WinRAR,Windows,Skype,Safari
+104,Ð?i l? danh v?ng Hollywood n?m ? nu?c nào?,M?,Anh ,Pháp,Nga
+105,James Cameroon là d?o di?n c?a b? phim nào?,Avatar,Spider Man,Iron Man,Captain American
+106,Bu?i th? vai c?a các di?n viên g?i là?,Casting,Cat,Cassing,Cating
+107,Gi?i Oscar dành cho linh v?c gì?,Ði?n ?nh,Kinh t?,Âm nh?c,Van hóa
+108,Tu?ng vàng Oscar có hình gì?,Hình ngu?i,Hình qu? bóng,Hình tam giác,Hình vuông
+109,B? phim Fast and Furious 7 kh?i chi?u vào nam nào?,2014,2013,2015,2016
+110,Gi?i thu?ng di?n ?nh c?a Vi?n Hàn lâm Khoa H?c và Ngh? thu?t Ði?n ?nh Hoa K? là…?,Oscar,Qu? c?u vàng,Qu? bóng vàng,Cành c? vàng
+111,Ðâu là t?p doàn gi?i trí và truy?n thông da phuong ti?n?,Disneyland,Alibaba,Amazon,Apple
+112,20th Century Fox là tên c?a m?t….?,Hãng phim,B? phim,Bài hát,Kênh truy?n hình
+113,Gi?i thu?ng uy tín nh?t du?c trao ? Liên hoan phim Cannes là gi?i?,Cành c? vàng,Mâm xôi vàng,Oscar,Qu? c?u vàng
+114,Gi?i Cành c? vàng là gi?i thu?ng dành cho…?,Phim xu?t s?c nh?t,Bài hát hay nh?t,Di?n vi?n xu?t s?c,Ð?o di?n xu?t s?c
+115,Tr? s? chính c?a Walt Disney là ?….?,M?,Pháp,Anh,Tây Ban Nha
+116,Deadpool là b? phim du?c công chi?u vào nam nào?,2016,2013,2012,2014
+117,Nam di?n viên chính trong Seri phim Nhi?m v? b?t kh? thi là ai?,Tom Cruise,Paul Walker,Leonardo,Jason Staham
+118,Ai là ngu?i M? g?c Hoa và là ngôi sao võ thu?t n?i ti?ng di?n ?nh M??,Lý Ti?u Long,Thành Long,Lý Liên Ki?t,H?ng Kim B?o
+119,Bollywood là tên d?t cho ngành công nghi?p s?n xu?t phim n?i ti?ng t?i dâu?,?n Ð?,M?,Nh?t B?n,Hàn Qu?c
+120,Ðâu không ph?i là tên m?t hãng phim?,BBC,NBC Universal,Fox Entertainment Group,Time Warner
+121,Kinh dô di?n ?nh Hollywood n?m ? bang nào nu?c M??,California ,Texas ,Washington,Florida
+122, Charlie Chaplin là di?n viên n?i ti?ng v? th? lo?i phim gì?,Hài,Võ thu?t,Tình c?m,Chi?n tranh
+123,Phim ho?t hình bom t?n c?a hãng Universal nam 2016 tên là gì?,Minion,Kungfu Panda 3,Ice Age,Big Hero 6
+124,Công ty Marvel ? M? n?i ti?ng v?i các b? phim nói v?…?,Siêu anh hùng,Ca si,Ngu?i m?u,Chi?n tranh
+125,Công ngh? mô ph?ng b?ng máy tính trong làm phim vi?t t?t là…?,CGI,CCG,CII,ICG
+126,Phim Titanic du?c công chi?u nam nào?,1997,2000,2009,2015
+127,Ðo?n phim qu?ng cáo cho m?t b? phim g?i là?,Trailer,Review,Movie,Film
+128,C?u v?n d?ng viên quy?n anh Mike Tyson còn là m?t….?,Di?n viên,Ca si,Nh?c si,Giáo su
+129,"Nam 2016, Mike Tyson dã góp m?t trong b? phim nào sau dây?",Di?p V?n 3,Deadpool,Ice Age,Captain American
+130,Ðâu không ph?i là m?t b? phim ho?t hình?,Deadpool,Ice Age,KungFu Panda 3,Big Hero 6
+131,KungFu Panda 3 thu?c th? lo?i phim gì?,Ho?t hình,Chi?n tranh,Tình c?m,H?nh d?ng
+132,Nam di?n vi?n chính trong phim Ngu?i V?n Chuy?n 2 là ai?,Jason Statham,Tom Cruise,Paul Walker,Leonardo
+133,Ðâu là m?t b? phim tình c?m?,Titanic,Ngu?i s?t,Sát th?,K? h?y di?t
+134,B? phim Cu?n theo chi?u gió ra m?t nam bao nhiêu?,1939,1999,2000,2006
+135,B? phim di?n ?nh M? nói v? ti?u s? t?ng th?ng Abraham Lincoln có tên?,Lincoln,White House Down,Olympus Has Fallen,Southside With You
+136,Leonardo d?t gi?i Oscar nam 2016 v?i b? phim nào?,The Revenant,Titanic,Deadpool,Batman and Superman
+137,B? phim Jungle Book du?c kh?i chi?u nam nào?,2016,2015,2014,2013
+138,Jungle Book 2016 thu?c th? lo?i phim gì?,Phiêu luu,Hành d?ng,Ho?t hình,Kinh d?
+139,B? phim C?u bé r?ng xanh do hãng nào s?n xu?t?,Walt Disney Picture,Warner Bros,Paramount Pictures,20th Century Fox
+140,B?  phim d?u tiên có ti?ng tên là gì?, The Jazz Singer ,Tatanic,Pinocchio,Gone with The Wind
+141,Phim có ti?ng d?u tiên ra d?i vào nam bao nhiêu?,1927,1935,1940,1942
+142,K? nguyên k? thu?t s? và DVD v?i n?n di?n ?nh là vào nh?ng nam nào?,Th?p niên 90,Th?p niên 70,Th?p niên 80,Th?p niên 2000
+143,Ai sau dây là m?t d?o di?n phim n?i ti?ng?,James Cameron,Selen Gomez,Justin Bieber,Taylor Swift
+144,Pixar là hãng phim n?i ti?ng c?a nu?c nào?,M?,?n Ð?,Tây Ban Nha,Vi?t Nam
+145,Di?n viên nào là ngu?i Trung Qu?c?,Thành Long,Jason Statham,Paul Walker,Tom Cruise
+146,Gi?i Grand Slam trong d?u tiên trong nam là gi?i nào?,Úc m? r?ng,Wimbledon,M? m? r?ng,Pháp m? r?ng
+147,Có m?y gi?i Grand Slam?,4,5,6,7
+148,Ðâu không ph?i là m?t gi?i Grand Slam?,Châu Phi m? r?ng,Úc m? r?ng,Wimbledon,Pháp m? r?ng
+149,AFC Asian Cup 2011 du?c t? ch?c ? dâu?,Qatar,Hàn Qu?c,Nh?t B?n,Vi?t Nam
+150,Ð?i nào vô d?ch t?i AFC Asian Cup 2011?,Nh?t B?n ,Hàn Qu?c,Uzbekistan,Australia
+151,S? ki?n gi? trái d?t du?c t? ch?c d?u tiên vào nam 2007 ? thành ph? nào?,Sydney,Tokyo,B?c Kinh,Hà N?i
+152,Vitamin nào có th? t?ng h?p t? ánh sáng m?t tr?i?,Vitamin D,Vitamin B,Vitamin A,Vitamin C
+153,Nu?c nào ? Ðông Nam Á không có d?a gi?i v?i b?t k? nu?c nào?,Philippines,Malaysia,Lào,Thái Lan
+154,B?nh s?i lây lan ch? y?u qua du?ng nào?,Hô h?p,Tình d?c,An u?ng,Máu
+155,The ASEAN Way là ca khúc chính c?a ASEAN do nh?c si nu?c nào sáng tác?,Thái Lan,Vi?t Nam,Lào,Malaysia
+156,Thung lung công ngh? n?i ti?ng Silicon du?c d?t theo tên c?a nguyên t? nào?,Silic,S?t,Uran,Thi?c
+157,Thung lung công ngh? Silicon n?m ? nu?c nào?,M? ,Anh,Pháp ,Nga
+158,T?p h?p các s? th?c du?c ký hi?u b?ng ch? cái nào?,R,N,Z,Q
+159,Vi?t Nam dang cai cu?c thi s?c d?p nào nam 2010?,Hoa h?u Th? gi?i,Hoa h?u Trái d?t,Hoa h?u Hoàn vu,Hoa h?u Qu?c t?
+160,Khí nào chi?m 80 ph?n tram thành ph?n không khí?,N2,O2,H2,Cl2
+161,Loài hoa du?c bi?t d?n nhu qu?c hoa c?a Vi?t Nam?,Hoa sen,Hoa súng,Hoa h?ng,Hoa hu?
+162,B? phim The Social Network nói v? m?ng xã h?i nào?,Facebook,Twitter,Opera,Yahoo
+163,"Trong môn dua xe d?p, tay dua có t?ng th?i gian ng?n nh?t s? nh?n du?c áo gì?",Áo vàng,Áo xanh,Áo ch?m d?,Áo tr?ng
+164,Con s? du?c coi là xui x?o v?i ngu?i Trung Qu?c?,4,3,2,1
+165,Sóng âm không truy?n du?c trong môi tru?ng nào?,Chân không,L?ng,R?n,Khí
+166,Ando Momofuku là ngu?i Nh?t dã phát minh ra món an gì ph? bi?n ngày nay?,M? an li?n,Bánh m?,Xúc xích,Gà rán
+167,B?i c?nh di?n ra câu truy?n Romeo và Juliet ? thành ph? nào c?a Ý?,Verona,Milan,Rome,Venice
+168,Gi?i Emmy là gi?i thu?ng cao quý dành cho linh v?c nào?,Ði?n ?nh,Ca nh?c,Th?i trang,Van hóa
+169,Tr? s? c?a Ngân hàng chung Châu Âu ? thành ph? nào?,Frankfurt,New York,Paris,Brussel
+170,Nu?c ch? nhà Copa America 2011 là nu?c nào?,Argentina,Boliviar,Venezuala,Paraguay 
+171,Nh?ng d?i phân t? du?c c?u t?o theo nguyên t?c da phân mà các don phân là axít amin là gì?,Protein ,Axít,Vitamin,Ch?t béo
+172,Nu?c nào dang cai cu?c thi sáng t?o Robocon 2011?,Thái Lan,Vi?t Nam,Singapore,Malaysia
+173,Ngày Sách Th? Gi?i du?c t? ch?c thu?ng niên vào ngày nào?,23 tháng 4,23 tháng 5,23 tháng 6,23 tháng 7
+174,"Trong môn võ Taekwondo, c?p dai cao nh?t có màu gì?",Ðen,Ð?,Tr?ng,Xanh
+175,Màu dai d? trong môn võ Taekwondo có danh xung là gì?,Võ sinh,Võ xinh huy?n dai,Huy?n luy?n viên,Võ su
+176,Châu l?c nào hoàn toàn n?m ? Tây bán c?u?,Châu M?,Châu Á,Châu Âu,Châu Phi
+177,Quinin là thu?c di?u tr? b?nh gì?,B?nh s?t rét,B?nh HIV,B?nh dau d?u,B?nh tim
+178,Núi phú si n?m trên hòn d?o nào?,Honshu,Shikoku,Hokkaido,Kyushu
+179,Kim lo?i nào có kh?i lu?ng riêng nh? nh?t?,Liti,Natri,Kali,Beri
+180,Ð?ng thau là h?p kim c?a hai kim lo?i nào?,Ð?ng và k?m,Ð?ng và s?t,Ð?ng và thi?c ,Ð?ng và nhôm
+181,Các chùa ? Nh?t B?n s? dánh bao nhiêu ti?ng chuông vào dêm giao th?a?,108,100,70,68
+182,Quân c? nào có c? trên c? vua và c? tu?ng?,Mã,Pháo,Si,H?u
+183,Ð?i bóng nu?c nào vô d?ch Gi?i vô d?ch bóng dá n? th? gi?i nam 2011?,Nh?t B?n ,Úc,Tri?u Tiên,Anh
+184,T? cao b?i trong ti?ng vi?t du?c vi?t hóa t? t? nào?,Cowboy,Caoboy,Cowboi,Caoboi
+185,Cao b?i nghia là gì?,Ngu?i chan bò,Ngu?i chan chim,Ngu?i chan v?t,Ngu?i chan gà
+186,Hoàn thi?n tiêu d? c?a b? phim James Bond: The Man With The Golden…?,Gun,Tooth,Eges,Eyes
+187,Ði?u gì là sai khi nói v? th?y ngân?,D?n di?n kém,D?n di?n t?t,D?n nhi?t kém,Có ánh b?c
+188,V?t d?ng nào sau dây có s? d?ng th?y ngân?,Nhi?t k?,Vô k?,Ampe k?,Ð?ng h?
+189,Th?y ngân có m?y d?ng v? ?n d?nh?,7,8,9,10
+190, N? th?n Aphrodite làn con gái c?a ai?,Th?n Zeus,Th?n dèn,Th?n Thor,Apollo
+191,Nguyên t? hóa h?c này sau dây khác v?i các nguyên t? còn l?i?,Fe,C,P,S
+192,T?ng s?n ph?m qu?c dân vi?t t?t là gì?,GNP,GDP,VAT,GPP
+193,Ch? s? giá tiêu dùng vi?t t?t là gì?,CPI,GDP,VAT,GNP
+194,Vi?t Nam chính th?c ra nh?p WTO vào nam nào?,2007,2008,2009,2010
+195,Hi?p d?nh Ð?i tác Xuyên Thái Bình Duong vi?t t?t là gì?,TPP,WTO,TTP,VAT
+196,Hi?p d?nh Ð?i tác Xuyên Thái Bình Duong du?c ký k?t vào nam nào?,2005,2006,2007,2008
+197,T? ch?c lao d?ng qu?c t? viêt t?t là gì?,ILO,IIO,LLO,OLL
+198,"Nam 2015, GDP nu?c nào cao nh?t Ðông nam Á?",Indonesia,Vi?t Nam,Thái Lan,Malaysia
+199,Nu?c B? s? d?ng d?ng ti?n gì?,Euro,USD,Rub,Nhân dân t?
+200,T? nào sau dây khác so v?i các t? còn l?i?,USD,WTO,WHO,UNICEF
+201,C?c d? tr? liên bang M? vi?t t?t là gì?,FED,FEE,FDD,FEE
+202,Ch? s? giá s?n xu?t vi?t t?t là gì?,PPI,PPE,PII,IPI
+203,N? x?u là kho?n n? du?c phân lo?i trong nhóm m?y?,4,8,6,2
+204,T? chúc H?p tác và Phát tri?n kinh t? vi?t t?t là gì?,OECD,WTO,WHO,UNICEF
+205,Ðâu là di?n dàn h?p tác Kinh t? Châu Á-Thái Binh Duong?,APEC,WTO,WHO,OECD
+206,Tr? s? chính c?a di?n dàn h?p tác Kinh t? Châu Á-Thái Binh Duong ? dâu?,Singapore,Malaysia,Philippines,Vi?t Nam
+207,"Nam 2016, APEC có bao nhiêu nu?c thành viên?",21,23,25,27
+208,APEC du?c thành l?p nam bao nhiêu?,1989,1990,1991,1992
+209,Vi?t Nam ra nh?p APEC nam nào?,1998,1999,2000,2003
+210,T? ch?c thuong m?i th? gi?i WTO du?c thành l?p nam nào?,1995,1997,1999,2001
+211,Tr? s? chính c?a t? ch?c thuong m?i th? gi?i ? dâu?,Th?y Si,B?,Anh,Pháp
+212,Ngân hàng phát tri?n Châu Á vi?t t?t là gì?,ADB,ACB,HSBC,VPB
+213,Tr? s? chính c?a ngân hàng phát tri?n Châu Á ? dâu?,Philippines,Malaysia,Singapore,Indonesia
+214,C?ng d?ng kinh t? Châu Phi vi?t t?t là gì?,AEC,APEC,WTO,WHO
+215,Ðâu là m?t t? báo v? kinh doanh qu?c t??,Financial Times,Play Boy,New York Times,CNN
+216,Th?i báo tài chính Financial Times có tr? s? ? dâu?,Anh ,M? ,Úc ,Canada
+217,?y ban kinh t? Tây Á vi?t t?t là gì?,ECWA,WTO,WHO,UNICEF
+218,H?i d?ng tu?ng tr? kinh t? vi?t t?t là gì?,COMECON,NATO ,WTO,WHO
+219,Ðâu là t?p chí kinh doanh lâu d?i và n?i ti?ng nh?t hi?n nay?,Forbes,Play Boy,CNN Money,CNBC
+220,T? ch?c Liên hi?p qu?c t? v? phát tri?n công nghi?p vi?t t?t là gì?,UNIDO,WHO,UNICEF,NASA
+221,Ðâu là tên vi?t t?t c?a C?ng d?ng kinh t? Châu Âu?,EEC,BBC,CNN,NATO
+222,Sàn ch?ng khoán New York vi?t t?t là gì?,NYSE,NNSE,SYYS,NYSS
+223,Qu?c gia có tr? lu?ng vàng l?n nh?t th? gi?i nam 2013?,M? ,Anh ,Pháp,Trung Qu?c
+224,Show di?n Victoria's Secret là show di?n v? th?i trang gì?,N?i y,Công s?,Mùa hè,Mùa dông
+225,Nói d?n b? suu t?p Xuân Hè là nói d?n linh v?c gì?,Th?i trang,Th? thao ,Ði?n ?nh,Van hóa
+226,Levis là thuong hi?u th?i trang n?i ti?ng v? lo?i qu?n gì?,Jeans,Th? thao ,Ðùi,Qu?n s?p
+227,Thuong hi?u th?i trang Levis du?c t?o d?ng b?i ai?,Levi Strauss,Ronaldo,Justin Bieber,Madona
+228,Thuong hi?u Gucci du?c sáng l?p nam nào?,1906,1990,1998,2003
+229,Rolex là thuong hi?u c?a s?n ph?m nào?,Ð?ng h?,Nh?n,Ô tô,Ð? lót
+230,Giá vé xem show di?n Victoria's Secret kho?ng bao nhiêu ti?n?,Vài tram tri?u,Vài ch?c nghìn,Vài tram nghìn,Vài ch?c chi?u
+231,Hãng th?i trang Valentino sáng l?p nam 1959 ? dâu?,Ý,B? ,Úc,Anh
+232,Louis Vuitton là tên c?a thuong hi?u...?,Th?i trang,Máy tính,Máy gi?t,Ði?n tho?i
+233,Chanel là hãng th?i trang…?,Cao c?p,Giá r?,Trung bình,Cho tr? em
+234,Victoria's Secret là nhà bán l? n?i y l?n nh?t t?i nu?c nào?,M?,Anh,Nga,Nh?t B?n
+235,Victoria's Secret du?c thành l?p vào nam nào?,1977,1990,2008,2010
+236,Ðâu là kinh dô th?i trang d?u tiên c?a th? gi?i?,Paris,New York,Milan,Tokyo
+237,Kinh dô th?i trang d?u tiên c?a Châu Á là ? dâu?,Tokyo,Milan,Seoul ,Bangkok
+238,Tên hãng th?i trang Calvin Klein là tên c?a….?,Nhà sáng l?p,B? suu t?p,Chi?c áo,Chi?c váy
+239,Hãng th?i trang Calvin Klein du?c ra d?i ? dâu?,M?,Anh ,Ý,Canada
+240,Phiên b?n g?c Next Top Model có ngu?n g?c ? nu?c nào?,M?,Anh ,Vi?t Nam,Pháp
+241,Bài hát du?c Maroon 5 th? hi?n t?i Victoria's Secret 2011 tên gì?,Moves Like Jagger,Sugar,Maps,Animals
+242,Victoria Beckham không ch? là ca si mà còn là m?t?,Nhà thi?t k?,C?u th?,Ngu?i m?u,Chính tr? gia
+243,T?p chí Vogue là t?p chí v? linh v?c gì?,Th?i trang ,Ði?n ?nh,Th? thao,Van hóa
+244,Tu?n l? th?i trang New York du?c t? ch?c m?y l?n m?t nam?,2,3,4,4
+245,Tu?n l? th?i trang New York du?c t? ch?c tháng 2 và tháng m?y?,9,10,11,12
+246,Hi?p h?i các nhà thi?t k? th?i trang M? vi?t t?t là gì?,CFDA,CEO,CIA,BFI
+247,Tu?n l? th?i trang Paris di?n ra d?nh k? vào tháng 1 và tháng m?y?,7,5,6,8
+248,Các thi?t k? mang tính ?ng d?ng và th?c ti?n cao g?i là?,Th?i trang ?ng d?ng,Th?i trang cao c?p,Th?i trang tr? em,Th?i trang thu dông
+249,Ðâu không ph?i là m?t nhà thi?t k? n?i ti?ng?,Justin Bieber,Donatella Versace,Tom Ford,Ralph Lauren
+250,Qu?n Jeans ban d?u du?c thi?t k? cho ai?,Th? m? vàng,Th? làm than,Chính tr? gia,Ca si
+251,Marc Jacobs là nhà thi?t k? th?i trang n?i ti?ng ? dâu?,M? ,Ý,Pháp,Anh
+252,Lo?i v?i d?u tiên d? làm nên qu?n Jeans?,Canvas,Coton ,S?i dây,To t?m
+253,Hãng th?i trang Dior du?c l?y tên theo tên c?a ai?,Nhà sáng l?p Dior,Ca si,Ngu?i m?u,Di?n viên
+254,Tr? s? chính c?a hãng th?i trang Dior là ? nu?c nào?,Pháp,M? ,Anh,Ý
+255,Tr? s? chính Dior du?c d?t t?i thành ph? nào?,Paris,New York,Milan,Luân Ðôn
+256,Bài hát We Don't Talk Anymore do ca s? nào th? hi?n?,Charlie Puth và Selena Gomez,Selena Gomez,Justin Bieber,Alan Walker
+257,Ai du?c m?nh danh là ông hoàng nh?c Pop?,Michael Jackson,Justin Bieber,Shayne Ward,Peter
+258,EDM là th? lo?i âm nh?c gì?,Nh?c di?n t?,Nh?c d?ng quê,Nh?c c? di?n,Nh?c Pop
+259,Adele là ca s? ngu?i nu?c nào?,Anh,Pháp,M? ,Canada
+260,Ca s? Vi?t Nam g?n v?i nhi?u gi?i thu?ng âm nh?c qu?c t??,M? Tâm,Ðàm Vinh Hung,H? Ng?c Hà,Phuong Linh
+261,Taylor Swift là ca si c?a th? lo?i nh?c nào?,Nh?c d?ng quê,Nh?c Pop,Rock,R&B
+262,OST là nh?c gì?,Nh?c n?n,Nh?c thính phong,Nh?c phim,Nh?c nh?
+263,Gi?i thu?ng âm nh?c danh giá nh?t?,Grammy,Oscar ,Gi?i c?ng hi?n,Cành c? vàng
+264,Ca si Justin Bieber du?c m?nh danh là gi?,Hoàng t? nh?c Pop,Vua nh?c Pop,N? hoàng nh?c PoP,Không là gì
+265,Heal the World là bài hát n?i ti?ng c?a ca si nào?,Michael Jackson,Shakira ,Taylor Swift,Lady Gaga
+266,N? ca si có phong cách quái d? nh?t?,Lady Gaga,Taylor Swift,Adele,Katy Perry
+267,Bài hát "See you again" du?c s? d?ng trong b? phim nào?,Fast and Furious 7,Cu?p bi?n,DeadPool,Titanic 
+268,L? h?i Summer Sonic là l? h?i âm nh?c ? dâu?,Nh?t B?n,Nga,M? ,Canada
+269,Ðâu là liên hoan âm nh?c di?n t? l?n nh?t th? gi?i?,Tomorrowland,Music Festival,Ultra Music Festival,Ozzfest
+270,"""Baby"" là ca khúc làm nên tên tu?i c?a ca si nào?",Justin Bieber,Michael Jackson,Shayne Ward,Maroon5
+271,Ca khúc làm mua làm gió trong n?n âm nh?c th? gi?i nam 2015?,Hello,What do you mean,Fade,Sorry
+272,Ca khúc nào du?c Katy Perry th? hi?n trong Olympic 2016?,Rise,Roar,Hot 'N Cold,Dark Horse 
+273,Michael Jackson m?t nam nào?,2009,2010,2011,2012
+274,Ca khúc "My Love" g?n v?i tên tu?i c?a ban nh?c nào?,Westlife,Backstresst Boy,The Beatle,Boyzone
+275,"""We don't talk anymore"" du?c Charlie Puth th? hi?n v?i ca si nào?",Selena Gomez,Lady Gaga,Taylor Swift,My Tam
+276,Ca si Selena Gomez là ngu?i nu?c nào?,M?,Úc,Pháp,Anh
+277,Ca khúc Hello c?a Adele n?m trong Album th? m?y?,3,1,4,5
+278,Ca si Shakira là ngu?i nu?c nào?,Colombia,Nga,Trung Qu?c,Ý
+279,Bài hát Waka Waka du?c Shakira th? hi?n trong World Cup nam bao nhiêu?,2010,2014,2006,2002
+280,Ca si nào th? hi?n ca khúc Dimonds?,Rihanna,Katy Perry,Jenifer Lopez ,Lady Gaga
+281,Michael Jackson sinh nam bao nhiêu?,1958,1959,1960,1961
+282,Shakira dã th? hi?n ca khúc nào t?i World Cup 2014?,La La La,Waka Waka,Whenever Wherever,Beautiful Liar
+283,Ai là ngu?i du?c m?nh danh là Công chúa nh?c d?ng quê?,Taylor Swift,Katy Perry,Lady Gaga,Selena Gomez
+284,"Ð?, rê, mi, pha, son…là nói d?n môn ngh? thu?t gì?",Âm nh?c,Phim ?nh,Th? thao,Hài k?ch
+285,Xu?ng âm là d?c lên nh?ng ký hi?u âm nh?c dúng cao d? và ….?,Tru?ng d?,Âm s?c,Giai di?u ,Ð? tr?m
+286,Cây sáo c? nh?t du?c các nhà khoa h?c tìm th?y du?c làm b?ng gì?,Ngà voi ma mút,S?ng tê giác,Cây trúc,Ðá
+287,Nh?c c? nào thu?ng du?c choi noi có gió?,Aeolian,Guitar,Sáo,Violin
+288,Sáo du?c phân ra làm m?y lo?i?,2,3,4,5
+289,Beethoven là ai?,Nhà so?n nh?c,Ca si,Vu Công,Di?n viên
+290,B?n nh?c n?i ti?ng Moonlight Sonata là c?a nhà so?n nh?c nào?,Beethoven,Mozart,William Lawes,Thomas Mace
+291,EDM du?c t?o ra t? nh?ng nh?c c? nào?,T? các thi?t b? di?n t?,Violin ,Sáo,Tr?ng
+292,Th? lo?i nh?c di?n t? du?c vi?t t?t là gì?,EDM,EEM,EMM,EDD
+293,Nh?c n?n vi?t t?t là gì?,OST,OMT,OTT,OOS
+294,EDM có ngu?n g?c t? dâu?,M?,Châu Phi,Nh?t B?n,Thái Lan
+295,Âm nh?c nói chung du?c chia làm m?y th? lo?i?,2,3,4,5
+296,Nh?c Jazz có ngu?n g?c t? dâu?,M?,Nh?t,Nga ,Úc
+297,Khuông nh?c là t?p h?p nh?ng…?,Dòng k? ngang,Ð?u ch?m,Ð?u ph?y,Dòng k? d?c
+298,Th?nh âm là t? ng? thu?c linh v?c nào?,Âm nh?c,Phim ?nh,Ngu?i m?u,Kinh t?
+299,"? Vi?t Nam, t? Diva là nghia là gì?",Danh ca,Ca si,Nh?c si,Ngh? si
+300,DJ có nghia là gì?,Ngu?i ph?i nh?c,Ca si,Di?n viên,Ð?o di?n
+301,Backstreet Boys là tên m?t…?,Nhóm nh?c,Ca si,Nh?c si,Di?n viên
+302,Backstreet Boys là ban nh?c toàn thành viên là…?,Nam gi?i,N? gi?i,C? Nam c? N?,Ð?ng tính
+303,"Opera là lo?i hình ngh? thu?t t?ng h?p gi?a sân kh?u, thanh nh?c và …?",Âm nh?c,Di?n viên,Thanh nh?c ,Ð?o di?n
+304,Harmonica là tên c?a m?t lo?i…?,Nh?c c?,Nhóm nh?c,Di?n viên,B? phim
+305,Ðâu không ph?i tên m?t nhóm nh?c?,G-Dragon,Westlife ,BigBang,Backstreet Boys
+306,G-Dragon là thành viên c?a nhóm nh?c nào?,BigBang,Westlife ,Backstreet Boys,Boyzone
+307,Nhóm tru?ng c?a ban nh?c BigBang là ai?,G-Dragon,Taeyang ,T.O.P,Daesung
+308,Ðâu là nhóm nh?c t?i t? Hàn Qu?c?,BigBang,Westlife ,Backstreet Boys,Boyzone
+309,Khi nói d?n Ông hoàng nh?c POP là chúng ta nói d?n…?,Michael Jackson,Bruno Mars,Justin Bieber,Sam Smith
+310,Ca khúc My Heart Will Go On là nh?c phim cho b? phim n?i ti?ng nào?,Titanic,Ngu?i nh?n,Ngu?i s?t,X-Men
+311,Bài hát du?c th? hi?n chính trong b? phim Titanic là bài hát nào?,My heart will go on,My Love,Sorry,Baby
+312,Bài hát See You Again d? tu?ng nh? v?….?,Paul Walker,Anton Yelchin,Johnny Lewis,Lý Ti?u Long
+313,Ca khúc Hello du?c th? hi?n thành công b?i ca si nào?,Adele,Katy Perry,Rihanna,Jenifer Lopez
+314,Michael Jackson là ca si nh?ng th?p niên d?u nam?,80,60,70,90
+315,Ca si nào dã dùng ti?ng hát d? phá v? rào c?n phân bi?t ch?ng t?c?,Michael Jackson,Adele,Justin Bieber,Jenifer Lopez
+316,Ca si Michael Jackson là ngu?i nu?c nào?,M?,Úc,Canada,Anh
+317,Ðâu không ph?i là nhà so?n nh?c?,Justin Bieber,Bach,Beethoven,Mozart
+318,T? T trong MTV là vi?t t?t c?a t? gì trong linh v?c âm nh?c?,Television ,Tell,Talk,Twitch 
+319,Ðâu là th? lo?i nh?c k?ch?,Opera,Jazz,Pop,R&B
+320,M?t b?n giao hu?ng do bao nhiêu ngu?i th? hi?n?,M?t dàn nh?c,1,2,3
+321,Boyzone là tên c?a…?,M?t ban nh?c,M?t bài hát,M?t ca si,M?t b? phim
+322,Chi?c máy nghe nh?c t? d?ng d?u tiên trên th? gi?i ra d?i nam nào? ,1906,1950,1960,1980
+323,The Beatle là ban nh?c c?a nh?ng th?p niên bao nhiêu?,60,70,80,90
+324,The Beatle là ban nh?c….?,Rock,Pop,Jazz,Blues
+325,The Beatle là ban nh?c Rock ngu?i…?,Anh,M?,Pháp,Nga
+326,DJ Soda là ngu?i nu?c nào?,Hàn Qu?c ,Vi?t Nam,M? ,Anh
+327,Ca si Justin Bieber sinh nam bao nhiêu?,1994,1995,1996,1997
+328,Justin Bieber là ca si ngu?i nu?c nào?,Canada,M?,Anh ,Pháp
+329,T?p h?p âm thanh theo m?t tr?t t? nh?t dinh g?i là?,H?p âm,Xu?ng Âm,Ca t?,L?i nh?c
+330,Môn giúp con ngu?i bi?u di?n âm thanh du?i d?ng n?t nh?c hay ca t? g?i là…?,Nh?c lý,Th?nh âm,Âm v?c,Nh?c c?
+331,Kho?ng cách gi?a hai n?t nh?c g?i là?,Quãng,N?t,Kho?ng tr?ng,D?u cách
+332,Thành ph?n co b?n c?a âm nh?c phuong Tây là?,N?t nh?c,Nh?c c?,Ca si,Nh?c si
+333,Nh?c Lossless là lo?i nh?c gì?,Ch?t lu?ng cao,Ch?t lu?ng th?p,Bình thu?ng,Nh?c không l?i
+334,Nh?c 128kbps là nh?c có ch?t lu?ng nhu th? nào?,Bình thu?ng,Cao,Th?p,C?c th?p
+335,"""See you again"" là tên c?a m?t…?",Bài hát,Ban nh?c,Quy?n sách,B? phim
+336,Bài hát d? tu?ng nh? v? nam di?n viên Paul Walk tên là gì?,See You Again,Miss You,My Love,Hello
+337,Bài hát See You Again là bài hát do ai th? hi?n?,Charlie Puth,Taylor Swift,Wiz Khalifa,Justin Bieber
+338,Pep Guardiola là hu?n luy?n viên c?a d?i tuy?n Man City vào nam nào?,2016,2014,2012,2010
+339,Pep Guardiola dã r?i kh?i v? trí hu?n luy?n viên câu l?c b? nào?,Barcelona,Bayern Munich,MU,Man City
+340,La Liga là cúp bóng dá...?,Tây Ban Nha,Ngo?i h?ng Anh,Châu Âu,Th? gi?i
+341,Hu?n luy?n viên Mourinho là ngu?i nu?c nào?,B? Ðào Nha,Tây Ban Nha,M?,Nga
+342,"Mùa gi?i 2013-2015, Mourinho dã d?n d?t câu l?c b? nào?",Chelsea,Real Madrid ,Inter Milan,MU
+343,Th? v?n h?i Mùa hè nam 2016 du?c t? chúc ? nu?c nào?,Brazil ,M?,Anh,Tây Ban Nha
+344,Thành ph? du?c ch?n d? t? ch?c th? v?n h?i Mùa hè nam 2016 là…?,Rio de Janeiro,Sao Paulo,Salvador,Serra
+345,Sân v?n d?ng nào du?c m?nh danh là Nhà hát c?a nh?ng gi?c mo?,Old Trafford,Etihad,Emirates,Stamford Bridge 
+346,Sân v?n d?ng Stamford Bridge là c?a d?i bóng nào?,Chelsea,MU,Manchester City,Bayern Munich
+347,World Cup 2014 du?c t? ch?c ? dâu?,Brazil ,Anh,Úc,Pháp
+348,World Cup 2014 là gi?i bóng dá vô d?ch th? gi?i l?n th? bao nhiêu?,20,19,18,17
+349,Ð?i tuy?n vô d?ch World Cup 2014 là d?i tuy?n nào?,Ð?c,Anh,M?,Brazil
+350,Novak Djokovic là v?n d?ng viên môn th? thao nào?,Tennis,Bóng dá,Bóng r?,Boi l?i
+351,Tay v?t Maria Sharapova là ngu?i nu?c nào?,Nga,Pháp,Úc,B? Ðào Nha
+352,Sân v?n d?ng Nou Camp ? dâu?,Tây Ban Nha,B? Ðào Nha,M? ,Brazil
+353,LeBron James là v?n d?ng viên n?i ti?ng c?a môn th? thao nào?,Bóng r?,Bóng dá,Tennis,Bóng bàn
+354,Michael Phelps là v?n d?ng viên môn…?,Boi l?i,Bóng dá,Tennis,C? vua
+355,Cristiano Ronaldo  sinh nam bao nhiêu?,1985,1987,1989,1990
+356,Danh hi?u qu? bóng vàng nam 2015 thu?c v? ai?,Cristiano Ronaldo ,Lionel Mession,Neymar ,Luis Suarez
+357,Usain Bolt là v?n d?ng viên qu?c gia nào?,Jamaica,Brazil,M? ,Anh
+358,Hoàng Xuân Vinh là v?n d?ng viên môn….?,B?n súng,Bóng bàn,Bóng r?,Nh?y cao
+359,C?u th? Luis Suarez là ngu?i nu?c nào?,Uruguay ,Paraguay,M?,Anh
+360,Lionel Messi choi ? v? trí nào?,Ti?n d?o,H?u v?,Trung v?,Ti?n v?
+361,Câu l?c b? giành vô d?ch ngo?i h?ng anh nam 2015?,Leicester,Manchester United ,Manchester City,Chelsea 
+362,Cúp bóng dá Nam M? có tên là gì?,Copa America,La Liga,Premier League,World Cup
+363,V?n d?ng viên môn b?n súng ngu?i nu?c nào dã phá v? k? l?c Olympic 2016? ,Vi?t Nam,Nga,M?,Jamaica
+364,Euro 2016 du?c t? ch?c t?i nu?c nào?,Pháp,Anh,M?,Úc
+365,V?n d?ng viên ch?y nhanh nh?t th? gi?i tên là gì?,Usain Bolt,Justin Gatlin,Yohan Blake,Elaine Thompson 
+366,"Tính d?n nam 2016, Lionel Messi dã dành du?c m?y qu? bóng vàng?",5,6,7,8
+367,Công viên các hoàng t? là sân v?n d?ng c?a câu l?c b? nào?,Paris Saint-Germain,MU,Man City,Juventus 
+368,Sân v?n d?ng Ánh sáng là c?a d?i bóng nào?,Sunderland,Inter Milan,Real Madrid ,Liverpool
+369,Thánh d?a Bernabeu - Sân nhà c?a d?i bóng nào?,Real Madrid ,MU,Liverpool,Juventus 
+370,Liên doàn bóng dá Châu Âu vi?t t?t là gì?,UEFA,VFF,UFFA,UEEF
+371,Môn th? thao du?c coi là môn th? thao n? hoàng?,Ði?n kinh,Bóng dá,Bóng r?,Bóng chuy?n
+372,M?i d?i bóng r? thi d?u trên sân có m?y ngu?i?,5,6,7,8
+373,Bóng r? ra d?i ? nu?c nào?,M?,Anh,Úc,Pháp
+374,Pháo th? thành Luân Ðôn là d?i bóng nào?,Asernal,MU,Man City,Juventus 
+375,Qu? d? là bi?t danh c?a d?i bóng nào?,Manchester United,Manchester City,Inter Milan,Sunderland
+376,Ð?i bóng nào có bi?t danh là L? doàn d??,Liverpool,Manchester City,MU,Juventus 
+377,"Nam 2016, MU dã chiêu m? thành công ti?n v? ngu?i pháp nào?",Paul Pogba,Rooney,Mata,Ibrahimovic
+378,Maradona dã tham d? m?y k? World Cup?,4,5,6,7
+379,Maradona là c?u th? ngu?i nu?c nào?,Argentina,Brazil,Uruguay ,B? Ðào Nha
+380,Ai du?c m?nh danh là "C?u Bé Vàng" c?a bóng dá th? gi?i?,Maradona,Messi,Ronaldo,Luis Suarez
+381,Bóng dá trong nhà g?i là gì?,Futsal,Butsan,Tutsan,Fusal
+382,L?i choi Tiki-taka là c?a d?i bóng nào?,Barcelona,MU,Manchester City,Inter Millan
+383,C?u th? du?c m?nh danh là ngu?i ngoài hành tinh?,Ronaldo béo,Cristiano Ronaldo,Messi,Kaka
+384,Tr?ng tài b?t chính trong tr?n chung k?t Euro 2016 là ai?,Mark Clattenburg,Pierluigi Collina,Jonas Eriksson,Simon Beck
+385,Tr?ng tài n?i ti?ng th? gi?i Pierluigi Collina là ngu?i nu?c nào?,Italia,Tây Ban Nha,M?,Anh
+386,Chi?c cup vô d?ch World Cup hi?n nay du?c s? d?ng t? nam bao nhiêu?,1974,1975,1976,1977
+387,Gi?i vô d?ch bóng dá th? gi?i du?c thành l?p nam bao nhiêu?,1930,1935,1940,1945
+388,Ronaldinho là danh th? ngu?i nu?c nào?,Brazil ,Tây Ban Nha,B? Ðào Nha,Ð?c
+389,FIFA World Cup b? h?y b? 2 k? vào nam 1942 và nam bao nhiêu?,1946,1950,1954,1958
+390,"Tính d?n nam 2016, ai là c?u th? duy nh?t d?t 3 lân vô d?ch World Cup?",Pele,Miroslav Klose,Just Fontaine,Ronaldinho
+391,Trong quy?n Anh h?ng ru?i có c?n n?ng bao nhiêu kg?,46-49 Kg,50-60 Kg,69-75 Kg,75-81 Kg
+392,Gi?i dua xe d?p vòng quanh nu?c Pháp có tên là gì?,Tour de France,Tout de France,Tour Le France,Tour de Fance
+393,Th? v?n h?i Mùa hè hay còn du?c g?i là gì?,Olympic,Olympia,Olimpic,Olympi
+394,SEA Games  22 du?c t? ch?c t?i Vi?t Nam vào nam bao nhiêu?,2003,2004,2005,2006
+395,Olympic b?t ngu?n t? các cu?c thi d?u th? thao t? th?i k? nào?,Hy L?p c? d?i,Sau công nguyên,Ph?c hung,Th? k? 19
+396,?y ban Olympic qu?c t? vi?t t?t là gì?,IOC,WTO,WHO,UEEF
+397,Tr? s? chính c?a ?y ban Olympic qu?c t? ? nu?c nào?,Th?y Si,M? ,B? Ðào Nha,Anh
+398,USOC là tên vi?t t?t c?a ?y ban Olympic ? nu?c nào?,M?,Vi?t Nam,Campuchia,Trung Qu?c
+399,Co quan ch?ng Doping Qu?c t? có tr? s? ? nu?c nào?,Canada,Anh,Thái Lan,Nga
+400,Co quan ch?ng Doping Qu?c du?c vi?t t?t là gì?,WADA,WHO,WTO,NASA
+401,Liên doàn C? vua qu?c t? vi?t t?t là gì?,FIDE,UNICEF,WTO,WHO
+402,Gi?i vô d?ch bóng dá gi?a các câu l?c b? Châu Âu có tên là?,UEFA Champions League ,World Cup,Olympic,Ngo?i h?ng Anh
+403,Môn ch?y Marathon là d? tôn vinh m?t ngu?i lính…?,Hy L?p ,Châu Phi,Vi?t Nam,M?
+404,Th? v?n h?i mùa dông 2014 du?c t? ch?c ? dâu?,Nga,Pháp,Nh?t B?n,M?
+405,Olympic B?c Kinh du?c di?n ra vào nam nào?,2008,2010,2012,2014
+406,Olympic 2004 du?c t? ch?c ? dâu?,Hy L?p,Trung Qu?c,Brazil,M?
+407,L?c si ném dia là b?c tu?ng n?i ti?ng c?a nu?c nào?,Hy L?p,M?,Anh,Nga
+408,Liên doàn di?n kinh qu?c t? vi?t t?t là gì?,IAAF,AFF,WTO,IOC
+409,Ngu?i choi môn khúc côn c?u s? d?ng gì d? di?u khi?n bóng?,G?y,Tay,Chân,Ð?u
+410,Bài hát khai m?c Olympic B?c Kinh 2008 do bao nhiêu ngu?i th? hi?n?,R?t nhi?u ngu?i,2,3,4
+411,K?n k?n tr?ng là bi?t danh c?a d?i bóng nào?,Real Madrid ,Juventus ,Asernal ,MU
+412,Võ si quy?n anh Manny Pacquiao là ngu?i nu?c nào?,Phillipines,Malaysia ,Indonesia,Thái Lan
+413,Tr?n quy?n Anh th? k? gi?a Mayweather và Pacquiao di?n ra vào nam nào?,2015,2014,2013,2016
+414,"Tính d?n nam 2015, ai là c?u th? ghi nhi?u bàn th?ng nh?t cho tuy?n Anh?",Rooney,Joe Hart,John Stones,Jamie Vardy
+415,Khi nói d?n môn th? thao F1 là nói d?n môn th? thao nào?,Ðua xe,Bóng dá,Bóng chuy?n,Boi l?i
+416,Tay v?t Novak Djokovic  dã d?t t?ng c?ng bao nhiêu danh hi?u trong 2015?,11,13,15,17
+417,Ð?i h?i Olympic du?c t? ch?c nhu th? nào?,Vào các nam ch?n,Vào các nam l?,C? A và B,4 nam 1 l?n
+418,Gi?i vô d?ch Wimbledon là gi?i d?u dành cho môn th? thao nào?,Qu?n v?t,Bóng dá,Bóng chày,Bóng r?
+419,Gi?i vô d?ch qu?n v?t Wimbledon du?c t? ch?c t?i dâu?,Lôn Ðôn,New York,Paris,Copenhagen
+420,"Trong các tr?n d?u t?i gi?i, các cô và c?u bé nh?t bóng, còn du?c g?i là?",BBG,BBC,CNN,DJ
+421,Hai ch? em nhà Williams là hai v?n d?ng viên n?i ti?ng v?i môn th? thao nào?,Qu?n v?t,Bóng bàn,Bóng dá,C?u lông
+422,Grand Slam là m?t trong nh?ng gi?i c?a môn th? thao nào?,Qu?n v?t,Bóng dá,Boi l?i,Ð?u ki?m
+423,"Gi?i Pháp m? r?ng, M? m? r?ng là gi?i d?u c?a môn nào?",Qu?n v?t,C? t?,Boi l?i,Ðua xe d?p
+424,C?u th? bóng dá du?c m?nh danh là voi r?ng?,Drogba,David Backham ,Messi,Ronaldo
+425,Hi?p h?i qu?n v?t nhà ngh? vi?t t?t là?,ATP,IOC,WHO,WTO
+426,Tay v?t nam d?ng d?u b?ng x?p h?ng don môn qu?n v?t tháng 12 -2015 là ai?,Novak Djokovic,Rafael Nadan,Roger Federer,Andy Murray
+427,Gi?i thu?ng dành cho c?u th? ghi nhi?u bàn th?ng nh?t trong mùa là?,Chi?c giày vàng Châu Âu,Oscar,Mâm xôi vàng,Qu? bóng vàng
+428,Gi?i vô d?ch U20 th? gi?i du?c t? ch?c m?y nam 1 l?n?,2,3,4,5
+429,Liên doàn bóng dá Châu Phi vi?t t?t là gì?,CAF,AFF,CFF,CAA
+430,Chi?c giày vàng Châu Âu nam 2015 thu?c v? ai?,Cristiano Ronaldo ,Messi,Neymar ,Mata
+431,Ai là th? môn c?a câu l?c b? Barcelona nam 2016?,Claudio Bravo,Van de Sar,Casilla,Petr Cech
+432,Th? thành Petr Cech là ngu?i nu?c nào?,C?ng hòa Séc,B?,Italia,Ð?c
+433,Huy chuong vàng Olympic 2016 du?c m? bao nhiêu gam vàng?,6 g,8 g,10 g,12 g
+434,L? khai m?c Euro 2016 du?c t? ch?c vào ngày nào?,11 tháng 6,11 tháng 7,11 tháng 8,11 tháng 9
+435,C?u mây có ngu?n g?c t? dâu?,Ðông nam Á,Châu Âu,Châu Phi,Nam M?
+436,Donald Trump dã tranh c? t?ng th?ng m? vào nam bao nhiêu?,2016,2009,2013,2012
+437,"Tính d?n nam 2015, ai là t?ng th?ng M??",Barack Obama,Clinton,Bush,Nixon
+438,Sheryl Sandberg là giám d?c tác nghi?p c?a m?ng xã h?i nào?,Facebook,Twitter,Yahoo,Instagram
+439,David William Donald Cameron gi? tr?c v? gì nam 2016?,Th? tu?ng Anh,Giám d?c ngân hàng,Doanh nhân,Phó th? tu?ng Anh
+440,Youtube là m?ng xã h?i thu?c v? t?p doàn nào?,Google,Apple ,Alibaba,Amazon
+441,Hillary Clinton là ngu?i nu?c nào?,M?,Anh,Pháp ,Nga
+442,T?ng th?ng Nga Putin sinh nam bao nhiêu?,1952,1956,1960,1964
+443,Dmitry Anatolyevich Medvedev du?c b? nhi?m làm t?ng th?ng nga vào nam nào?,2008,2005,2006,2007
+444,Fidel Castro nhà lãnh d?o Cuba sinh nam nào?,1927,1937,1947,1957
+445,T?n th?ng Hugo Chavez là v? t?ng th?ng ngu?i nu?c nào?,Venezuela,Nga,M? ,Philippines 
+446,John Kennedy là t?ng th?ng d?i th? bao nhiêu c?a M??,35,36,37,38
+447,Nelson Mandela là ngu?i ? dâu?,Nam Phi,Trung Qu?c,Philippines,Malaysia
+448,Ca si G-Dragon là ngu?i nu?c nào?,Hàn Qu?c ,Trung Qu?c,Nh?t B?n,Thái Lan
+449,Cô ca si Rihanna sinh nam bao nhiêu?,1988,1990,1992,1994
+450,Di?n viên Alan Rickman trong phim Harry Potter m?t nam nào?,2016,2015,2014,2013
+451,Ai dã th? vai nhân v?t Harry Potter trong b? phim cùng tên?,Daniel Radcliffe ,Charity Burbage,Rolanda Hooch,Rubeus Hagrid
+452,Kim là ngu?i n?i ti?ng v?i siêu vòng m?y?,Vòng 3,Vòng 1,Vòng 2,Vòng tròn
+453,Mark Zuckerberg l?t vào top 10 t? phú th? gi?i vào nam nào?,2016,2015,2014,2013
+454,"Nam 2016, ai là ngu?i gi?u nh?t th? gi?i?",Bill Gate,Mark Zuckerberg,Amancio Ortega,Warren Buffet
+455,T? phú Amancio Ortega là t? phú v? linh v?c gì?,Th?i trang,Kinh t?,Công ngh?,Du l?ch
+456, Jeff Bezos là nhà sáng l?p c?a t?p doàn nào?,Amazon,Alibaba,Apple,Microsoft
+457,Larry Ellison là CEO c?a công ty chuyên s?n xu?t v? cái gì?,Ph?n m?n,Máy tính,Ði?n tho?i,Tivi
+458,Priscilla Chan là ai c?a CEO Facebook?,V?,Ch? gái,B?n,Em gái
+459,Priscilla Chan và Mark Zuckerberg là ngu?i nu?c nào?,M?,Anh,Pháp ,Úc
+460,Priscilla Chan làm ngh? gì?,Bác si,Marketing,Giáo viên,K? toán
+461,Siêu m?u n?i ti?ng Gisele Bundchen là ngu?i nu?c nào?,Brazil,Nh?t B?n,M? ,Anh
+462,Nam di?n viên Kim Bum c?a b? phim Vu?n Sao Bang sinh nam bao nhiêu?,1989,1991,1993,1995
+463,C?u th? Zlatan Ibrahimovic là ngu?i nu?c nào?,Th?y Ði?n,Anh,Pháp ,M?
+464,C?u th? Paul Pogba sinh nam bao nhiêu?,1993,1994,1995,1996
+465,"Nam 2016, Paul Pogba dã ra nh?p câu l?c b? nào?",MU,Man City,Inter Milan,Juventus
+466,Th? môn Victor Valdes là ngu?i nu?c nào?,Tây Ban Nha,Ý ,Anh,M?
+467,Tài t? Vin Diesel sinh nam bao nhiêu?,1967,1970,1975,1980
+468,Di?n viên Hollywood Vin Diesel là ngu?i nu?c nào?,M? ,Anh ,Úc ,Pháp
+469,Seri phim Fast and Furious g?n li?n v?i tên tu?i c?a ai?,Vin Diesel,Rihanna,Alan Rickman,Justin Bieber
+470,Nam di?n viên Holllywood Will Smith sinh nam bao nhiêu?,1968,1970,1972,1974
+471,Ai là d?o di?n b? phim Fast and Furious 7?,James Wan,Vin Diesel,Paul Walker,Chris Morgan
+472,Cô ca si Selena Gomez là ngu?i nu?c nào?,M? ,Anh,Pháp ,Úc
+473, Tom Hanks là di?n viên ngu?i nu?c nào?,M?,Nga,Canada,Ý
+474,Tháp Eiffel n?m ? thành ph? nào? ,Paris,Luôn Ðôn,New York,Bangkok
+475,Tháp Eiffel cao bao nhiêu mét?,325 mét,360 mét,400 mét,500 mét
+476,"Tính d?n nam 2016, tòa nhà cao nh?t th? gi?i n?m ? dâu?",?n Ð? ,Ai C?p,M?,Trung Qu?c
+477,Tòa nhà cao nh?t th? gi?i có tên là gì?,Kingdom Tower,Greenland Centre,The Pearl, Lotte World Tower
+478,Tòa nhà cao nh?t th? gi?i có d? cao bao nhiêu?,3281 Ft,3000 Ft,4000 Ft,4600 Ft
+479,Thành ph? nào du?c m?nh danh là thành ph? nghìn c?a s??,Berat,B?c Kinh, Paris,Luôn Ðôn
+480,L? h?i dánh nhau b?ng g?i ? nu?c nào?,Rumani,Ai C?p,Vi?t Nam,Thái Lan
+481,"Tính d?n 2016, dâu là thành ph? nhi?u tri?u phú nh?t th? gi?i?",Monaco,New York,Paris,Luôn Ðôn
+482,Vùng núi Zhangye Danxia s?c s? d?y m?u s?c là ? dâu?,Trung Qu?c,M? ,Anh,Úc
+483,H? xanh vi d?i là m?t h? sâu n?m du?i m?t bi?n ngoài khoi b? bi?n nào?,Belize,Bi?n den,Bi?n Balitc ,Bi?n d?
+484,Ð?t nu?c nào luôn du?c m?nh danh là quê huong c?a hoa Tulip?,Hà Lan,Trung Qu?c ,Nh?t B?n,Vi?t Nam
+485,"Hang Son Ðoòng, n?m trong qu?n th? hang d?ng nào?",Phong Nha-K? Bàng,Ð?ng Huong tích,Tràng An,Ð?ng Thiên cung
+486,Hang d?ng bang Mendenhall là ? nu?c nào?,M? ,Anh ,Ai C?p ,Nga
+487,Thác nu?c Victoria n?m ? dâu?,Châu Phi,Châu Âu ,Châu Á,Châu M?
+488,Thác nu?c Victoria n?m gi?a biên gi?i Zimbabwe và nu?c nào?,Zambia,Algeria,Angola,Congo
+489,Bãi bi?n có bãi cát tr?ng nh?t th? gi?i dài 7km n?m ? dâu?,Australia,Nga,Brazil,Nh?t B?n
+490,B? bi?n Whitehaven là m?t trong nh?ng d?a di?m du l?ch n?i ti?ng ? dâu?,Australia,Anh ,Brazil,Vi?t Nam
+491,Hang d?ng dom dóm ? dâu?,New Zealand,Nga,Anh,Ai C?p
+492,H? d?i màu trên d?nh núi Kelimutu ? qu?c gia nào?,Indonesia,Trung Qu?c ,Malaysia,Thái Lan
+493,Công viên Hitachi Seaside là m?t trong nh?ng di?m du l?ch “vàng” c?a d?t nu?c nào?,Nh?t B?n,Hàn Qu?c,M?,Hà Lan
+494,B?c tu?ng m?t ngu?i di du l?ch ? Oviedo là ? nu?c nào?,Tây Ban Nha,Thái Lan ,Nh?t B?n,Hàn Qu?c
+495,Sân bay Gisborne giao nhau v?i du?ng s?t là ? qu?c gia nào?,New Zealand,Nga,Anh ,M?
+496,Sân bay Don Mueang v?i sân golf 18 l? n?m gi?a 2 du?ng bang ? dâu?,Thái Lan, Úc ,Anh ,M?
+497,"Sân bay qu?c t? Kansai, Nh?t B?n du?c làm ? dâu?",Trên bi?n,Trên núi ,Trên du?ng ,Trên d?i
+498,Du l?ch ba lô hay còn du?c g?i là?,Du l?ch bui,Du l?ch m?o hi?m,Du l?ch h?i th?o,Du l?ch làm an
+499,Ðâu du?c coi là bi?u tu?ng c?a nu?c Anh?,Big Ben,Eiffel,Tháp nghiêng Pisa,Dãy núi Anpo
+500, H?i các t? ch?c du l?ch chính th? vi?t t?t là gì?,UIOOPT,NASA,NATO,WTO
+501,Ngày du l?ch th? gi?i du?c t? ch?c vào ngày nào?,27 tháng 9,27 tháng 10,27 tháng 11,27 tháng 12
+502,Khóa h?p l?n th? 12 c?a T? ch?c Du l?ch Th? gi?i ? nu?c nào?,Th? Nhi K? ,Ai C?p,Vi?t Nam,Campuchia
+503,T? ch?c du l?ch th? gi?i vi?t t?t là gì?,UNWTO,WTO,WHO,UUWTO
+504,Ðâu là t?p chí du l?ch hàng d?u th? gi?i?,Lonely Planet,Play Boys,Vogue,InStyle
+505,Tu?ng th?n Zeus ? Olympia là ? qu?c gia nào?,Hy L?p ,Nga ,Anh ,Úc
+506,Ng?n h?i dang là k? quan c? d?i Alexandria là ? nu?c nào?,Ai C?p,?n Ð?,M? ,Pháp
+507,R?n san hô Great Barrier hùng vi và d?p nh?t th? gi?i ? nu?c nào?,Úc,Trung Qu?c ,M?,Vi?t Nam
+508,Nu?c nào  là qu?c gia n?m ? v? trí th?p nh?t trên trái d?t?,Maldives,Ai C?p,?n Ð? ,Ý
+509,Thung lung các v? vua là ? qu?c gia nào?,Ai C?p,?n Ð?,Thái Lan ,Trung Qu?c
+510,Vu?n treo Babylon ? qu?c gia nào?,Iraq,Ý,Tây Ban Nha,?n Ð?
+511,Ð?n Artemis ? Th? Nhi K? du?c xây d?ng b?ng gì?,Ðá c?m th?ch,Ðá vôi,Ðá ong,Bê tông
+512,Petra thành ph? c? n?i ti?ng v?i nh?ng c?u trúc b?ng dá ? nu?c nào?,Jordan,Ý,M? ,Anh
+513,Machu Picchu m?t trong nh?ng tàn tích c?a nên van minh Inca ? dâu?,Peru,Úc,Ai C?p ,Trung Qu?c
+514,Khu di tích Chichen Itza do n?n van minh Maya xây d?ng n?m ? nu?c nào?,Mexico,Vi?t Nam,Úc,Anh
+515,B?c tu?ng Chúa C?u Th? ? Brazil du?c xây d?ng ? thành ph? nào?,Rio de Janeiro,Salvador,Porto Alegre,Osasco
+516,Sân bay Courchevel n?m trên dãy núi Alps là ? qu?c gia nào?,Pháp,Anh ,Úc,M?
+517,"Ðây là m?t thành ph? ngh? du?ng, dánh b?c và ?m th?c n?i ti?ng th? gi?i?",Las Vegas,Paris,Luôn Ðôn,Hà N?i
+518,C? dô c?a nu?c Lào là thành ph? nào?,Luang Prabang,Viêng Chan,Attapeu, Champasack
+519,Tôn giáo chính c?a Lào là tôn giáo gì?,Ph?t giáo Theravada,Nho giáo,Ð?o giáo,Thiên chúa giáo
+520,"Lào giáp biên v?i Thái Lan, Vi?t Nam, Trung Qu?c và nu?c nào?",Campuchia,Philippines,Singapore,Malaysia
+521,Tru?ng d?i h?c nào là lâu d?i nh?t ? vuong qu?c Anh?,Oxford,Plymouth,Swansea,Cambridge
+522,Ð?n Angkor Wat t?i thành ph? nào ? Campuchia?,Siem Reap ,Phnôm Pênh,Kampot,Kampong Thom
+523,Ðài tu?ng ni?m t?ng th?ng M? Lincoln t?i thành ph? nào?,Washington,New York,California,Las Vegas
+524,Duomo di Milano là nhà th? theo ki?n trúc Gô-tích l?n nh?t ? nu?c nào?,Italia,M? ,Anh,Pháp
+525,Macao s? d?ng ngôn ng? ti?ng trung và ti?ng gì?,Ti?ng B? Ðào Nha,Ti?ng Thái ,Ti?ng Anh,Ti?ng Vi?t
+526,Vuong Qu?c Anh du?c m?nh danh là gì?,X? s? suong mù,X? s? bò tó,Kinh dô ánh sáng,Kinh dô di?n ?nh
+527,Bãi dá c? Stonehenge ? nu?c nào?,Anh,M? ,Nh?t B?n,Úc
+528,B?c tu?ng N? th?n T? Do ? M? du?c d?t trên hòn d?o nào?,Liberty,Hawaii,Midway,Wake
+529,Tên m?t cây c?u dã tr? thành bi?u tu?ng ? nu?c Anh?,Tower Bridge,Big Ben,Red Phone Box,Twice Bridge
+530,C?u c?ng vàng là cây c?u ? d?t nu?c nào?,M? ,Anh ,Pháp ,Úc
+531,C?u c?ng vàng du?c xây d?ng ? v?nh nào?,San Francisco,Mexico,Chesapeake,Alaska
+532,Ð?o Vancouver xinh d?p n?m ? qu?c giao nào?,Canada,Nga,Anh,Pháp
+533,"Thác Niagara n?m t?i B?c M?, n?m ? du?ng biên gi?i c?a Hoa K? và nu?c nào?",Canada,Anh ,Pháp ,Nga
+534,Ðâu là thành ph? lâu d?i nh?t Canada?,Quebec,Ontario,Manitoba,Alberta
+535,Cung di?n n?i ti?ng Buckingham ? dâu?,Vuong qu?c Anh,Pháp,Ý ,Tây Ban Nha
+536,Cung di?n n?i ti?ng Buckingham dành cho n? hoàng nào?,Elizabeth II,Elizabeth I,Elizabeth III,Elizabeth IV
+537,Mauna Loa là ng?n núi l?a l?n nh?t Trái Ð?t tính theo s? l?n phun và di?n tích ? dâu?,M? ,Ý,Nh?t B?n,Úc
+538,Thành ph? nào ? M? du?c m?nh danh là H?t Ð?u?,Chicago,Las Vegas,California,New York
+539,X? s? b?ch duong là m?nh danh c?a nu?c nào?,Nga,Anh ,M?,Úc
+540,Cây trinh n? hay còn g?i là cây x?u h? có ngu?n g?c t? nu?c nào?,Brazil,Trung Qu?c,M? ,Anh
+541,Con chàng hang s?ng ? dâu?,Bi?n,Ð?i,Núi,H?
+542,Loài cá l?n nh?t trong phân b? cá voi có rang?,Cá nhà táng,Cá m?p tr?ng,Cá voi,Cá mái chèo
+543,Ð?ng v?t g?m nh?m l?n nh?t th? gi?i?,Chu?t lang nu?c,Chu?t trù,Chu?t chui,Chu?t nh?t
+544,Cây ô luu già nh?t th? gi?i n?m ? dâu?,Hy L?p,M?,Anh,Pháp
+545,"Trong các con v?t sau, con nào ch?y ch?m nh?t?",Ng?a,Báo,Th?,Linh duong Thomson
+546,Cây nào sau dây là cây an côn trùng?,Cây n?p ?m,Cây s?i,Cây thông,Hoa loa kèn
+547,Cây bao báp phát tri?n m?nh ? dâu?,Madagascar,Anh,Nga,Trung Qu?c
+548,Cây Tule là cây n?i ti?ng nh?t ? dâu?,Mexico,Malaysia,Trung Qu?c,Úc
+549,Ngu?i d?u tiên gây gi?ng du?c n?m linh chi là ngu?i nu?c nào?,Nh?t B?n,Hàn Qu?c,Vi?t Nam,Philippines 
+550,Lá phong là bi?u tu?ng c?a nu?c nào?,Canada,Malaysia,Trung Qu?c,M?
+551,Quang h?p là quá trình giúp t?o ra cái gì cho cây?,Ch?t h?u co,Carbon,Oxy,Nu?c
+552,Khí du?c th?i ra trong quá trình quang h?p?,Oxy,Carbon,Hidro,Nito
+553,Loài cây huy?t r?ng là lo?i cây n?i ti?ng ? qu?c gia nào?,Yemen,Madagasca,Mexico,Trung Qu?c
+554,Lo?i cây huy?t r?ng là loài cây có nh?a màu gì?,Ð? ,H?ng,Vàng,Xanh
+555,?ch Titicaca là loài ?ch l?n ch? có duy nh?t ? h? Titicaca ? dâu?,Nam M?,B?c M?,Châu Phi,Canada
+556,Cây sinh m?nh là m?t cái cây r?t d?c bi?t vì nó n?m gi?a sa m?c nào?,Bahrain,Sahara,Kalahari,Gobi
+557,Cua d? là loài d?c h?u t?i qu?n d?o Cocos t?i ?n Ð? Duong và d?o?,Christmas,Hawaii,Madagascar,Honshu
+558,Tên khác c?a hoa Tulip là gì?,U?t kim huong,U?t kim ti?n,U?t ?c ,U?t kim thom
+559,Nói d?n keo hao vàng hay hoa Mimosa là nói d?n qu?c gia nào?,Úc,Anh,Pháp,M?
+560,B?ch tu?c Wolfi tru?ng thành ch? n?ng…?,1 gam,1 cân,1 y?n,1 t?
+561,Loài v?t nh? nh?t trong nhóm linh tru?ng?,Kh? lùn Pygmy Marmoset,Tinh tinh,Kh? ,Golila
+562,Cây n?p ?m Attenborough ch? s?ng ? núi Victoria ? nu?c nào?,Philippines,Malaysia,Trung Qu?c,M?
+563,Loài nào sau dây không có d? dày?,Cá ng?a,Cá s?u,Bò,Trâu
+564,Khóm hoa nào có th? d?t chi?u cao t?i 3 mét?,Hoa xác th?i,Hoa cúc,Hoa d?ng ti?n,Hoa hu?
+565,Loài hoa Champion ch? du?c tìm th?y ? dâu?,Vuong qu?c Anh,M?,Pháp,Nga
+566,Loài hoa Koki'o ch? du?c tìm th?y ??,Hawaii,Bangkok,New York,Luôn Dôn
+567,Loài nào sau dây có n?c d?c?,R?n h? mang,R?n chu?t,Tran,Mu?i
+568,Loài ?ch phóng d?c có n?c d?c ti?t ra t? dâu?,Da,Mui,Phân,M?t
+569,Ði?u gì là sai khi nói v? S?a h?p Australia?,S?ng ? nu?c ng?t,Có túi ch?a d?c,Còn g?i là s?a l?a,S?ng ? d?i duong
+570,Hi?n tu?ng nu?c bi?n trên b? m?t l?nh di m?t cách d? thu?ng g?i là?,La Nina,El Nino,Ðóng bang,Hi?u ?ng nhà kính
+571,Tên qu?c t? c?a con bão s? 1 nam 2016 di qua Vi?t Nam là gì?,Kujira,Kujan,Kuro,Nami
+572,Hi?n tu?ng nóng lên khác thu?ng c?a nu?c bi?n t?i vành dai xích d?o là...?,El-Nino,Et-Noni,Et-Nito,En-Nino
+573,T?ng Ozon n?m ? d? cao kho?ng bao nhiêu?,25 Km,500 M,2 Km,10 KM
+574,Ô xi có công th?c hóa h?c là gì?,O2,O,O1,O3
+575,Nh?ng khí nào sau dây không ph?i là khí nhà kính?,O2,CO2,O3,CH4
+576,"Tính d?n nam 2016, m?c nu?c bi?n toàn c?u v?n dang...?",Tang,?n d?nh,Gi?m,Gi?m m?nh
+577,?y ban Liên chính ph? v? Bi?n d?i khí h?u vi?t t?t là gì?,UNFCCC,WTO,WHO,UNICEF
+578,Ngh? d?nh thu Kyoto là ngh? d?nh liên quan d?n v?n d?...?,Khí h?u,Van hóa,Kinh t?,Chính tr?
+579,Tr? s? chính c?a T? ch?c b?o t?n thiên nhiên th? gi?i n?m ?...?,Th?y Si,Nga,Anh,M?
+580,S? chuy?n d?i v?t lý l?p d?t m?t do nhi?u tác nhân khác nhau g?i là….?,Xói mòn,B?c m?u,Sa m?c hóa,S?t l?
+581,Công u?c Marpol 73/78 là công u?c ch?ng ô nhi?m….?,Bi?n,Ð?t,Không khí,Nu?c ng?t
+582,Lo?i d?t nào sau dây có hàm lu?ng ch?t dinh du?ng cao nh?t?,Ð?t phù xa,Ð?t d? ba dan,Ð?t b?c màu,Ð?t s?i d?
+583,Ðâu không ph?i là nguyên nhân c?a lu l?t?,N?ng lâu,Mua nhi?u,Sóng th?n,Phá r?ng
+584,Hi?n tu?ng th?y tri?u d? bùng phát do…?,T?o d?,Ð?t d? ,Máu,Ánh sáng
+585,"Trong ti?ng Hêbro, bi?n Ch?t có nghia là…?",Bi?n mu?i,Bi?n m?n,Bi?n sâu,Bi?n den
+586,"Tru?c Washington, thành ph? nào dã t?ng là th? dô c?a M??",Philadelphia ,Los Angeles,New York ,Boston 
+587,Con v?t nào du?c nh?c d?n trong câu Ki?u sau: Du?i trang ... dã g?i hè?,Quyên ,Công ,Ngôi ,Sáu 
+588,Trong môn bóng chuy?n m?i bên ra sân v?i bao nhiêu c?u th?,6,5,7,4
+589,Chu Th? Nhân là tên th?t c?a nhà van nào ?,L? T?n,Chu Lai ,Chu Tác Nhân ,L? Thu? 
+590,"Theo ngôn ng? Tin h?c, trong h? nh? phân thì 1 + 1 = ?",10,1,2,100
+591,Nh?ng ngân phi?u d?u tiên trên th? gi?i du?c in ? dâu?,Thu? Ði?n ,Thu? Si ,Trung Qu?c ,Anh 
+592,Cái nào ngan c?n s? thoát hoi nu?c c?a lá cây?,Ch?t cutin,Gân lá ,Di?p l?c ,L? khí 
+593,C?u th? bóng dá nam xu?t s?c nh?t Tiger Cup 1998 là ai?,Nguy?n H?ng Son,Kiatisak,Bima Sakti,Natifon
+594,Chim công thu?c b? nào?,B? Gà ,B? Ng?ng ,Bô Chim Ung ,B? Cú
+595,Hình thoi có m?t góc vuông g?i là gì?,Hình vuông,Hình bình hành ,Hình thoi vuông ,T? giác d?u 
+596,M?t b? c? vua có bao nhiêu lo?i quân?,6,5,7,8
+597,Ngu?n sáng nào sau dây không phát ra ánh sáng tr?ng?,M?t dèn LED vàng ,Bóng dèn pin dang sáng ,Bóng dèn ?ng thông d?ng ,M?t ngôi sao 
+598,Lê Hoàn dã chi?n th?ng quân xâm lu?c nào trên sông B?ch Ð?ng nam 981 ?,Quân T?ng,Quân Nam Hán,Quân B?c Hán,Quân Ðu?ng
+599,Ngày duy nh?t trong nam ? Nam C?c mà m?t tr?i xu?t hi?n 24 gi??,Ðông chí,H? chí,Xuân phân,Thu phân
+600,"Ð? có ánh sáng màu h?ng nh?t, ph?i tr?n hai màu nào v?i nhau?",Ð? v?i lam ,Ð? v?i l?c ,Ð? v?i tím ,Ð? v?i vàng 
+601,Hào khí Ðông A là tinh th?n c?a tri?u d?i nào?,Nhà Tr?n ,Nhà Lý ,Nhà H? ,Nhà Nguy?n 
+602,Hai Ð? qu?c nào du?c nh?c d?n trong bài tho Con cáo và t? ong c?a H? Chí Minh?,"Nh?t, Pháp ","Pháp, M? ","Nh?t, M? ","Pháp, Anh"
+603,Sông H?ng d? vào nu?c ta ? d?a ph?n t?nh nào d?u tiên?,Lào Cai ,Cao B?ng ,Ði?n Biên ,Son La 
+604,Kilimanjaro là ng?n núi cao nh?t châu l?c nào?,Châu Phi ,Châu Á ,Châu Âu ,Châu M? 
+605,Qu?n d?o Hoàng Sa n?m ? phía nào c?a qu?n d?o Tru?ng Sa?,B?c,Tây ,Ðông ,Nam 
+606,Lê Hoàn dã chi?n th?ng quân xâm lu?c nào trên sông B?ch Ð?ng nam 981 ? ,Quân T?ng ,Quân Nam Hán ,Quân B?c Hán ,Quân Ðu?ng 
+607,"Trong các kì quan th? gi?i c? d?i sau, kì quan nào không n?m ? châu Âu ?",Vu?n treo Babylon ,Tu?ng th?n Zeus,Ð?n th? n? th?n Artemis ,Tu?ng th?n trên d?o Rhodes
+608,Ng?n núi cao nh?t mi?n nam b??,Núi Bà Ðen,Núi Ð?,Núi Ngu Hành,Núi Ng?c Linh 
+609,Ð?i bóng nào vô d?ch gi?i ngo?i h?ng anh mùa bóng 2010 -2011?,Manchester United,Arsenal,Livepool,Chelsea
+610,Ngôn ng? nào sau dây không ph?i là ngôn ng? l?p trình?,La-tinh,Java,C Sharp,C
+611,Nu?c nào có nhi?u múi gi? nh?t?,Nga,Anh,Trung Qu?c,Canada
+612,Trong v?t lý có nguyên t?c nào?,Nguyên t?c bình thông nhau,Nguyên t?c c? chai,Nguyên t?c bình r?ng,Nguyên t?c bình phuong
+613,Ð?i lu?ng nào sau dây không ph?i là d?i lu?ng v?t lý?,Radian,Mô men,L?c,Ð?ng lu?ng
+614,T? nào sau dây theo ti?ng Ngh? An nghia là làm?,M?n,Mi,Rang,R?a
+615,"Anh có nhi?u hon em 6 cái k?o, t?ng s? k?o c?a c? 2 anh em là 18. H?i ngu?i em có m?y cái?",6,7,9,12
+616,Công th?c hóa h?c c?a Toluen?,C7H8,C5H6,C6H7,C8H9
+617,"Nam 1954, nu?c ta ký hi?p d?nh nào v?i Pháp?",Gio-ne-vo,Paris,Washinton,London
+618,"Trong chi?n d?ch Ði?n Biên Ph? nam 1954, ngu?i anh hùng nào dã l?y thân mình l?p l? châu mai?",Phan Ðình Giót,B? Van Ðàn,Phùng Van Kh?u ,Tô Vinh Di?n 
+619,Ð?ng co di?n m?t chi?u là d?ng co làm bi?n d?i?,Ði?n nang thành co nang ,Co nang thành di?n nang,Co nang thành nhi?t nang ,Ði?n nang thành nhi?t nang 
+620,Sombrero là v?t d?ng truy?n th?ng nào sau dây?,Mu Mexico,Váy Ailen,Ki?m Tây Ban Nha,Giày ?n Ð?
+621,Ð?i bóng nào du?c m?nh danh là C? xe tang?,Ð?c,Pháp,Hà Lan,Anh
+622,"Trái d?t, m?t trang, m?t tr?i cùng nam trên 1 du?ng th?ng theo th? t? g?i là gì?",Nh?t th?c,Nguy?t th?c,Hoàng hôn ,Giao th?a
+623,L?c hút ? m?t Trang nh? g?p bao nhiêu l?n Trái d?t?,6,5,7,8
+624,Kim lo?i nhi?u nh?t trong d?t sét?,Nhôm ,Silic,S?t ,Ð?ng 
+625,"Con gì hai cánh, mà l?i bi?t boi, ngày xu?ng ao choi, dêm v? d? tr?ng?",V?t,Gà,B? Câu,Chim Cú
+626,"Trong các ch?t sau dây, ? di?u ki?n tiêu chu?n, ch?t nào có nhi?t d? sôi cao nh?t?",Thu? ngân ,Ête ,Ru?u ,Nu?c 
+627,"Xét v? m?c dích nói, câu van: Tôi ng?i d?a vào thành dá và khe kh? hát thu?c lo?i câu nào?",Câu tr?n thu?t ,Câu nghi v?n ,Câu c?u khi?n ,Câu c?m thán 
+628,Ch? n?i ? vùng nào c?a nu?c ta?,Ð?ng b?ng S.C?u Long ,Tây Nguyên ,B?c Trung B? ,Trung B? 
+629,Qu?c gia nào sau dây không thu?c Châu Phi?,Tây Ban Nha ,Madagascar,Nigeria,Niger
+630,Ai là nhân v?t quy?n l?c và có ?nh hu?ng nh?t c?a ngành công nghi?p di?n ?nh?,Steven Spielberg,Peter Jackson,Walt Disney,Charles Spencer Chaplin
+631,"G?m m?t n?i cam h?n trong cui s?t, ta n?m dài trông ngày tháng d?n qua là câu tho du?c vi?t b?i?",Th? L? ,Tr?n T? Xuong ,Vi?n Phuong ,Chính H?u 
+632,Huy?n Thanh Trì thu?c thành ph? nào c?a nu?c ta?,Tp. Hà N?i ,Tp. Hu? ,Tp. Ðà N?ng ,Tp. Vinh Long 
+633,Huy?n Hoa Lu tr?c thu?c t?nh nào c?a nu?c ta?,Ninh Bình ,Nam Ð?nh ,Hà Nam ,Thanh Hoá 
+634,Ngu?i ta dánh d?u biên gi?i bi?n b?ng gì?,Phao s? không ,C?t m?c ,Dãy núi ,Cây 
+635,Hà N?i ni?m tin và hy v?ng là sáng tác c?a nh?c si nào?,Phan Nhân ,Vu Thanh ,Tôn Th?t L?p ,Phan Hu?nh Ði?u 
+636,Nu?c ta có bao nhiêu t?nh và thành ph? giáp v?i Trung Qu?c?,7,5,10,11
+637,Ðon v? c?a công co h?c là?,N.m,Nm,Nm2,N.m2
+638,"Trong các d?ng c? tiêu th? di?n nhu qu?t, t? l?nh, d?ng co, ngu?i ta nâng cao h? s? công su?t nh?m?",Gi?m cu?ng d? dòng di?n ,Tang cu?ng d? dòng di?n ,Tang công su?t to? nhi?t,Gi?m công su?t tiêu th?
+639,Hanbok là trang ph?c truy?n th?ng ? dâu?,Hàn Qu?c,Nh?t B?n,Trung Qu?c,Thái Lan
+640,Ð?i bóng nào do?t cúp vô d?ch World Cup nam 2010?,Tây Ban Nha,Brazil,Hà Lan,Argentina
+641,"M?t tr?i, trái d?t, m?t trang cùng n?m trên 1 du?ng th?ng theo th? t? g?i là gì?",Nguy?t th?c ,Nh?t th?c ,Giao th?a,Hoàng hôn 
+642,Ngu?i giàu nh?t th? gi?i 2006 - 2007 là ai?,Bill Gates ,Bush,Biladen,N? hoàng Elizabeth
+643,"Bài hát m?t d?i ngu?i, m?t r?ng cây là nh?c s? nào?",Tr?n Long ?n,Tr?n Hoàn ,Hoàng Vi?t ,Ph?m Mih Tu?n 
+644,Nu?c nào sau dây không thu?c nhóm G7?,Australia ,Anh,Nh?t ,Pháp 
+645,Ðon v? do l?c là gì?,N ,Kg ,M,Nm3
+646,"T? nó trong câu “Nó dài dài, màu nâu, hay nheo l?i nhu ch?i n?ng” là lo?i t? gì?",Ch? t? ,Quan h? t? ,Ð?i t? ,Tình thái t?
+647,"Lúc Bác H? ? H?ng Kông, Bác l?y tên là gì?",T?ng Van So ,H? Chí Minh ,Nguy?n T?t Thành ,Nguy?n Ái Qu?c 
+648,Qu?c gia nào sau dây không thu?c Châu Phi?,Hy L?p,Angola,Liberia,Somalia
+649,Sea Games 22 du?c t? ch?c ? Vi?t Nam có bao nhiêu môn thi d?u?,38 môn,28 môn ,32 môn ,34 môn 
+650,B?n tru?ng ca Ð? d?t d? nu?c là c?a dân t?c nào?,Êdê,Hmông ,Cham ,Mu?ng 
+651,Thành Ph? Uông Bí tr?c thu?c t?nh nào c?a nu?c ta?,Qu?ng Ninh ,H?i Phòng ,H?i Duong ,B?c Giang 
+652,Th? xã H?ng Linh tr?c thu?c t?nh nào c?a nu?c ta?,Hà Tinh ,Ngh? An ,Hà N?i,Ninh Bình 
+653,Sóng d?ng là m?t tru?ng h?p c?a hi?n tu?ng gì?,Giao thoa sóng ,C?ng hu?ng ,Tri?t tiêu ,Tang d?n 
+654,M?t cõi di v? là sáng tác c?a nh?c si nào?,Tr?nh Công Son ,Van Cao ,Phan Hu?nh Ði?u ,Hoàng Hi?p 
+655,"T?nh nào n?m ? ngã ba biên gi?i Lào, Campuchia và Vi?t Nam?",Kon Tum ,Ð?c L?c ,Ð?c Nông ,Gia Lai 
+656,"Càng lên cao, áp su?t khí quy?n s? nhu th? nào?",Càng gi?m ,Càng tang ,Không thay d?i,Tang d?n r?i gi?m
+657,Sóng di?n t? là sóng gì?,Ngang,D?ng ,D?c ,V?a ngang v?a d?c 
+658,Tác ph?m Chí Phèo c?a Nam Cao du?c d?i tên m?y l?n?,3,2,4,5
+659,Nhà tho Nguy?n Ðình Chi?u b? d? t?t gì?,Mù ,Ði?c ,Th?n Kinh ,Câm 
+660,Quang Dung tác gi? bài tho Tây Ti?n tên th?t là gì?,Bùi Ðình Di?m ,Nguy?n Quang Dung ,Tr?n Nh?t Tân ,Ngô Thì Nh?m 
+661,L? h?i Canaval là l? h?i n?i ti?ng ? qu?c gia nào?,Brazil ,Mexico ,Argentina ,Chile 
+662,Ðon v? kh?i lu?ng riêng là gì?,Kg/m3,N/m ,N/m3,Kg/m2
+663,T? nào du?i dây là t? tu?ng thanh?,Khe kh? ,Kiêu hãnh ,Xa xam ,L?n x?n 
+664,"Khi ho?t d?ng ? Thái Lan, Bác H? l?y tên là gì?",Th?u Chín,T?ng Van So ,H? Chí Minh ,Nguy?n Ái Qu?c 
+665,Sân v?n d?ng qu?c gia M? Ðình có s?c ch?a bao nhiêu?,40 nghìn ngu?i ,30 nghìn ngu?i ,50 nghìn ngu?i ,60 nghìn ngu?i 
+666,Qu?c gia nào sau dây không thu?c châu Á?,New Zealand ,Iran ,Iraq,Qatar
+667,"Cho d?n nam 2010, th? h?ng cao nh?t c?a doàn Vi?t Nam qua các k?  Sea Games là h?ng m?y?",Nh?t ,Nhì ,Ba ,Tu 
+668,Huy?n Cô Tô thu?c t?nh nào c?a nu?c ta?,Qu?ng Ninh ,H?i Phòng ,H?i Duong ,B?c Giang 
+669,Thành Ph? H?i An tr?c thu?c t?nh nào c?a nu?c ta?,Qu?ng Nam ,Qu?ng Tr? ,Qu?ng Bình ,Qu?ng Ninh 
+670,Ðu?ng n?i các di?m cùng d? cao trên b?n d? g?i là gì?,Ðu?ng d?ng m?c ,Ðu?ng xích d?o ,Vi tuy?n ,Kinh d? 
+671,Nhu có Bác H? trong ngày vui d?i th?ng là sáng tác c?a nh?c si nào?,Ph?m Tuyên ,Phan Hu?nh Ði?u,Hu?nh Tho ,Tr?nh Công Son  
+672,Ánh sáng tr?ng chi?u qua m?t môi tru?ng b? môi tru?ng dó h?p th? m?t s? b?c x? t?o ra quang ph? nhu th? nào?,H?p th? ,Liên t?c ,Ðám ,V?ch 
+673,"Khi cho m?t dòng di?n xoay chi?u ch?y trong m?t dây d?n th?ng b?ng kim lo?i, xung quanh dây d?n s? có?",Ði?n t? tru?ng ,Tru?ng h?p d?n,T? tru?ng ,Ði?n tru?ng 
+674,Lo?i d?t có di?n tích l?n nh?t d?ng b?ng sông C?u Long?,Ð?t phèn,Ð?t d?m l?y,Ð?t m?n ,Ð?t phù sa
+675,Virus gây b?nh cúm gà r?t nguy hi?m cho tính m?ng con ngu?i?,AH5N1,H5N2,H1N5,SARS
+676,Ð?a danh nào sau dây không du?c nh?c d?n trong bài tho Tây Ti?n c?a quang dung?, Lát Hoa,Sài Khao,Châu M?c,Pha luông
+677,"Trong các ch?t sau dây, ch?t nào có nhi?t d? nóng ch?y cao nh?t?",Graphit,Ð?ng,S?t,Vàng
+678,Ðon v? do tr?ng l?c là gì?,N ,N.m ,N.m2,N.m3
+679,Câu tho “mà sao nghe nhói ? trong tim” thu?c lo?i câu nào?,Câu c?m thán ,Câu tr?n thu?t ,Câu nghi v?n ,Câu c?u khi?n 
+680,Châu l?c nào có lu?ng mua ít nh?t th? gi?i?,Châu Nam C?c ,Châu Ð?i Duong ,Châu Âu,Châu Phi 
+681,Con v?t nào sau dây l?n d?u tiên cùng con ngu?i bay vào vu tr??,Chó ,Mèo ,Chu?t ,Nhím 
+682,Qu?c gia nào sau dây không thu?c châu Á?,Th? Nhi Kì ,Banglades ,Oman,Mông C? 
+683,"Tên khu du l?ch T? linh n?i ti?ng ? Qu?n 9, thành ph? H? Chí Minh?",Su?i Tiên ,Ð?m Sen ,K? Hoà ,Thác Bà 
+684,Arron Carter là em trai c?a thành viên trong nhóm nh?c nào?,Backstreet Boys,N sync,Westlife,Five 
+685,Huy?n Vân Ð?n thu?c t?nh nào c?a nu?c ta?,Qu?ng Ninh ,H?i Phòng ,Thái Bình ,H?i Duong 
+686,Thành Ph? Cam Ranh tr?c thu?c t?nh nào c?a nu?c ta?,Khánh Hoà ,Phú Yên ,Bình Ð?nh ,Lâm Ð?ng 
+687,Thành ph?n chính c?a dá vôi?,CaCO3,CaO ,CaAlO2,CaMgO2
+688,Ti?n gi?y Vi?t Nam m?nh giá 100 d?ng du?c phát hành vào nam nào?,1992,1991,1993,1994
+689,B? m?t d?a hình hi?n t?i c?a nu?c ta du?c quy?t d?nh b?i v?n d?ng t?o núi nào?,Himalaya,Caledoni ,Hecxini ,Indonesia 
+690,Màu ph? nhau là màu khi tr?n vào nhau s? t?o thành màu gì?,Màu tr?ng ,Màu d? ,Màu vàng ,Màu lam nh?t 
+691,"Trong công nghi?p, d? làm mau khô l?p son ngoài ngu?i ta s? d?ng tác d?ng nhi?t c?a tia gì?",Tia h?ng ngo?i ,Tia Ronghen,Tia t? ngo?i ,Tia phóng x? 
+692,Trong khoa h?c máy tính ALU là b? ph?n x? lý nào sau dây?,Logic và s? h?c,Hình ?nh,Âm thanh,Tín hi?u internet
+693,Qu?c gia nào du?c xem là quê huong c?a ông già Noel?,Ph?n Lan,Hà Lan,Nauy,Ðan M?ch
+694,Thu? Ði?n n?i ti?ng ? th? lo?i nh?c nào?,Jazz,Dance,Pop,C? di?n
+695,"Theo th?n tho?i Trung Hoa, v? th?n cai qu?n bi?n, sông g?i là gì?",Long vuong ,Thu? vuong ,H?i vuong ,Hà vuong 
+696,Ngôi sao bóng dá David Beckham l?n d?u tiên sang Vi?t Nam nam nào?,2003,2002,2004,2001
+697,Lo?i mua nào sau dây du?c hình thành t? nh?ng tr?n mua trong không khí?,Mua tuy?t ,Mua phùn ,Mua dá,Mua rào 
+698,Ðon v? do tr?ng lu?ng riêng là gì?,N/m3,N/m2,N.m3,Kg/m3
+699,"Ch? có m?t châu l?c mang tên c?a m?t nhà thám hi?m hàng h?i n?i ti?ng, dó là châu l?c nào?",Châu M? ,Châu Âu ,Châu Á ,Châu Phi 
+700,Sông Nil ch?y ra bi?n nào?,Ð?a Trung H?i ,Bi?n Ch?t ,Bi?n Ðen,Thái Bình Duong
+701,"Gió heo may là gió hoi l?nh và khô, thu?ng th?i vào mùa nào trong nam?",Thu ,Xuân ,H? ,Ðông 
+702,Qu?c gia nào sau dây không thu?c châu M??,B? Bi?n Ngà ,Brazil ,Argentina ,Cuba 
+703,Qu? bom nguyên t? d?u tiên du?c th? xu?ng thành ph? nào?,Hiroshima ,Nagasaki ,Tokyo ,Osaka 
+704,Tác gi? c?a tác ph?m B? già là ai?,Mario Puzzo,J.K. Rowling,Mac Helen,Margeret Thetcher
+705,Huy?n Yên Hung thu?c t?nh nào c?a nu?c ta?,Qu?ng Ninh ,H?i Phòng ,Thái Bình ,B?c Giang 
+706,Thành Ph? Th? D?u M?t tr?c thu?c t?nh nào c?a nu?c ta?,Bình Duong ,Bình Phu?c ,Lâm Ð?ng ,Ð?ng Nai 
+707,L? th?ng t?ng Ozon l?n d?u tiên du?c tìm th?y t?i dâu?,Nam C?c ,M? ,B?c C?c ,Anh 
+708,Ti?n gi?y Vi?t Nam m?nh giá 10.000 d?ng ch?t li?u cotton du?c phát hành vào nam nào?,1994,1995,1996,1997
+709,Ch? d? thu? tri?u c?a v?nh B?c B? thu?c lo?i gì?,Nh?t tri?u d?u ,Nh?t tri?u không d?u ,Bán nh?t tri?u d?u ,Bán nh?t tri?u d?u 
+710,"M?t th?u kính có m?t l?i bán kính 20cm, m?t lõm bán kính h 30cm. Ðó là th?u kính gì?",Rìa m?ng,H?i t? ,Phân k? ,Rìa dày 
+711,Tia có kh? nang ch?a ung thu ? g?n da ngu?i là tia gì?,Tia Ronghen tia X,Tia h?ng ngo?i ,Tia t? ngo?i ,Tia âm c?c
+712,Chùa vàng Shwedagon là m?t công trình ki?n trúc d?c dáo c?a qu?c gia nào?,Myanmar,Philipines,Campuchia,Singapore
+713,Ðông Nam Á hi?n t?i có bao nhiêu qu?c gia?,11,9,10,12
+714,B?n tuyên ngôn Bác H? d?c ? Ba Ðình là b?n Tuyên ngôn th? m?y c?a dân t?c ta?,3,1,2,4
+715,"Trong th?n tho?i Hy L?p, cái gì dã du?c n? th?n b?t hòa g?i t?i 3 n? th?n khác?",Qu? táo vàng,Qu? nho ,Qu? bu?i ,Qu? Ôliu
+716,Ag là ký hi?u hoá h?c c?a nguyên t? nào?,B?c ,Thu? ngân ,Natri ,Ð?ng 
+717,Ngành công nghi?p s?n xu?t thu? tinh g?i là gì?,Công nghi?p Silicat,Công nghi?p Nitorat,Công nghi?p Cacbonat ,Công nghi?p Nano 
+718,1 lít b?ng giá tr? nào du?i dây?,1 dm3,1 m3,1 cm3,1 mm3
+719,Sài Lang dùng d? ch? tên con v?t nào?,Chó sói,H?i c?u ,Hà mã,H? 
+720,T?nh Ð?c Nông du?c ra d?i t? t?nh nào du?i dây?,Ð?c L?c ,Kontum ,Gia Lai ,Lâm Ð?ng 
+721,N? Hoàng là tên c?a con sông nào ? Vi?t Nam?,Sông H?ng ,Sông Ðà ,Sông Thao ,Sông Thu B?n 
+722,Qu?c gia nào sau dây không thu?c châu M??,Nam Tu ,Venezuela ,Bolivia ,Paraguay 
+723,Tu?ng N? th?n T? do n?m ? dâu?,New York,Washington,San Jose,Chicago
+724,Th? xã Cam Ðu?ng thu?c t?nh nào c?a nu?c ta?,Lào Cai ,Hà Giang ,Yên Bái ,Son La 
+725,Huy?n Chuong M? tr?c thu?c t?nh nào c?a nu?c ta?,Hà N?i,Hà Nam ,Hung Yên ,Vinh Phúc 
+726,Thành Ph? Bà R?a tr?c thu?c t?nh nào c?a nu?c ta?,Bà R?a - Vung Tàu ,Ð?ng Nai ,Bình Thu?n ,Long An 
+727,B?n hãy cho bi?t qu?c gia nào du?c m?nh danh là Ð?t nu?c c?a nh?ng ngu?i di xe d?p?,Ðan M?ch ,Ð?c ,Anh ,B? Ðào Nha 
+728,Ti?n gi?y Vi?t Nam m?nh giá 10.000 d?ng polymer du?c phát hành vào nam nào?,2006,2002,2003,2005
+729,Vùng khí h?u c?c và c?n c?c có nh?ng lo?i cây sinh s?ng du?c là?,Rêu và d?a y ,Thông và rêu ,Cây b?i và thông ,Rêu và duong x? 
+730,Cáp quang làm b?ng gì?,Thu? tinh ,Kim lo?i ,Polimer,H?p kim 
+731,Màu s?c ánh sáng ph? thu?c vào y?u t? nào?,T?n s?,Bu?c sóng,Môi tru?ng truy?n sóng ,Cu?ng d? chùm sáng
+732,Qu?c gia M? Latinh nào có hình dáng gi?ng m?t chú cá s?u?,Cuba,Brasil,Nicaragua,Venezuela
+733,B?ch Tuy?t và 7 chú lùn là m?t truy?n c? tích c?a qu?c gia nào?,Ðan M?ch,Thu? Ði?n,Ð?c,Hà Lan
+734,Qu?c gia nào du?c m?nh danh là d?t nu?c Tri?u Voi?,Lào ,Thái Lan ,Campuchia,Myanmar
+735,C?u th? nào xu?t s?c nh?t th? k? 20?,Maradona  Pele,Pele,Maradona,Pele và 1 c?u th? khác 
+736,Hg là ký hi?u hoá h?c c?a nguyên t? nào?,Thu? ngân ,B?c ,Thi?c ,Kali 
+737,Hoàng d? nào s?ng lâu nh?t ? Trung Qu?c?,Càn Long ,T?n Thu? Hoàng ,Khang Hy ,Ph? Nghi 
+738,Tru?ng h?p nào du?i dây liên quan d?n s? dông d?c?,Ng?n n?n v?a t?t ,Ng?n n?n dang cháy ,Nu?c dá ngoài n?ng ,Ðèn d?u dang cháy 
+739,? Nam C?c có bao nhiêu loài g?u tr?ng?,0 có loài nào ,1 loài ,2 loài ,3 loài 
+740,Môn Yoga có ngu?n g?c t? qu?c gia nào?,?n Ð? ,Nepan ,Banglades ,Pakistan 
+741,L?c dà 2 bu?u s?ng ? châu l?c nào?,Châu Á ,Châu Âu ,Châu Phi ,Châu M? 
+742,Qu?c gia nào sau dây không thu?c châu M??,Ðan M?ch,Hoa K? ,Canada ,Mexico 
+743,Con tem du?c phát minh và s? d?ng l?n d?u ? qu?c gia nào?,Anh ,Pháp,Ð?c ,Nga 
+744,Th? xã Nghia L? thu?c t?nh nào c?a nu?c ta?,Yên Bái ,Son La ,Phú Th? ,Tuyên Quang 
+745,Huy?n Mai Châu tr?c thu?c t?nh nào c?a nu?c ta?,Hoà Bình ,Vinh Phúc,Ninh Bình ,Phú Th? 
+746,"Tính d?n th?i di?m nam 2010, c?u Donghai là chi?c c?u dài nh?t th? gi?i. Nó thu?c qu?c gia nào?",Trung Qu?c ,Hoa K? ,Canada ,Malaysia 
+747,"Trong v?t lý, b?u dàn Guitar du?c g?i là gì?",H?p c?ng hu?ng ,H?p âm ,H?p dao d?ng ,C?ng hu?ng 
+748,Thác B?n D?c thu?c t?nh nào c?a nu?c ta?,Cao B?ng ,L?ng Son ,Son La ,Lai Châu 
+749,"Theo cách tính gi? trong âm l?ch, gi? D?u n?m trong kho?ng nào?",17 - 19 gi?,13 - 15 gi?,11 - 13 gi?,15 - 17 gi?
+750,Trong d?ng c? nào du?i dây có c? m?t máy phát và máy thu sóng vô tuy?n?,Chi?c di?n tho?i di d?ng,Máy thu thanh ,Máy thu hình ,B? di?u khi?n Tivi
+751,Ði?u nào th? hi?n rõ nh?t tính ch?t sóng c?a ánh sáng?,S? tán s?c ánh sáng,Kh? nang dâm xuyên ,Tác d?ng quang di?n ,Tác d?ng phát quang 
+752,Vi?t Nam có bao nhiêu thành ph? tr?c thu?c trung uong?,5,2,3,4
+753,Pleiku là thành ph? tr?c thu?c t?nh nào?,Gia Lai,Kontum,Ð?c L?c,Lâm Ðông
+754,Qu?c gia nào có dân s? theo d?o H?i nhi?u nh?t th? gi?i?,Indonesia,?n Ð? ,Iraq,Iran
+755,Tên g?i khác c?a tia X-quang?,Tia Ronghen,Tia t? ngo?i ,Tia H?ng ngo?i ,Tia Gamma
+756,Ngu?i du?c nhân dân d?t bi?t hi?u là chúa ch?m?,Lê Trang Tông ,Tr?n Ph? Ð?,Ð?ng Khánh ,Lý Hu? Tông
+757,Ngôn ng? nào là ngôn ng? l?p trình d?u tiên?,Fortran ,Pascal ,C,Basic
+758,Nu?c d?ng trong c?c bay hoi càng nhanh khi nu?c trong c?c ?,Càng nóng ,Càng nhi?u ,Càng ít ,Càng l?nh 
+759,? B?c C?c có bao nhiêu loài chim cánh c?t?,Không có loài nào,1 loài,2 loài ,3 loài 
+760,"Trong c? Carô, hai bên di t?i thi?u bao nhiêu nu?c c? thì cu?c choi phân th?ng b?i?",7,6,5,8
+761,Lo?i da giác l?i duy nh?t có s? c?nh b?ng s? du?ng chéo là gì?,Ngu giác ,T? giác ,Tam giác ,L?c giác 
+762,Karaoke là phát minh c?a nu?c nào?,Nh?t B?n ,Trung Qu?c ,M? ,Singapore 
+763,0 d? C b?ng bao nhiêu d? F?,32,24,26,36
+764,Th? xã Sông Công thu?c t?nh nào c?a nu?c ta?,Thái Nguyên ,Vinh Phúc ,B?c Giang ,L?ng Son 
+765,Thành Ph? Ph? Lý tr?c thu?c t?nh nào c?a nu?c ta?,Hà Nam ,Hoà Bình ,Thái Bình ,B?c Giang 
+766,Qu?c gia nào có di?n tích d?ng th? 5 trên th? gi?i?,Hoa K? ,Trung Qu?c ,?n Ð? ,Brazil 
+767,Ðu?ng tr?ng n?m ngang gi?a bàn c? tu?ng g?i là gì?,Sông ,Ranh gi?i ,Kho?ng cách ,Ð?a gi?i 
+768,"Khi chuy?n d?ng trên qu? d?o, tr?c trái d?t nghiêng không d?i hu?ng so v?i m?t ph?ng 1 góc là?",66 d? 33 ,36 d? 36,33 d? 66 ,63 d? 26 
+769,Ð?a hình chính c?a Campuchia là?,Ð?ng b?ng và cao nguyên ,Núi và d?ng b?ng ,Ð?ng b?ng ,Núi và cao nguyên 
+770,"Trong thang sóng di?n t?, vùng có bu?c sóng l?n nh?t là vùng nào?",Vùng sóng vô tuy?n di?n ,Vùng Ronghen ,Vùng kh? bi?n ,Vùng Gamma
+771,Khi dùng kính lúp d? quan sát m?t v?t nh? thì ta ph?i d?t v?t cách th?u kính m?t kho?ng bao nhiêu?,Nh? hon f,Nh? hon 2f,Kho?ng gi?a f và 2f,B?ng f
+772,Dân s? Vi?t Nam tính d?n th?i di?m 2010 là?,Hon 80 tri?u dân,75 tri?u dân,70 tri?u dân,Kho?ng 60 tri?u dân
+773,Buôn Mê Thu?t là thành ph? tr?c thu?c t?nh nào?,Ð?c L?c,Kontum,Gialai,Lâm Ð?ng
+774,Nhà tho Lí B?ch du?c m?nh danh là gì?,Tiên tho ,Thánh tho ,Th?n tho ,Không có m?nh danh 
+775,Lá c? H?i ch? th?p d? qu?c t? gi?ng qu?c k? c?a qu?c gia nào nh?t?,Thu? Si ,Ðan M?ch ,Anh,Nepal
+776,Firefox là tên g?i c?a cái gì trong gi?i công ngh? thông tin?,Trình duy?t web,Game ,Ngôn ng? l?p trình ,Máy in 
+777,Vuong qu?c Ba Tu ngày xua là qu?c gia nào ngày nay?,Iraq,Iran ,Kuwait ,Qatar
+778,T?c d? bay hoi c?a ch?t l?ng ph? thu?c vào y?u t? nào?,Nhi?t d? ,Ngày,Th?i di?m,Gi? gi?c
+779,? Nam C?c có bao nhiêu loài voi bi?n?,Không có loài nào ,1 loài ,2 loài ,3 loài 
+780,"Trong c? Caro, bên nào di tru?c t?i da bao nhiêu nu?c c? trên cùng hàng thì s? th?ng cu?c?",4,3,5,6
+781,Sông Mêkông ch?y vào lãnh th? Vi?t nam và ra bi?n theo bao nhiêu nhánh chính?,9,7,8,10
+782,Gi?i Abel là gi?i thu?ng trao hàng nam cho nh?ng nhà?,Toán h?c ,Thiên van h?c ,L?ch s? ,Ð?a lý
+783,Nhà du hành vu tr? d?u tiên d?t chân lên m?t trang là ai?,Neil Armstrong,Edwin Aldrin,Ph?m Tuân ,Galile 
+784,Huy?n Mê Linh thu?c t?nh nào c?a nu?c ta?,Hà N?i,Tuyên Quang ,Phú Th? ,Hà Nam 
+785,Huy?n Thanh Liêm tr?c thu?c t?nh nào c?a nu?c ta?,Hà Nam ,Hoà Bình ,Ninh Bình ,Thanh Hoá 
+786,Ac là ký hi?u hoá h?c c?a nguyên t? nào sau dây?,Aktinium,Americium,Antimon,Argo
+787,Rafael Nadal là tay v?t n?i ti?ng c?a nu?c nào?,Tây Ban Nha ,Anh ,M? ,B? Ðào Nha 
+788,Cùng m?t lúc Trái Ð?t tham gia m?y chuy?n d?ng?,2,1,3,4
+789,Phuong pháp ch? y?u du?c s? d?ng d? t?o uu th? lai là?,Lai khác dòng ,Lai khác loài ,Lai khác th? ,Lai c?i ti?n 
+790,L?c tác d?ng làm quay d?ng co di?n là gì?,L?c t? ,L?c dàn h?i ,L?c di?n t? ,Tr?ng l?c 
+791,S?i quang h?c là ?ng d?ng c?a hi?n tu?ng gì?,Ph?n x? toàn ph?n ,Tán s?c,Khúc x? ,Ph?n x? 
+792,C?u M? Thu?n là cây c?u dây vang hi?n d?i th? nhì ?,Ðông Nam Á,Vi?t Nam,Châu Á,Ðông Á
+793,Kim lo?i nào tác d?ng v?i nu?c t?o ra Hidro?,Na,Cu,Sn,Ag 
+794,Ð? Ph? du?c m?nh danh là gì?,Thánh tho ,Th?n tho ,Tiên tho ,Ph?t tho
+795,Loài hoa nào là bi?u tu?ng c?a Singapore?,Hoa phong lan ,Hoa hu? ,Hoa hu?ng duong ,Hoa h?ng 
+796,Opera là tên g?i c?a cái gì trong gi?i công ngh? thông tin?,Trình duy?t web ,Game,Ngôn ng? l?p trình ,Máy in 
+797,T?nh nào sau dây không giáp bi?n?,Gia Lai ,Khánh Hoà ,Qu?ng Tr? ,Cà Mau 
+798,Tru?ng h?p nào sau dây liên quan d?n s? ngung t??,Suong d?ng trên lá ,Nu?c trong c?c c?n d?n ,Phoi qu?n áo cho khô ,S? t?o thành hoi nu?c 
+799,"Nam 1947, quân dân ta dã b?n cháy tàu chi?n Pháp trên sông nào?",Sông Lô ,Sông Ðà ,Sông H?ng ,Sông Thu B?n 
