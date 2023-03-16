@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Button } from 'cc';
+import { _decorator, Component, Node, Button, Label } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameView')
@@ -14,6 +14,24 @@ export class GameView extends Component {
 
     @property({type:Button})
     private backMainMenuBtn: Button = null;
+
+    @property({type:Label})
+    private questionLabel: Label = null;
+
+    @property({type:Label})
+    private answerLabelA: Label = null;
+
+    @property({type:Label})
+    private answerLabelB: Label = null;
+
+    @property({type:Label})
+    private answerLabelC: Label = null;
+
+    @property({type:Label})
+    private answerLabelD: Label = null;
+
+    @property({type:Label})
+    private questionLabelNumber: Label = null;
 
     public get BackGroundMenu() : Node {
         return this.backGroundMenu;
@@ -46,6 +64,61 @@ export class GameView extends Component {
     public set BackMainMenuBtn(backMainMenuBtn : Button) {
         this.backMainMenuBtn = backMainMenuBtn;
     }
+
+    public get QuestionLabel() : Label {
+        return this.questionLabel
+    }
+    
+    
+    public set QuestionLabel(questionLabel : Label) {
+        this.questionLabel = questionLabel;
+    }
+    
+    public get AnswerLabelA() : Label {
+        return this.answerLabelA
+    }
+    
+    
+    public set AnswerLabelA(answerLabelA : Label) {
+        this.answerLabelA = answerLabelA;
+    }
+
+    public get AnswerLabelB() : Label {
+        return this.answerLabelB
+    }
+    
+    
+    public set AnswerLabelB(answerLabelB : Label) {
+        this.answerLabelB = answerLabelB;
+    }
+
+    public get AnswerLabelC() : Label {
+        return this.answerLabelC
+    }
+    
+    
+    public set AnswerLabelC(answerLabelC : Label) {
+        this.answerLabelC = answerLabelC;
+    }
+
+    public get AnswerLabelD() : Label {
+        return this.answerLabelD
+    }
+    
+    
+    public set AnswerLabelD(answerLabelD : Label) {
+        this.answerLabelD = answerLabelD;
+    }
+
+    public get QuestionLabelNumber() : Label {
+        return this.questionLabelNumber
+    }
+    
+    
+    public set QuestionLabelNumber(questionLabelNumber : Label) {
+        this.questionLabelNumber = questionLabelNumber;
+    }
+    
 }
 
 
