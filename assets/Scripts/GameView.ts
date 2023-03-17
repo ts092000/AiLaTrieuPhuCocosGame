@@ -30,6 +30,18 @@ export class GameView extends Component {
     @property({type:Label})
     private answerLabelD: Label = null;
 
+    @property({type:Button})
+    private answerBtnA: Button = null;
+
+    @property({type:Button})
+    private answerBtnB: Button = null;
+
+    @property({type:Button})
+    private answerBtnC: Button = null;
+
+    @property({type:Button})
+    private answerBtnD: Button = null;
+
     @property({type:Label})
     private questionLabelNumber: Label = null;
 
@@ -78,7 +90,6 @@ export class GameView extends Component {
         return this.answerLabelA
     }
     
-    
     public set AnswerLabelA(answerLabelA : Label) {
         this.answerLabelA = answerLabelA;
     }
@@ -114,9 +125,40 @@ export class GameView extends Component {
         return this.questionLabelNumber
     }
     
-    
     public set QuestionLabelNumber(questionLabelNumber : Label) {
         this.questionLabelNumber = questionLabelNumber;
+    }
+
+    public get AnswerBtnA() : Button {
+        return this.answerBtnA
+    }
+    
+    public set AnswerBtnA(answerBtnA : Button) {
+        this.answerBtnA = answerBtnA;
+    }
+
+    public get AnswerBtnB() : Button {
+        return this.answerBtnB
+    }
+    
+    public set AnswerBtnB(answerBtnB : Button) {
+        this.answerBtnB = answerBtnB;
+    }
+
+    public get AnswerBtnC() : Button {
+        return this.answerBtnC
+    }
+    
+    public set AnswerBtnC(answerBtnC : Button) {
+        this.answerBtnC = answerBtnC;
+    }
+
+    public get AnswerBtnD() : Button {
+        return this.answerBtnD
+    }
+    
+    public set AnswerBtnD(answerBtnD : Button) {
+        this.answerBtnD = answerBtnD;
     }
     
 }

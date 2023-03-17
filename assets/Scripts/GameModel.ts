@@ -12,8 +12,6 @@ export class GameModel extends Component {
 
     @property({type:TextAsset})
     private csvFilelv3: TextAsset = null;
-    
-    static lv1QuestionArray: string[] = [];
 
     public get CsvFilelv1() : TextAsset {
         return this.csvFilelv1;
@@ -40,12 +38,12 @@ export class GameModel extends Component {
     }
 
     start() {
+        // var text1 = this.csvFilelv2.text;
         // console.log(text1);
         // var text2 = this.csvFilelv2.text;
         // console.log(text2);
         // var text3 = this.csvFilelv3.text;
         // console.log(text3);
-        
     }
 
     update(deltaTime: number) {
