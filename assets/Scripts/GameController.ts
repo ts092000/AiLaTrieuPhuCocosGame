@@ -11,14 +11,14 @@ export class GameController extends Component {
     @property({type:GameModel})
         Model: GameModel
 
-    @property({type:CCInteger, range:[1, 999, 1]})
-    private idQuestionLv1: number = 1;
+    // @property({type:CCInteger, range:[1, 999, 1]})
+    // private idQuestionLv1: number = 1;
 
-    @property({type:CCInteger, range:[1, 799, 1]})
-    private idQuestionLv2: number = 1;
+    // @property({type:CCInteger, range:[1, 799, 1]})
+    // private idQuestionLv2: number = 1;
 
-    @property({type:CCInteger, range:[1, 599, 1]})
-    private idQuestionLv3: number = 1;
+    // @property({type:CCInteger, range:[1, 599, 1]})
+    // private idQuestionLv3: number = 1;
 
     @property({type:CCString})
     private question = '';
@@ -35,10 +35,12 @@ export class GameController extends Component {
     @property({type:CCString})
     private ansD = '';
 
-    @property({type:CCString})
-    private correctAnsLv1 = 'A ';
+    @property({type:CCInteger})
+    private timeNum: number = 0;
 
     public static i: number = 1;
+    public static correctAnswer: boolean = false;
+    public static callbackSchedule: any;
 
     // static questionArray: string[] = [];
 
@@ -75,12 +77,14 @@ export class GameController extends Component {
     private btnClickPlayGame(PlayBtn: Button) {
         this.View.BackGroundMenu.active = false;
         this.View.GamePlayBg.active = true;
+        this.startCountDown();
     }
 
     private btnBackMainMenu(BackMainMenuBtn: Button) {
         this.View.BackGroundMenu.active = true;
         this.View.GamePlayBg.active = false;
         GameController.i = 1;
+        GameController.correctAnswer = false;
 
         director.preloadScene("Main", function () {
             console.log('Next scene preloaded');
@@ -112,24 +116,75 @@ export class GameController extends Component {
         //     return questionArr.length <= 6;
         // });
         
+        let range2 = 5;
+        let outputCount2 = 5;
+
+        let arr2 = [];
+        for (let i = 2; i <= range2; i++) {
+            arr2.push(i);
+        }
+      
+        let result2 = [];
+      
+        for (let i = 2; i <= outputCount2; i++) {
+            const random2 = Math.floor(Math.random() * (range2 - i));
+            result2.push(arr2[random2]);
+            arr2[random2] = arr2[range2 - i];
+        }
+        console.log(result2);
+
+        let range3 = 5;
+        let outputCount3 = 5;
+
+        let arr3 = [];
+        for (let i = 2; i <= range3; i++) {
+            arr3.push(i);
+        }
+      
+        let result3 = [];
+      
+        for (let i = 2; i <= outputCount3; i++) {
+            const random3 = Math.floor(Math.random() * (range3 - i));
+            result3.push(arr3[random3]);
+            arr3[random3] = arr2[range3 - i];
+        }
+        console.log(result3);
+
+        let range4 = 5;
+        let outputCount4 = 5;
+
+        let arr4 = [];
+        for (let i = 2; i <= range4; i++) {
+            arr4.push(i);
+        }
+      
+        let result4 = [];
+      
+        for (let i = 2; i <= outputCount4; i++) {
+            const random4 = Math.floor(Math.random() * (range4 - i));
+            result4.push(arr4[random4]);
+            arr4[random4] = arr4[range4 - i];
+        }
+        console.log(result4);
+
         let questionLv1 = text1.split('\n').map((row1:string) => {
             return row1.split(',')[1];
         });
 
         let answerALv1 = text1.split('\n').map((row1:string) => {
-            return row1.split(',')[2];
+            return row1.split(',')[result2[0]];
         });
         
         let answerBLv1 = text1.split('\n').map((row1:string) => {
-            return row1.split(',')[3];
+            return row1.split(',')[result2[1]];
         });
         
         let answerCLv1 = text1.split('\n').map((row1:string) => {
-            return row1.split(',')[4];
+            return row1.split(',')[result2[2]];
         });
         
         let answerDLv1 = text1.split('\n').map((row1:string) => {
-            return row1.split(',')[5];
+            return row1.split(',')[result2[3]];
         });
 
         let questionLv2 = text2.split('\n').map((row2:string) => {
@@ -137,19 +192,19 @@ export class GameController extends Component {
         });
 
         let answerALv2 = text2.split('\n').map((row2:string) => {
-            return row2.split(',')[2];
+            return row2.split(',')[result3[0]];
         });
         
         let answerBLv2 = text2.split('\n').map((row2:string) => {
-            return row2.split(',')[3];
+            return row2.split(',')[result3[1]];
         });
         
         let answerCLv2 = text2.split('\n').map((row2:string) => {
-            return row2.split(',')[4];
+            return row2.split(',')[result3[2]];
         });
         
         let answerDLv2 = text2.split('\n').map((row2:string) => {
-            return row2.split(',')[5];
+            return row2.split(',')[result3[3]];
         });
 
         let questionLv3 = text3.split('\n').map((row3:string) => {
@@ -157,19 +212,19 @@ export class GameController extends Component {
         });
 
         let answerALv3 = text3.split('\n').map((row3:string) => {
-            return row3.split(',')[2];
+            return row3.split(',')[result4[0]];
         });
         
         let answerBLv3 = text3.split('\n').map((row3:string) => {
-            return row3.split(',')[3];
+            return row3.split(',')[result4[1]];
         });
         
         let answerCLv3 = text3.split('\n').map((row3:string) => {
-            return row3.split(',')[4];
+            return row3.split(',')[result4[2]];
         });
         
         let answerDLv3 = text3.split('\n').map((row3:string) => {
-            return row3.split(',')[5];
+            return row3.split(',')[result4[3]];
         });
 
         // let questionLv1 = questionArrFilter.map((row:string) => {
@@ -253,8 +308,36 @@ export class GameController extends Component {
     }
 
     private btnClickNextQuestion(AnswerBtnA: Button) {
+        this.unschedule(GameController.callbackSchedule);
+        console.log(GameController.callbackSchedule);
         GameController.i++;
         this.questionAndAnswerDisplay();
+        GameController.correctAnswer = true;
+        this.timeNum = 10;
+        this.startCountDown()
+        // this.schedule(GameController.callbackSchedule);
+    }
+
+    private startCountDown() {
+        this.View.TimeLabel.string = this.timeNum.toString();
+        
+        GameController.callbackSchedule = function() {
+            this.timeNum--;
+            this.View.TimeLabel.string = this.timeNum.toString();
+            
+            if (this.timeNum == 0) {
+                this.timeNum = this.timeNum;
+                this.View.ResultLabel.string = "Hết Giờ";
+                this.unschedule(GameController.callbackSchedule, 1);
+                // setInterval(() => {
+                //     director.preloadScene("Main", function () {
+                //         console.log('Next scene preloaded');
+                //         director.loadScene("Main");
+                //     });
+                // }, 3000)
+            }
+        }
+        this.schedule(GameController.callbackSchedule, 1);
     }
 }
 

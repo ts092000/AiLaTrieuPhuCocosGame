@@ -45,6 +45,14 @@ export class GameView extends Component {
     @property({type:Label})
     private questionLabelNumber: Label = null;
 
+    @property({type:Label})
+    private timeLabel: Label = null;
+
+    @property({type:Label})
+    private resultLabel: Label = null;
+
+
+
     public get BackGroundMenu() : Node {
         return this.backGroundMenu;
     }
@@ -161,6 +169,21 @@ export class GameView extends Component {
         this.answerBtnD = answerBtnD;
     }
     
+    public get TimeLabel() : Label {
+        return this.timeLabel
+    }
+    
+    public set TimeLabel(timeLabel : Label) {
+        this.timeLabel = timeLabel;
+    }
+
+    public get ResultLabel() : Label {
+        return this.resultLabel
+    }
+    
+    public set ResultLabel(resultLabel : Label) {
+        this.resultLabel = resultLabel;
+    }
 }
 
 
