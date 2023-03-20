@@ -240,36 +240,7 @@ export class GameController extends Component {
 
             this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv1, this);
             this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv1, this);
-
-            if (result2[0] == 2) {
-                console.log('BtnAlv1 true');
-                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this)
-                
-            }
-            else if (result2[1] == 2) {
-                console.log('BtnBlv1 true');
-                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            }
-            else if (result2[2] == 2) {
-                console.log('BtnClv1 true');
-                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            }
-            else if (result2[3] == 2) {
-                console.log('BtnDlv1 true');
-                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            }
+            
         }
         else if (GameController.i > 5 && GameController.i <= 10) {
             this.View.AudioLv2.play();
@@ -285,34 +256,6 @@ export class GameController extends Component {
             this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv2, this);
             this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv2, this);
 
-            if (result3[0] == 2) {
-                console.log('BtnAlv2 true');
-                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            }
-            else if (result3[1] == 2) {
-                console.log('BtnBlv2 true');
-                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            }
-            else if (result3[2] == 2) {
-                console.log('BtnClv2 true');
-                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            }
-            else if (result3[3] == 2) {
-                console.log('BtnDlv2 true');
-                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            }
         }
         else if (GameController.i > 10 && GameController.i <= 15) {
             this.View.AudioLv3.play();
@@ -327,35 +270,6 @@ export class GameController extends Component {
 
             this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv3, this);
             this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv3, this);
-
-            if (result4[0] == 2) {
-                console.log('BtnAlv3 true');
-                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            }
-            else if (result4[1] == 2) {
-                console.log('BtnBlv3 true');
-                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            }
-            else if (result4[2] == 2) {
-                console.log('BtnClv3 true');
-                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            }
-            else if (result4[3] == 2) {
-                console.log('BtnDlv3 true');
-                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            }
         }
         else if (GameController.i > 15) {
             director.preloadScene("Main", function () {
@@ -370,6 +284,51 @@ export class GameController extends Component {
         this.View.AnswerLabelC.string = this.ansC;
         this.View.AnswerLabelD.string = this.ansD;
         this.View.QuestionLabelNumber.string = 'Câu hỏi số ' + GameController.i.toString();
+
+        if (result2[0] == 2 || result3[0] == 2 || result4[0] == 2) {
+            console.log('BtnAtrue');
+            this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+            this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+            this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+            this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+            this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+        }
+        else if (result2[1] == 2 || result3[1] == 2 || result4[1] == 2) {
+            console.log('BtnBtrue');
+            this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+            this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+            this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+            this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+            this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+        }
+        else if (result2[2] == 2 || result3[2] == 2 || result4[2] == 2) {
+            console.log('BtnCtrue');
+            this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+            this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+            this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+            this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+            this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+        }
+        else if (result2[3] == 2 || result3[3] == 2 || result4[3] == 2) {
+            console.log('BtnDtrue');
+            this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+            this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+            this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+            this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+            this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+        }
     }
 
     private btnClickNextQuestion(AnswerBtnA: Button) {
@@ -379,6 +338,7 @@ export class GameController extends Component {
         this.questionAndAnswerDisplay();
         this.timeNum = 10;
         this.startCountDown();
+        console.log(GameController.i);
         // this.schedule(GameController.callbackSchedule);
     }
 

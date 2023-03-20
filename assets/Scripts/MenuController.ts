@@ -15,10 +15,10 @@ export class MenuControll extends Component {
         this.View.BackGroundMusic.play();
         this.View.AudioControlMuted.node.active = true;
         this.View.AudioControlPlay.node.active = false;
-        this.View.PlayBtn.node.on(Button.EventType.CLICK, this.btnClickPlayGame, this);
     }
-
+    
     public onLoad() {
+        this.View.PlayBtn.node.on(Button.EventType.CLICK, this.btnClickPlayGame, this);
         // director.addPersistRootNode(this.View.BackGroundMusic.node);
     }
     
