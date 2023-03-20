@@ -38,12 +38,7 @@ export class GameModel extends Component {
     }
 
     start() {
-        // var text1 = this.csvFilelv2.text;
-        // console.log(text1);
-        // var text2 = this.csvFilelv2.text;
-        // console.log(text2);
-        // var text3 = this.csvFilelv3.text;
-        // console.log(text3);
+        
     }
 
     update(deltaTime: number) {
