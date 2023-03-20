@@ -39,16 +39,12 @@ export class GameController extends Component {
     private timeNum: number = 0;
 
     public static i: number = 1;
-    public static correctAnswer: boolean = false;
     public static callbackSchedule: any;
 
     // static questionArray: string[] = [];
 
     public start() {
         // this.randomUniqueNum(200, 200);
-        this.View.BackGroundMenu.active = true;
-        this.View.GamePlayBg.active = false;
-        GameController.i = 1;
     }
     
     public update(deltaTime: number) {
@@ -58,11 +54,11 @@ export class GameController extends Component {
     public onLoad() {
         this.View.PlayBtn.node.on(Button.EventType.CLICK, this.btnClickPlayGame, this);
         this.View.BackMainMenuBtn.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-        this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-        this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-        this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-        this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-        this.questionAndAnswerDisplay();
+        // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+        // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+        // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+        // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+        // this.questionAndAnswerDisplay();
     }
 
     public onDestroy() {
@@ -78,16 +74,15 @@ export class GameController extends Component {
         this.View.BackGroundMenu.active = false;
         this.View.GamePlayBg.active = true;
         this.startCountDown();
+        this.questionAndAnswerDisplay();
     }
 
     private btnBackMainMenu(BackMainMenuBtn: Button) {
         this.View.BackGroundMenu.active = true;
         this.View.GamePlayBg.active = false;
         GameController.i = 1;
-        GameController.correctAnswer = false;
 
         director.preloadScene("Main", function () {
-            console.log('Next scene preloaded');
             director.loadScene("Main");
         });
     }
@@ -131,7 +126,7 @@ export class GameController extends Component {
             result2.push(arr2[random2]);
             arr2[random2] = arr2[range2 - i];
         }
-        console.log(result2);
+        console.log('result2: ', result2);
 
         let range3 = 5;
         let outputCount3 = 5;
@@ -146,9 +141,9 @@ export class GameController extends Component {
         for (let i = 2; i <= outputCount3; i++) {
             const random3 = Math.floor(Math.random() * (range3 - i));
             result3.push(arr3[random3]);
-            arr3[random3] = arr2[range3 - i];
+            arr3[random3] = arr3[range3 - i];
         }
-        console.log(result3);
+        console.log('result3: ', result3);
 
         let range4 = 5;
         let outputCount4 = 5;
@@ -165,7 +160,7 @@ export class GameController extends Component {
             result4.push(arr4[random4]);
             arr4[random4] = arr4[range4 - i];
         }
-        console.log(result4);
+        console.log('result4: ', result4);
 
         let questionLv1 = text1.split('\n').map((row1:string) => {
             return row1.split(',')[1];
@@ -268,7 +263,35 @@ export class GameController extends Component {
             this.ansC = answerCLv1[result[lv1]];
             this.ansD = answerDLv1[result[lv1]];
             lv1 += 1;
-            console.log('lv1 ', lv1);
+
+            if (result2[0] == 2) {
+                console.log('BtnA true');
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result2[1] == 2) {
+                console.log('BtnB true');
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result2[2] == 2) {
+                console.log('BtnC true');
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result2[3] == 2) {
+                console.log('BtnD true');
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
         }
         else if (GameController.i > 5 && GameController.i <= 10) {
             this.question = questionLv2[result[lv2]];
@@ -277,7 +300,35 @@ export class GameController extends Component {
             this.ansC = answerCLv2[result[lv2]];
             this.ansD = answerDLv2[result[lv2]];
             lv2 += 1;
-            console.log('lv2 ', lv2);
+
+            if (result3[0] == 2) {
+                console.log('BtnA true');
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result3[1] == 2) {
+                console.log('BtnB true');
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result3[2] == 2) {
+                console.log('BtnC true');
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result3[3] == 2) {
+                console.log('BtnD true');
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
         }
         else if (GameController.i > 10 && GameController.i <= 15) {
             this.question = questionLv3[result[lv3]];
@@ -286,13 +337,40 @@ export class GameController extends Component {
             this.ansC = answerCLv3[result[lv3]];
             this.ansD = answerDLv3[result[lv3]];
             lv3 += 1;
-            console.log('lv3', lv3);
+
+            if (result4[0] == 2) {
+                console.log('BtnA true');
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result4[1] == 2) {
+                console.log('BtnB true');
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result4[2] == 2) {
+                console.log('BtnC true');
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result4[3] == 2) {
+                console.log('BtnD true');
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
         }
         else if (GameController.i > 15) {
             this.View.BackGroundMenu.active = true;
             this.View.GamePlayBg.active = false;
             director.preloadScene("Main", function () {
-                console.log('Next scene preloaded');
                 director.loadScene("Main");
             });
         }
@@ -304,15 +382,29 @@ export class GameController extends Component {
         this.View.AnswerLabelD.string = this.ansD;
         this.View.QuestionLabelNumber.string = 'Câu hỏi số ' + GameController.i.toString();
         console.log(GameController.i);
-        console.log('randomNumber: ', result);
     }
+    
+    // private btnAnswerA(AnswerBtnA: Button) {
+    //     this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+    // }
+
+    // private btnAnswerB(btnAnswerB: Button) {
+    //     this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this)
+    // }
+
+    // private btnAnswerC(btnAnswerC: Button) {
+    //     this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+    // }
+
+    // private btnAnswerD(btnAnswerD: Button) {
+    //     this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+    // }
 
     private btnClickNextQuestion(AnswerBtnA: Button) {
         this.unschedule(GameController.callbackSchedule);
         console.log(GameController.callbackSchedule);
         GameController.i++;
         this.questionAndAnswerDisplay();
-        GameController.correctAnswer = true;
         this.timeNum = 10;
         this.startCountDown()
         // this.schedule(GameController.callbackSchedule);
@@ -329,12 +421,12 @@ export class GameController extends Component {
                 this.timeNum = this.timeNum;
                 this.View.ResultLabel.string = "Hết Giờ";
                 this.unschedule(GameController.callbackSchedule, 1);
-                // setInterval(() => {
-                //     director.preloadScene("Main", function () {
-                //         console.log('Next scene preloaded');
-                //         director.loadScene("Main");
-                //     });
-                // }, 3000)
+                this.scheduleOnce(function() {
+                    director.preloadScene("Main", function () {
+                        console.log('Next scene preloaded');
+                        director.loadScene("Main");
+                    });
+                }, 3);
             }
         }
         this.schedule(GameController.callbackSchedule, 1);
