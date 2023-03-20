@@ -36,6 +36,8 @@ export class GameController extends Component {
         // this.randomUniqueNum(200, 200);
         this.questionAndAnswerDisplay();
         this.startCountDown();
+        this.View.BtnMute.node.active = true;
+        this.View.BtnUnmute.node.active = false;
     }
     
     public update(deltaTime: number) {
@@ -205,7 +207,7 @@ export class GameController extends Component {
             // console.log(answerCLv1[i]);
             // console.log(answerDLv1[i]);
         // }
-        let range = 300;
+        let range = 500;
         let outputCount = 5;
 
         let arr = []
@@ -226,6 +228,9 @@ export class GameController extends Component {
 
         console.log('result: ', result)
         if (GameController.i <= 5) {
+            this.View.AudioLv1.play();
+            this.View.AudioLv2.stop();
+            this.View.AudioLv3.stop();
             this.question = questionLv1[result[lv1]];
             this.ansA = answerALv1[result[lv1]];
             this.ansB = answerBLv1[result[lv1]];
@@ -233,12 +238,16 @@ export class GameController extends Component {
             this.ansD = answerDLv1[result[lv1]];
             lv1 += 1;
 
+            this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv1, this);
+            this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv1, this);
+
             if (result2[0] == 2) {
                 console.log('BtnAlv1 true');
                 this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                // this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
                 // this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                // this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this)
+                
             }
             else if (result2[1] == 2) {
                 console.log('BtnBlv1 true');
@@ -263,12 +272,18 @@ export class GameController extends Component {
             }
         }
         else if (GameController.i > 5 && GameController.i <= 10) {
+            this.View.AudioLv2.play();
+            this.View.AudioLv1.stop();
+            this.View.AudioLv3.stop();
             this.question = questionLv2[result[lv2]];
             this.ansA = answerALv2[result[lv2]];
             this.ansB = answerBLv2[result[lv2]];
             this.ansC = answerCLv2[result[lv2]];
             this.ansD = answerDLv2[result[lv2]];
             lv2 += 1;
+
+            this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv2, this);
+            this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv2, this);
 
             if (result3[0] == 2) {
                 console.log('BtnAlv2 true');
@@ -300,12 +315,18 @@ export class GameController extends Component {
             }
         }
         else if (GameController.i > 10 && GameController.i <= 15) {
+            this.View.AudioLv3.play();
+            this.View.AudioLv1.stop();
+            this.View.AudioLv2.stop();
             this.question = questionLv3[result[lv3]];
             this.ansA = answerALv3[result[lv3]];
             this.ansB = answerBLv3[result[lv3]];
             this.ansC = answerCLv3[result[lv3]];
             this.ansD = answerDLv3[result[lv3]];
             lv3 += 1;
+
+            this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv3, this);
+            this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv3, this);
 
             if (result4[0] == 2) {
                 console.log('BtnAlv3 true');
@@ -350,22 +371,6 @@ export class GameController extends Component {
         this.View.AnswerLabelD.string = this.ansD;
         this.View.QuestionLabelNumber.string = 'Câu hỏi số ' + GameController.i.toString();
     }
-    
-    // private btnAnswerA(AnswerBtnA: Button) {
-    //     this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-    // }
-
-    // private btnAnswerB(btnAnswerB: Button) {
-    //     this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this)
-    // }
-
-    // private btnAnswerC(btnAnswerC: Button) {
-    //     this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-    // }
-
-    // private btnAnswerD(btnAnswerD: Button) {
-    //     this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-    // }
 
     private btnClickNextQuestion(AnswerBtnA: Button) {
         this.unschedule(GameController.callbackSchedule);
@@ -403,6 +408,42 @@ export class GameController extends Component {
             }
         }
         this.schedule(GameController.callbackSchedule, 1);
+    }
+
+    private btnMuteLv1(BtnMute: Button) {
+        this.View.BtnMute.node.active = false;
+        this.View.BtnUnmute.node.active = true;
+        this.View.AudioLv1.volume = 0;
+    }
+
+    private btnUnmuteLv1(BtnUnmute: Button) {
+        this.View.BtnMute.node.active = true;
+        this.View.BtnUnmute.node.active = false;
+        this.View.AudioLv1.volume = 0.5;
+    }
+
+    private btnMuteLv2(BtnMute: Button) {
+        this.View.BtnMute.node.active = false;
+        this.View.BtnUnmute.node.active = true;
+        this.View.AudioLv2.volume = 0;
+    }
+
+    private btnUnmuteLv2(BtnUnmute: Button) {
+        this.View.BtnMute.node.active = true;
+        this.View.BtnUnmute.node.active = false;
+        this.View.AudioLv2.volume = 0.5;
+    }
+
+    private btnMuteLv3(BtnMute: Button) {
+        this.View.BtnMute.node.active = false;
+        this.View.BtnUnmute.node.active = true;
+        this.View.AudioLv3.volume = 0;
+    }
+
+    private btnUnmuteLv3(BtnUnmute: Button) {
+        this.View.BtnMute.node.active = true;
+        this.View.BtnUnmute.node.active = false;
+        this.View.AudioLv3.volume = 0.5;
     }
 }
 

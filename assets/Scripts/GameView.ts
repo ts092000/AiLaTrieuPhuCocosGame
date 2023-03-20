@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Button, Label } from 'cc';
+import { _decorator, Component, Node, Button, Label, AudioSource } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameView')
@@ -41,6 +41,22 @@ export class GameView extends Component {
 
     @property({type:Label})
     private resultLabel: Label = null;
+
+    @property({type:AudioSource})
+    private audioLv1: AudioSource = null;
+
+    @property({type:AudioSource})
+    private audioLv2: AudioSource = null;
+
+    @property({type:AudioSource})
+    private audioLv3: AudioSource = null;
+
+    @property({type:Button})
+    private btnMute: Button = null;
+
+    @property({type:Button})
+    private btnUnmute: Button = null;
+
 
     public get BackMainMenuBtn() : Button {
         return this.backMainMenuBtn;
@@ -148,6 +164,46 @@ export class GameView extends Component {
     
     public set ResultLabel(resultLabel : Label) {
         this.resultLabel = resultLabel;
+    }
+
+    public get AudioLv1() : AudioSource {
+        return this.audioLv1;
+    }
+    
+    public set AudioLv1(audioLv1 : AudioSource) {
+        this.audioLv1 = audioLv1;
+    }
+
+    public get AudioLv2() : AudioSource {
+        return this.audioLv2;
+    }
+    
+    public set AudioLv2(audioLv2 : AudioSource) {
+        this.audioLv2 = audioLv2;
+    }
+
+    public get AudioLv3() : AudioSource {
+        return this.audioLv3;
+    }
+    
+    public set AudioLv3(audioLv3 : AudioSource) {
+        this.audioLv3 = audioLv3;
+    }
+
+    public set BtnMute(btnMute : Button) {
+        this.btnMute = btnMute;
+    }
+
+    public get BtnMute() : Button {
+        return this.btnMute
+    }
+    
+    public set BtnUnmute(btnUnmute : Button) {
+        this.btnUnmute = btnUnmute;
+    }
+
+    public get BtnUnmute() : Button {
+        return this.btnUnmute
     }
 }
 
