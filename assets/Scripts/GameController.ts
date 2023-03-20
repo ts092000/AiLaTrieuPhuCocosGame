@@ -96,17 +96,17 @@ export class GameController extends Component {
         if (GameController.i <= 5) {
             let text1 = this.Model.CsvFilelv1.text;
 
-            let range2 = 5;
-            let outputCount2 = 5;
+            let range2 = 4;
+            let outputCount2 = 4;
 
-            let arr2 = [];
-            for (let i = 2; i <= range2; i++) {
+            let arr2 = [5, 4, 3, 2];
+            for (let i = 1; i <= range2; i++) {
                 arr2.push(i);
             }
         
             let result2 = [];
         
-            for (let i = 2; i <= outputCount2; i++) {
+            for (let i = 1; i <= outputCount2; i++) {
                 const random2 = Math.floor(Math.random() * (range2 - i));
                 result2.push(arr2[random2]);
                 arr2[random2] = arr2[range2 - i];
@@ -159,7 +159,7 @@ export class GameController extends Component {
                 this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
                 this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
             }
-            else if (result2[2]) {
+            else if (result2[2] == 2) {
                 console.log('BtnCtrue');
                 this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
@@ -186,17 +186,17 @@ export class GameController extends Component {
         else if (GameController.i > 5 && GameController.i <= 10) {
             let text2 = this.Model.CsvFilelv2.text;
 
-            let range3 = 5;
-            let outputCount3 = 5;
+            let range3 = 4;
+            let outputCount3 = 4;
 
-            let arr3 = [];
-            for (let i = 2; i <= range3; i++) {
+            let arr3 = [5, 4, 3, 2];
+            for (let i = 1; i <= range3; i++) {
                 arr3.push(i);
             }
         
             let result3 = [];
         
-            for (let i = 2; i <= outputCount3; i++) {
+            for (let i = 1; i <= outputCount3; i++) {
                 const random3 = Math.floor(Math.random() * (range3 - i));
                 result3.push(arr3[random3]);
                 arr3[random3] = arr3[range3 - i];
@@ -249,7 +249,7 @@ export class GameController extends Component {
                 this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
                 this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
             }
-            else if (result3[2]) {
+            else if (result3[2] == 2) {
                 console.log('BtnCtrue');
                 this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
@@ -274,17 +274,17 @@ export class GameController extends Component {
 
         }
         else if (GameController.i > 10 && GameController.i <= 15) {
-            let range4 = 5;
-            let outputCount4 = 5;
+            let range4 = 4;
+            let outputCount4 = 4;
 
-            let arr4 = [];
-            for (let i = 2; i <= range4; i++) {
+            let arr4 = [5, 4, 3, 2];
+            for (let i = 1; i <= range4; i++) {
                 arr4.push(i);
             }
         
             let result4 = [];
         
-            for (let i = 2; i <= outputCount4; i++) {
+            for (let i = 1; i <= outputCount4; i++) {
                 const random4 = Math.floor(Math.random() * (range4 - i));
                 result4.push(arr4[random4]);
                 arr4[random4] = arr4[range4 - i];
@@ -337,7 +337,7 @@ export class GameController extends Component {
                 this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
                 this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
             }
-            else if (result4[2]) {
+            else if (result4[2] == 2) {
                 console.log('BtnCtrue');
                 this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
