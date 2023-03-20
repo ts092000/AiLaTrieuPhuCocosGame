@@ -56,157 +56,23 @@ export class GameController extends Component {
         });
     }
 
+    private csvToArray(text) {
+        let p = '', row = [''], ret = [row], i = 0, r = 0, s = !0, l;
+        for (l of text) {
+            if ('"' === l) {
+                if (s && l === p) row[i] += l;
+                s = !s;
+            } else if (',' === l && s) l = row[++i] = '';
+            else if ('\n' === l && s) {
+                if ('\r' === p) row[i] = row[i].slice(0, -1);
+                row = ret[++r] = [l = '']; i = 0;
+            } else row[i] += l;
+            p = l;
+        }
+        return ret;
+    };
+
     private questionAndAnswerDisplay() {
-        let text1 = this.Model.CsvFilelv1.text;
-        let text2 = this.Model.CsvFilelv2.text;
-        let text3 = this.Model.CsvFilelv3.text;
-
-        // this.View.BackGroundMenu.active = false;
-        // this.View.GamePlayBg.active = true;
-
-        // var questionArr1 = text1.split('\n').map((row1:string): string[] => {
-        //     return row1.split(',');
-        // });
-
-        // var questionArr2 = text2.split('\n').map((row2:string): string[] => {
-        //     return row2.split(',');
-        // });
-
-        // var questionArr3 = text3.split('\n').map((row3:string): string[] => {
-        //     return row3.split(',');
-        // });
-        
-        // let questionArrFilter = questionArr.filter(function(questionArr) {
-        //     return questionArr.length <= 6;
-        // });
-        
-        let range2 = 5;
-        let outputCount2 = 5;
-
-        let arr2 = [];
-        for (let i = 2; i <= range2; i++) {
-            arr2.push(i);
-        }
-      
-        let result2 = [];
-      
-        for (let i = 2; i <= outputCount2; i++) {
-            const random2 = Math.floor(Math.random() * (range2 - i));
-            result2.push(arr2[random2]);
-            arr2[random2] = arr2[range2 - i];
-        }
-        console.log('result2: ', result2);
-
-        let range3 = 5;
-        let outputCount3 = 5;
-
-        let arr3 = [];
-        for (let i = 2; i <= range3; i++) {
-            arr3.push(i);
-        }
-      
-        let result3 = [];
-      
-        for (let i = 2; i <= outputCount3; i++) {
-            const random3 = Math.floor(Math.random() * (range3 - i));
-            result3.push(arr3[random3]);
-            arr3[random3] = arr3[range3 - i];
-        }
-        console.log('result3: ', result3);
-
-        let range4 = 5;
-        let outputCount4 = 5;
-
-        let arr4 = [];
-        for (let i = 2; i <= range4; i++) {
-            arr4.push(i);
-        }
-      
-        let result4 = [];
-      
-        for (let i = 2; i <= outputCount4; i++) {
-            const random4 = Math.floor(Math.random() * (range4 - i));
-            result4.push(arr4[random4]);
-            arr4[random4] = arr4[range4 - i];
-        }
-        console.log('result4: ', result4);
-
-        let questionLv1 = text1.split('\n').map((row1:string) => {
-            return row1.split(',')[1];
-        });
-
-        let answerALv1 = text1.split('\n').map((row1:string) => {
-            return row1.split(',')[result2[0]];
-        });
-        
-        let answerBLv1 = text1.split('\n').map((row1:string) => {
-            return row1.split(',')[result2[1]];
-        });
-        
-        let answerCLv1 = text1.split('\n').map((row1:string) => {
-            return row1.split(',')[result2[2]];
-        });
-        
-        let answerDLv1 = text1.split('\n').map((row1:string) => {
-            return row1.split(',')[result2[3]];
-        });
-
-        let questionLv2 = text2.split('\n').map((row2:string) => {
-            return row2.split(',')[1];
-        });
-
-        let answerALv2 = text2.split('\n').map((row2:string) => {
-            return row2.split(',')[result3[0]];
-        });
-        
-        let answerBLv2 = text2.split('\n').map((row2:string) => {
-            return row2.split(',')[result3[1]];
-        });
-        
-        let answerCLv2 = text2.split('\n').map((row2:string) => {
-            return row2.split(',')[result3[2]];
-        });
-        
-        let answerDLv2 = text2.split('\n').map((row2:string) => {
-            return row2.split(',')[result3[3]];
-        });
-
-        let questionLv3 = text3.split('\n').map((row3:string) => {
-            return row3.split(',')[1];
-        });
-
-        let answerALv3 = text3.split('\n').map((row3:string) => {
-            return row3.split(',')[result4[0]];
-        });
-        
-        let answerBLv3 = text3.split('\n').map((row3:string) => {
-            return row3.split(',')[result4[1]];
-        });
-        
-        let answerCLv3 = text3.split('\n').map((row3:string) => {
-            return row3.split(',')[result4[2]];
-        });
-        
-        let answerDLv3 = text3.split('\n').map((row3:string) => {
-            return row3.split(',')[result4[3]];
-        });
-
-        // let questionLv1 = questionArrFilter.map((row:string) => {
-        //     return questionArrFilter.split(',')[1].replace('\r', '');
-        // });
-
-        // console.log(questionArr1);
-        // console.log(questionArr2);
-        // console.log(questionArr3);
-        // for (let i = 1; i <= 5; i++) {
-            // console.log(idcloumn[i]);
-            // console.log(questionArrFilter[i]);
-            // console.log(questionArr1[i]);
-            // console.log(answerALv1[i]);
-            // console.log(answerBLv1[i]);
-            // console.log(answerCLv1[i]);
-            // console.log(answerDLv1[i]);
-        // }
         let range = 500;
         let outputCount = 5;
 
@@ -228,48 +94,271 @@ export class GameController extends Component {
 
         console.log('result: ', result)
         if (GameController.i <= 5) {
+            let text1 = this.Model.CsvFilelv1.text;
+
+            let range2 = 5;
+            let outputCount2 = 5;
+
+            let arr2 = [];
+            for (let i = 2; i <= range2; i++) {
+                arr2.push(i);
+            }
+        
+            let result2 = [];
+        
+            for (let i = 2; i <= outputCount2; i++) {
+                const random2 = Math.floor(Math.random() * (range2 - i));
+                result2.push(arr2[random2]);
+                arr2[random2] = arr2[range2 - i];
+            }
+
+            let questionLv1 = this.csvToArray(text1)[result[lv1]][1];
+    
+            let answerALv1 = this.csvToArray(text1)[result[lv1]][result2[0]];
+            
+            let answerBLv1 = this.csvToArray(text1)[result[lv1]][result2[1]];
+            
+            let answerCLv1 = this.csvToArray(text1)[result[lv1]][result2[2]];
+            
+            let answerDLv1 = this.csvToArray(text1)[result[lv1]][result2[3]];
+
+            console.log('result2: ', result2);
+    
             this.View.AudioLv1.play();
             this.View.AudioLv2.stop();
             this.View.AudioLv3.stop();
-            this.question = questionLv1[result[lv1]];
-            this.ansA = answerALv1[result[lv1]];
-            this.ansB = answerBLv1[result[lv1]];
-            this.ansC = answerCLv1[result[lv1]];
-            this.ansD = answerDLv1[result[lv1]];
+            this.question = questionLv1;
+            this.ansA = answerALv1;
+            this.ansB = answerBLv1;
+            this.ansC = answerCLv1;
+            this.ansD = answerDLv1;
             lv1 += 1;
 
             this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv1, this);
             this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv1, this);
+
+            if (result2[0] == 2) {
+                console.log('BtnAtrue');
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result2[1] == 2) {
+                console.log('BtnBtrue');
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result2[2]) {
+                console.log('BtnCtrue');
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result2[3] == 2) {
+                console.log('BtnDtrue');
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
             
         }
         else if (GameController.i > 5 && GameController.i <= 10) {
+            let text2 = this.Model.CsvFilelv2.text;
+
+            let range3 = 5;
+            let outputCount3 = 5;
+
+            let arr3 = [];
+            for (let i = 2; i <= range3; i++) {
+                arr3.push(i);
+            }
+        
+            let result3 = [];
+        
+            for (let i = 2; i <= outputCount3; i++) {
+                const random3 = Math.floor(Math.random() * (range3 - i));
+                result3.push(arr3[random3]);
+                arr3[random3] = arr3[range3 - i];
+            }
+
+            let questionLv2 = this.csvToArray(text2)[result[lv2]][1];
+    
+            let answerALv2 = this.csvToArray(text2)[result[lv2]][result3[0]];
+            
+            let answerBLv2 = this.csvToArray(text2)[result[lv2]][result3[1]];
+            
+            let answerCLv2 = this.csvToArray(text2)[result[lv2]][result3[2]];
+            
+            let answerDLv2 = this.csvToArray(text2)[result[lv2]][result3[3]];
+
+            console.log('result3: ', result3);
+
             this.View.AudioLv2.play();
             this.View.AudioLv1.stop();
             this.View.AudioLv3.stop();
-            this.question = questionLv2[result[lv2]];
-            this.ansA = answerALv2[result[lv2]];
-            this.ansB = answerBLv2[result[lv2]];
-            this.ansC = answerCLv2[result[lv2]];
-            this.ansD = answerDLv2[result[lv2]];
+            this.question = questionLv2;
+            this.ansA = answerALv2;
+            this.ansB = answerBLv2;
+            this.ansC = answerCLv2;
+            this.ansD = answerDLv2;
             lv2 += 1;
 
             this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv2, this);
             this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv2, this);
 
+            if (result3[0] == 2) {
+                console.log('BtnAtrue');
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result3[1] == 2) {
+                console.log('BtnBtrue');
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result3[2]) {
+                console.log('BtnCtrue');
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result3[3] == 2) {
+                console.log('BtnDtrue');
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+
         }
         else if (GameController.i > 10 && GameController.i <= 15) {
+            let range4 = 5;
+            let outputCount4 = 5;
+
+            let arr4 = [];
+            for (let i = 2; i <= range4; i++) {
+                arr4.push(i);
+            }
+        
+            let result4 = [];
+        
+            for (let i = 2; i <= outputCount4; i++) {
+                const random4 = Math.floor(Math.random() * (range4 - i));
+                result4.push(arr4[random4]);
+                arr4[random4] = arr4[range4 - i];
+            }
+
+            let text3 = this.Model.CsvFilelv3.text;
+            let questionLv3 = this.csvToArray(text3)[result[lv3]][1];
+    
+            let answerALv3 = this.csvToArray(text3)[result[lv3]][result4[0]];
+            
+            let answerBLv3 = this.csvToArray(text3)[result[lv3]][result4[1]];
+            
+            let answerCLv3 = this.csvToArray(text3)[result[lv3]][result4[2]];
+            
+            let answerDLv3 = this.csvToArray(text3)[result[lv3]][result4[3]];
+
+            console.log('result4: ', result4);
             this.View.AudioLv3.play();
             this.View.AudioLv1.stop();
             this.View.AudioLv2.stop();
-            this.question = questionLv3[result[lv3]];
-            this.ansA = answerALv3[result[lv3]];
-            this.ansB = answerBLv3[result[lv3]];
-            this.ansC = answerCLv3[result[lv3]];
-            this.ansD = answerDLv3[result[lv3]];
+            this.question = questionLv3;
+            this.ansA = answerALv3;
+            this.ansB = answerBLv3;
+            this.ansC = answerCLv3;
+            this.ansD = answerDLv3;
             lv3 += 1;
 
             this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv3, this);
             this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv3, this);
+
+            if (result4[0] == 2) {
+                console.log('BtnAtrue');
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result4[1] == 2) {
+                console.log('BtnBtrue');
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result4[2]) {
+                console.log('BtnCtrue');
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
+            else if (result4[3] == 2) {
+                console.log('BtnDtrue');
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+            }
         }
         else if (GameController.i > 15) {
             director.preloadScene("Main", function () {
@@ -284,51 +373,6 @@ export class GameController extends Component {
         this.View.AnswerLabelC.string = this.ansC;
         this.View.AnswerLabelD.string = this.ansD;
         this.View.QuestionLabelNumber.string = 'Câu hỏi số ' + GameController.i.toString();
-
-        if (result2[0] == 2 || result3[0] == 2 || result4[0] == 2) {
-            console.log('BtnAtrue');
-            this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-            this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-            this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-            this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-            this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
-        }
-        else if (result2[1] == 2 || result3[1] == 2 || result4[1] == 2) {
-            console.log('BtnBtrue');
-            this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-            this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-            this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-            this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-            this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
-        }
-        else if (result2[2] == 2 || result3[2] == 2 || result4[2] == 2) {
-            console.log('BtnCtrue');
-            this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-            this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-            this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-            this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-            this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
-        }
-        else if (result2[3] == 2 || result3[3] == 2 || result4[3] == 2) {
-            console.log('BtnDtrue');
-            this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-            this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-            this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-            this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-            this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-            this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
-        }
     }
 
     private btnClickNextQuestion(AnswerBtnA: Button) {
