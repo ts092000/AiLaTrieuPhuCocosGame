@@ -1,0 +1,134 @@
+{
+  "ver": "1.0.25",
+  "importer": "image",
+  "imported": true,
+  "uuid": "3972ccda-0257-4294-aebf-9ef201b6ab14",
+  "files": [
+    ".json",
+    ".png"
+  ],
+  "subMetas": {
+    "6c48a": {
+      "importer": "texture",
+      "uuid": "3972ccda-0257-4294-aebf-9ef201b6ab14@6c48a",
+      "displayName": "StCamillusDeLellis",
+      "id": "6c48a",
+      "name": "texture",
+      "userData": {
+        "wrapModeS": "clamp-to-edge",
+        "wrapModeT": "clamp-to-edge",
+        "imageUuidOrDatabaseUri": "3972ccda-0257-4294-aebf-9ef201b6ab14",
+        "isUuid": true,
+        "visible": false,
+        "minfilter": "linear",
+        "magfilter": "linear",
+        "mipfilter": "none",
+        "anisotropy": 0
+      },
+      "ver": "1.0.22",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "f9941": {
+      "importer": "sprite-frame",
+      "uuid": "3972ccda-0257-4294-aebf-9ef201b6ab14@f9941",
+      "displayName": "StCamillusDeLellis",
+      "id": "f9941",
+      "name": "spriteFrame",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": -1,
+        "offsetY": -1,
+        "trimX": 0,
+        "trimY": 2,
+        "width": 245,
+        "height": 248,
+        "rawWidth": 247,
+        "rawHeight": 250,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [
+            -122.5,
+            -124,
+            0,
+            122.5,
+            -124,
+            0,
+            -122.5,
+            124,
+            0,
+            122.5,
+            124,
+            0
+          ],
+          "indexes": [
+            0,
+            1,
+            2,
+            2,
+            1,
+            3
+          ],
+          "uv": [
+            0,
+            248,
+            245,
+            248,
+            0,
+            0,
+            245,
+            0
+          ],
+          "nuv": [
+            0,
+            0,
+            0.9919028340080972,
+            0,
+            0,
+            0.992,
+            0.9919028340080972,
+            0.992
+          ],
+          "minPos": [
+            -122.5,
+            -124,
+            0
+          ],
+          "maxPos": [
+            122.5,
+            124,
+            0
+          ]
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "3972ccda-0257-4294-aebf-9ef201b6ab14@6c48a",
+        "atlasUuid": ""
+      },
+      "ver": "1.0.11",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "type": "sprite-frame",
+    "fixAlphaTransparencyArtifacts": true,
+    "hasAlpha": true,
+    "redirect": "3972ccda-0257-4294-aebf-9ef201b6ab14@f9941"
+  }
+}

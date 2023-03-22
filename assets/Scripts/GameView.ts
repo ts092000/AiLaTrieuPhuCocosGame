@@ -1,10 +1,13 @@
-import { _decorator, Component, Node, Button, Label, AudioSource } from 'cc';
+import { _decorator, Component, Node, Button, Label, AudioSource, AnimationClip } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameView')
 export class GameView extends Component {
     @property({type:Button})
     private backMainMenuBtn: Button = null;
+
+    @property({type:Button})
+    private giveUpBtn: Button = null;
 
     @property({type:Label})
     private questionLabel: Label = null;
@@ -57,7 +60,6 @@ export class GameView extends Component {
     @property({type:Button})
     private btnUnmute: Button = null;
 
-
     public get BackMainMenuBtn() : Button {
         return this.backMainMenuBtn;
     }
@@ -66,10 +68,17 @@ export class GameView extends Component {
         this.backMainMenuBtn = backMainMenuBtn;
     }
 
+    public get GiveUpBtn() : Button {
+        return this.giveUpBtn;
+    }
+    
+    public set GiveUpBtn(giveUpBtn : Button) {
+        this.giveUpBtn = giveUpBtn;
+    }
+
     public get QuestionLabel() : Label {
         return this.questionLabel
     }
-    
     
     public set QuestionLabel(questionLabel : Label) {
         this.questionLabel = questionLabel;
@@ -87,7 +96,7 @@ export class GameView extends Component {
         return this.answerLabelB
     }
     
-    
+
     public set AnswerLabelB(answerLabelB : Label) {
         this.answerLabelB = answerLabelB;
     }
@@ -95,7 +104,6 @@ export class GameView extends Component {
     public get AnswerLabelC() : Label {
         return this.answerLabelC
     }
-    
     
     public set AnswerLabelC(answerLabelC : Label) {
         this.answerLabelC = answerLabelC;

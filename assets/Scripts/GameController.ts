@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, director, Button, CCInteger, CCString } from 'cc';
+import { _decorator, Component, Node, director, Button, CCInteger, CCString, Animation, AnimationState, AnimationClip, SpriteFrame } from 'cc';
 import { GameModel } from './GameModel';
 import { GameView } from './GameView';
 const { ccclass, property } = _decorator;
@@ -46,6 +46,7 @@ export class GameController extends Component {
     
     public onLoad() {
         this.View.BackMainMenuBtn.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
+        this.View.GiveUpBtn.node.on(Button.EventType.CLICK, this.GiveUpLosingScene, this);
     }
 
     private btnBackMainMenu(BackMainMenuBtn: Button) {
@@ -54,6 +55,30 @@ export class GameController extends Component {
         director.preloadScene("Main", function () {
             director.loadScene("Main");
         });
+    }
+
+    private GiveUpLosingScene(GiveUpBtn: Button) {
+        // let dataNode = new Node();
+        // dataNode.addComponent('DataComponent');
+        // dataNode.getComponent('DataComponent').
+        console.log(GameController.i);
+        GameController.i = 1;
+        director.preloadScene("Losing", function () {
+            director.loadScene("Losing");
+        });
+    }
+
+    private LosingScene(GiveUpBtn: Button) {
+        // let dataNode = new Node();
+        // dataNode.addComponent('DataComponent');
+        // dataNode.getComponent('DataComponent').
+        GameController.i = 1;
+        this.unschedule(GameController.callbackSchedule);
+        this.scheduleOnce(function() {
+            director.preloadScene("Losing", function () {
+                director.loadScene("Losing");
+            });
+        }, 3)
     }
 
     private csvToArray(text) {
@@ -88,6 +113,7 @@ export class GameController extends Component {
             result.push(arr[random]);
             arr[random] = arr[range - i];
         }
+
         let lv1 = 0;
         let lv2 = 0;
         let lv3 = 0;
@@ -99,7 +125,7 @@ export class GameController extends Component {
             let range2 = 4;
             let outputCount2 = 4;
 
-            let arr2 = [5, 4, 3, 2];
+            let arr2 = [2, 3, 4, 5];
             for (let i = 1; i <= range2; i++) {
                 arr2.push(i);
             }
@@ -139,47 +165,79 @@ export class GameController extends Component {
 
             if (result2[0] == 2) {
                 console.log('BtnAtrue');
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnAClickTrue, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBClickTrue, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnCClickTrue, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnDClickTrue, this);
                 this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnAClickFalse, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBClickFalse, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnCClickFalse, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnDClickFalse, this);
                 this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.LosingScene, this);
             }
             else if (result2[1] == 2) {
                 console.log('BtnBtrue');
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBClickTrue, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnAClickTrue, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnCClickTrue, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnDClickTrue, this);
                 this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBClickFalse, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnAClickFalse, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnCClickFalse, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnDClickFalse, this);
                 this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.LosingScene, this);
             }
             else if (result2[2] == 2) {
                 console.log('BtnCtrue');
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnCClickTrue, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnAClickTrue, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBClickTrue, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnDClickTrue, this);
                 this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnCClickFalse, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnAClickFalse, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBClickFalse, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnDClickFalse, this);
                 this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.LosingScene, this);
             }
             else if (result2[3] == 2) {
                 console.log('BtnDtrue');
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnDClickTrue, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnAClickTrue, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBClickTrue, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnCClickTrue, this);
                 this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnDClickFalse, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnAClickFalse, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBClickFalse, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnCClickFalse, this);
                 this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.LosingScene, this);
             }
             
         }
@@ -189,7 +247,7 @@ export class GameController extends Component {
             let range3 = 4;
             let outputCount3 = 4;
 
-            let arr3 = [5, 4, 3, 2];
+            let arr3 = [2, 5, 4, 3];
             for (let i = 1; i <= range3; i++) {
                 arr3.push(i);
             }
@@ -229,47 +287,79 @@ export class GameController extends Component {
 
             if (result3[0] == 2) {
                 console.log('BtnAtrue');
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnAClickTrue, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBClickTrue, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnCClickTrue, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnDClickTrue, this);
                 this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnAClickFalse, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBClickFalse, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnCClickFalse, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnDClickFalse, this);
                 this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.LosingScene, this);
             }
             else if (result3[1] == 2) {
                 console.log('BtnBtrue');
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBClickTrue, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnAClickTrue, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnCClickTrue, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnDClickTrue, this);
                 this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBClickFalse, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnAClickFalse, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnCClickFalse, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnDClickFalse, this);
                 this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.LosingScene, this);
             }
             else if (result3[2] == 2) {
                 console.log('BtnCtrue');
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnCClickTrue, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnAClickTrue, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBClickTrue, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnDClickTrue, this);
                 this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnCClickFalse, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnAClickFalse, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBClickFalse, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnDClickFalse, this);
                 this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.LosingScene, this);
             }
             else if (result3[3] == 2) {
                 console.log('BtnDtrue');
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnDClickTrue, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnAClickTrue, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBClickTrue, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnCClickTrue, this);
                 this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnDClickFalse, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnAClickFalse, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBClickFalse, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnCClickFalse, this);
                 this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.LosingScene, this);
             }
 
         }
@@ -317,52 +407,84 @@ export class GameController extends Component {
 
             if (result4[0] == 2) {
                 console.log('BtnAtrue');
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnAClickTrue, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBClickTrue, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnCClickTrue, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnDClickTrue, this);
                 this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnAClickFalse, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBClickFalse, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnCClickFalse, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnDClickFalse, this);
                 this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.LosingScene, this);
             }
             else if (result4[1] == 2) {
                 console.log('BtnBtrue');
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBClickTrue, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnAClickTrue, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnCClickTrue, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnDClickTrue, this);
                 this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBClickFalse, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnAClickFalse, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnCClickFalse, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnDClickFalse, this);
                 this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.LosingScene, this);
             }
             else if (result4[2] == 2) {
                 console.log('BtnCtrue');
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnCClickTrue, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnAClickTrue, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBClickTrue, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnDClickTrue, this);
                 this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnCClickFalse, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnAClickFalse, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBClickFalse, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnDClickFalse, this);
                 this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.LosingScene, this);
             }
             else if (result4[3] == 2) {
                 console.log('BtnDtrue');
+                this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnDClickTrue, this);
+                this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnAClickTrue, this);
+                this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnBClickTrue, this);
+                this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnCClickTrue, this);
                 this.View.AnswerBtnD.node.on(Button.EventType.CLICK, this.btnClickNextQuestion, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnDClickFalse, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnAClickFalse, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBClickFalse, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnCClickFalse, this);
                 this.View.AnswerBtnA.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnB.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
                 this.View.AnswerBtnC.node.off(Button.EventType.CLICK, this.btnClickNextQuestion, this);
-                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
-                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.btnBackMainMenu, this);
+                this.View.AnswerBtnA.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnB.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnC.node.on(Button.EventType.CLICK, this.LosingScene, this);
+                this.View.AnswerBtnD.node.off(Button.EventType.CLICK, this.LosingScene, this);
             }
         }
         else if (GameController.i > 15) {
-            director.preloadScene("Main", function () {
-                director.loadScene("Main");
+            director.preloadScene("Winning", function () {
+                director.loadScene("Winning");
             });
             GameController.i = 1;
         }
@@ -377,13 +499,54 @@ export class GameController extends Component {
 
     private btnClickNextQuestion(AnswerBtnA: Button) {
         this.unschedule(GameController.callbackSchedule);
-        console.log(GameController.callbackSchedule);
         GameController.i++;
-        this.questionAndAnswerDisplay();
-        this.timeNum = 10;
-        this.startCountDown();
-        console.log(GameController.i);
+        this.scheduleOnce(function() {
+            this.questionAndAnswerDisplay();
+            this.timeNum = 15;
+            this.startCountDown();
+            console.log(GameController.i);
+        }, 3)
         // this.schedule(GameController.callbackSchedule);
+    }
+
+    private btnAClickTrue(AnswerBtnA: Button) {
+        const aniBtnA = this.View.AnswerBtnA.getComponent(Animation);
+        aniBtnA.play("BtnTrue");
+    }
+
+    private btnBClickTrue(AnswerBtnB: Button) {
+        const aniBtnB = this.View.AnswerBtnB.getComponent(Animation);
+        aniBtnB.play("BtnTrue");
+    }
+
+    private btnCClickTrue(AnswerBtnC: Button) {
+        const aniBtnC = this.View.AnswerBtnC.getComponent(Animation);
+        aniBtnC.play("BtnTrue");
+    }
+
+    private btnDClickTrue(AnswerBtnD: Button) {
+        const aniBtnD = this.View.AnswerBtnD.getComponent(Animation);
+        aniBtnD.play("BtnTrue");
+    }
+
+    private btnAClickFalse(AnswerBtnA: Button) {
+        const aniBtnA = this.View.AnswerBtnA.getComponent(Animation);
+        aniBtnA.play("BtnFalse");
+    }
+
+    private btnBClickFalse(AnswerBtnB: Button) {
+        const aniBtnB = this.View.AnswerBtnB.getComponent(Animation);
+        aniBtnB.play("BtnFalse");
+    }
+
+    private btnCClickFalse(AnswerBtnC: Button) {
+        const aniBtnC = this.View.AnswerBtnC.getComponent(Animation);
+        aniBtnC.play("BtnFalse");
+    }
+
+    private btnDClickFalse(AnswerBtnD: Button) {
+        const aniBtnD = this.View.AnswerBtnD.getComponent(Animation);
+        aniBtnD.play("BtnFalse");
     }
 
     private startCountDown() {
@@ -403,15 +566,16 @@ export class GameController extends Component {
                 this.View.AnswerBtnC.node.active = false;
                 this.View.AnswerBtnD.node.active = false;
                 this.scheduleOnce(function() {
-                    director.preloadScene("Main", function () {
+                    director.preloadScene("Losing", function () {
                         console.log('Next scene preloaded');
-                        director.loadScene("Main");
+                        director.loadScene("Losing");
                     });
                 }, 2);
                 GameController.i = 1;
             }
         }
         this.schedule(GameController.callbackSchedule, 1);
+        
     }
 
     private btnMuteLv1(BtnMute: Button) {
@@ -449,6 +613,7 @@ export class GameController extends Component {
         this.View.BtnUnmute.node.active = false;
         this.View.AudioLv3.volume = 0.5;
     }
+
 }
 
 
