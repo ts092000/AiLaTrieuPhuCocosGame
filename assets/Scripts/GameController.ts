@@ -31,6 +31,7 @@ export class GameController extends Component {
 
     public static i: number = 1;
     public static callbackSchedule: any;
+    public gameHighScoreArray: number[] = [0];
 
     public start() {
         // this.randomUniqueNum(200, 200);
@@ -38,6 +39,15 @@ export class GameController extends Component {
         this.startCountDown();
         this.View.BtnMute.node.active = true;
         this.View.BtnUnmute.node.active = false;
+        
+        let gameHighScore1 = localStorage.getItem('gameHighScoreArray');
+        
+        if (gameHighScore1) {
+            this.gameHighScoreArray = JSON.parse(gameHighScore1);
+            this.gameHighScoreArray.push(0);
+            localStorage.setItem('gameHighScoreArray', JSON.stringify(this.gameHighScoreArray));
+        }
+        console.log(this.gameHighScoreArray);
     }
     
     public update(deltaTime: number) {
@@ -58,10 +68,6 @@ export class GameController extends Component {
     }
 
     private GiveUpLosingScene(GiveUpBtn: Button) {
-        // let dataNode = new Node();
-        // dataNode.addComponent('DataComponent');
-        // dataNode.getComponent('DataComponent').
-        console.log(GameController.i);
         GameController.i = 1;
         director.preloadScene("Losing", function () {
             director.loadScene("Losing");
@@ -78,7 +84,7 @@ export class GameController extends Component {
             director.preloadScene("Losing", function () {
                 director.loadScene("Losing");
             });
-        }, 3)
+        }, 2.5)
     }
 
     private csvToArray(text) {
@@ -495,11 +501,15 @@ export class GameController extends Component {
         this.View.AnswerLabelC.string = this.ansC;
         this.View.AnswerLabelD.string = this.ansD;
         this.View.QuestionLabelNumber.string = 'Câu hỏi số ' + GameController.i.toString();
+        console.log(this.gameHighScoreArray);
     }
-
+    
     private btnClickNextQuestion(AnswerBtnA: Button) {
         this.unschedule(GameController.callbackSchedule);
+        console.log(GameController.i);
         GameController.i++;
+        this.gameHighScoreArray.push(GameController.i - 1);
+        localStorage.setItem('gameHighScoreArray', JSON.stringify(this.gameHighScoreArray));
         this.scheduleOnce(function() {
             this.questionAndAnswerDisplay();
             this.timeNum = 15;

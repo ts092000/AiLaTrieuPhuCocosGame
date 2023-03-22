@@ -7,7 +7,7 @@ export class LosingSceneView extends Component {
     private currentScoreLabel: Label = null;
 
     @property({type:Label})
-    private bestScoretLabel: Label = null;
+    private bestScoreLabel: Label = null;
 
     @property({type:Button})
     private playAgainBtn: Button = null;
@@ -29,6 +29,22 @@ export class LosingSceneView extends Component {
     
     public set Audio(audio : AudioSource) {
         this.audio = audio;
+    }
+
+    public get CurrentScoreLabel() : Label {
+        return this.currentScoreLabel;
+    }
+    
+    public set CurrentScoreLabel(currentScoreLabel : Label) {
+        this.currentScoreLabel = currentScoreLabel;
+    }
+
+    public get BestScoreLabel() : Label {
+        return this.bestScoreLabel;
+    }
+    
+    public set BestScoreLabel(bestScoreLabel : Label) {
+        this.bestScoreLabel = bestScoreLabel;
     }
 
 }
