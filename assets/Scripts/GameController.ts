@@ -29,9 +29,13 @@ export class GameController extends Component {
     @property({type:CCInteger})
     private timeNum: number;
 
-    public static i: number = 1;
-    public static callbackSchedule: any;
-    public gameHighScoreArray: number[] = [0];
+    private static result = [];
+    private static i: number = 1;
+    private static lv1: number = 0;
+    private static lv2: number = 0;
+    private static lv3: number = 0;
+    private static callbackSchedule: any;
+    private gameHighScoreArray: number[] = [0];
 
     public start() {
         this.questionAndAnswerDisplay();
@@ -63,10 +67,16 @@ export class GameController extends Component {
     public onLoad() {
         this.View.BackMainMenuBtn.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
         this.View.GiveUpBtn.node.on(Button.EventType.CLICK, this.GiveUpLosingScene, this);
+        this.randomNumber(500, 5);
+        console.log(GameController.result);
     }
 
     private btnBackMainMenu(BackMainMenuBtn: Button) {
         GameController.i = 1;
+        GameController.lv1 = 0;
+        GameController.lv2 = 0;
+        GameController.lv3 = 0;
+        GameController.result = [];
 
         director.preloadScene("Main", function () {
             director.loadScene("Main");
@@ -75,6 +85,11 @@ export class GameController extends Component {
 
     private GiveUpLosingScene(GiveUpBtn: Button) {
         GameController.i = 1;
+        GameController.lv1 = 0;
+        GameController.lv2 = 0;
+        GameController.lv3 = 0;
+        GameController.result = [];
+
         director.preloadScene("Losing", function () {
             director.loadScene("Losing");
         });
@@ -82,6 +97,16 @@ export class GameController extends Component {
 
     private LosingScene(GiveUpBtn: Button) {
         GameController.i = 1;
+        GameController.lv1 = 0;
+        GameController.lv2 = 0;
+        GameController.lv3 = 0;
+        GameController.result = [];
+
+        this.View.AnswerBtnA.interactable = false;
+        this.View.AnswerBtnB.interactable = false;
+        this.View.AnswerBtnC.interactable = false;
+        this.View.AnswerBtnD.interactable = false;
+
         this.unschedule(GameController.callbackSchedule);
         this.scheduleOnce(function() {
             director.preloadScene("Losing", function () {
@@ -106,28 +131,26 @@ export class GameController extends Component {
         return ret;
     };
 
-    private questionAndAnswerDisplay() {
-        let range = 500;
-        let outputCount = 5;
-
+    private randomNumber(range: number, outputCount: number) {
         let arr = []
         for (let i = 1; i <= range; i++) {
-            arr.push(i)
+            arr.push(i);
         }
-      
-        let result = [];
       
         for (let i = 0; i < outputCount; i++) {
             const random = Math.floor(Math.random() * (range - i));
-            result.push(arr[random]);
+            GameController.result.push(arr[random]);
             arr[random] = arr[range - i];
         }
+        return GameController.result;
+    }
 
-        let lv1 = 0;
-        let lv2 = 0;
-        let lv3 = 0;
-
-        console.log('result: ', result)
+    private questionAndAnswerDisplay() {
+        this.View.AnswerBtnA.interactable = true;
+        this.View.AnswerBtnB.interactable = true;
+        this.View.AnswerBtnC.interactable = true;
+        this.View.AnswerBtnD.interactable = true;
+        console.log('result: ', GameController.result)
         if (GameController.i <= 5) {
             let text1 = this.Model.CsvFilelv1.text;
 
@@ -147,18 +170,19 @@ export class GameController extends Component {
                 arr2[random2] = arr2[range2 - i];
             }
 
-            let questionLv1 = this.csvToArray(text1)[result[lv1]][1];
-    
-            let answerALv1 = this.csvToArray(text1)[result[lv1]][result2[0]];
+            let questionLv1 = this.csvToArray(text1)[GameController.result[GameController.lv1]][1];
             
-            let answerBLv1 = this.csvToArray(text1)[result[lv1]][result2[1]];
+            let answerALv1 = this.csvToArray(text1)[GameController.result[GameController.lv1]][result2[0]];
             
-            let answerCLv1 = this.csvToArray(text1)[result[lv1]][result2[2]];
+            let answerBLv1 = this.csvToArray(text1)[GameController.result[GameController.lv1]][result2[1]];
             
-            let answerDLv1 = this.csvToArray(text1)[result[lv1]][result2[3]];
-
+            let answerCLv1 = this.csvToArray(text1)[GameController.result[GameController.lv1]][result2[2]];
+            
+            let answerDLv1 = this.csvToArray(text1)[GameController.result[GameController.lv1]][result2[3]];
+            
+            console.log('lv1', GameController.lv1);
             console.log('result2: ', result2);
-    
+            
             this.View.AudioLv1.play();
             this.View.AudioLv2.stop();
             this.View.AudioLv3.stop();
@@ -167,8 +191,8 @@ export class GameController extends Component {
             this.ansB = answerBLv1;
             this.ansC = answerCLv1;
             this.ansD = answerDLv1;
-            lv1 += 1;
-
+            GameController.lv1 += 1;
+            
             this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv1, this);
             this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv1, this);
 
@@ -285,15 +309,17 @@ export class GameController extends Component {
                 arr3[random3] = arr3[range3 - i];
             }
 
-            let questionLv2 = this.csvToArray(text2)[result[lv2]][1];
+            let questionLv2 = this.csvToArray(text2)[GameController.result[GameController.lv2]][1];
     
-            let answerALv2 = this.csvToArray(text2)[result[lv2]][result3[0]];
+            let answerALv2 = this.csvToArray(text2)[GameController.result[GameController.lv2]][result3[0]];
             
-            let answerBLv2 = this.csvToArray(text2)[result[lv2]][result3[1]];
+            let answerBLv2 = this.csvToArray(text2)[GameController.result[GameController.lv2]][result3[1]];
             
-            let answerCLv2 = this.csvToArray(text2)[result[lv2]][result3[2]];
+            let answerCLv2 = this.csvToArray(text2)[GameController.result[GameController.lv2]][result3[2]];
             
-            let answerDLv2 = this.csvToArray(text2)[result[lv2]][result3[3]];
+            let answerDLv2 = this.csvToArray(text2)[GameController.result[GameController.lv2]][result3[3]];
+
+            console.log('lv2', GameController.lv2);
 
             console.log('result3: ', result3);
 
@@ -305,7 +331,7 @@ export class GameController extends Component {
             this.ansB = answerBLv2;
             this.ansC = answerCLv2;
             this.ansD = answerDLv2;
-            lv2 += 1;
+            GameController.lv2 += 1;
 
             this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv2, this);
             this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv2, this);
@@ -422,15 +448,17 @@ export class GameController extends Component {
             }
 
             let text3 = this.Model.CsvFilelv3.text;
-            let questionLv3 = this.csvToArray(text3)[result[lv3]][1];
+            let questionLv3 = this.csvToArray(text3)[GameController.result[GameController.lv3]][1];
     
-            let answerALv3 = this.csvToArray(text3)[result[lv3]][result4[0]];
+            let answerALv3 = this.csvToArray(text3)[GameController.result[GameController.lv3]][result4[0]];
             
-            let answerBLv3 = this.csvToArray(text3)[result[lv3]][result4[1]];
+            let answerBLv3 = this.csvToArray(text3)[GameController.result[GameController.lv3]][result4[1]];
             
-            let answerCLv3 = this.csvToArray(text3)[result[lv3]][result4[2]];
+            let answerCLv3 = this.csvToArray(text3)[GameController.result[GameController.lv3]][result4[2]];
             
-            let answerDLv3 = this.csvToArray(text3)[result[lv3]][result4[3]];
+            let answerDLv3 = this.csvToArray(text3)[GameController.result[GameController.lv3]][result4[3]];
+
+            console.log('lv3', GameController.lv3);
 
             console.log('result4: ', result4);
             this.View.AudioLv3.play();
@@ -441,7 +469,7 @@ export class GameController extends Component {
             this.ansB = answerBLv3;
             this.ansC = answerCLv3;
             this.ansD = answerDLv3;
-            lv3 += 1;
+            GameController.lv3 += 1;
 
             this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv3, this);
             this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv3, this);
@@ -561,6 +589,10 @@ export class GameController extends Component {
         GameController.i++;
         this.gameHighScoreArray.push(GameController.i - 1);
         localStorage.setItem('gameHighScoreArray', JSON.stringify(this.gameHighScoreArray));
+        this.View.AnswerBtnA.interactable = false;
+        this.View.AnswerBtnB.interactable = false;
+        this.View.AnswerBtnC.interactable = false;
+        this.View.AnswerBtnD.interactable = false;
         this.scheduleOnce(function() {
             this.questionAndAnswerDisplay();
             this.timeNum = 15;
@@ -725,20 +757,20 @@ export class GameController extends Component {
         let randInt = Math.floor(Math.random() * 3) + 1;
         this.View.Help1Btn.interactable = false;
         if (randInt == 1) {
-            this.View.AnswerBtnB.onDisable;
-            this.View.AnswerBtnC.onDisable;
+            this.View.AnswerBtnB.interactable = false;
+            this.View.AnswerBtnC.interactable = false;
             this.View.AnswerLabelB.string = '';
             this.View.AnswerLabelC.string = '';
         }
         else if (randInt == 2) {
-            this.View.AnswerBtnB.onDisable;
-            this.View.AnswerBtnD.onDisable;
+            this.View.AnswerBtnB.interactable = false;
+            this.View.AnswerBtnD.interactable = false;
             this.View.AnswerLabelB.string = '';
             this.View.AnswerLabelD.string = '';
         }
         else if (randInt == 3) {
-            this.View.AnswerBtnD.onDisable;
-            this.View.AnswerBtnC.onDisable;
+            this.View.AnswerBtnD.interactable = false;
+            this.View.AnswerBtnC.interactable = false;
             this.View.AnswerLabelD.string = '';
             this.View.AnswerLabelC.string = '';
         }
@@ -748,20 +780,20 @@ export class GameController extends Component {
         let randInt = Math.floor(Math.random() * 3) + 1;
         this.View.Help1Btn.interactable = false;
         if (randInt == 1) {
-            this.View.AnswerBtnA.onDisable;
-            this.View.AnswerBtnC.onDisable;
+            this.View.AnswerBtnA.interactable = false;
+            this.View.AnswerBtnC.interactable = false;
             this.View.AnswerLabelA.string = '';
             this.View.AnswerLabelC.string = '';
         }
         else if (randInt == 2) {
-            this.View.AnswerBtnA.onDisable;
-            this.View.AnswerBtnD.onDisable;
+            this.View.AnswerBtnA.interactable = false;
+            this.View.AnswerBtnD.interactable = false;
             this.View.AnswerLabelA.string = '';
             this.View.AnswerLabelD.string = '';
         }
         else if (randInt == 3) {
-            this.View.AnswerBtnD.onDisable;
-            this.View.AnswerBtnC.onDisable;
+            this.View.AnswerBtnD.interactable = false;
+            this.View.AnswerBtnC.interactable = false;
             this.View.AnswerLabelD.string = '';
             this.View.AnswerLabelC.string = '';
         }
@@ -771,20 +803,20 @@ export class GameController extends Component {
         let randInt = Math.floor(Math.random() * 3) + 1;
         this.View.Help1Btn.interactable = false;
         if (randInt == 1) {
-            this.View.AnswerBtnA.onDisable;
-            this.View.AnswerBtnB.onDisable;
+            this.View.AnswerBtnA.interactable = false;
+            this.View.AnswerBtnB.interactable = false;
             this.View.AnswerLabelA.string = '';
             this.View.AnswerLabelB.string = '';
         }
         else if (randInt == 2) {
-            this.View.AnswerBtnA.onDisable;
-            this.View.AnswerBtnD.onDisable;
+            this.View.AnswerBtnA.interactable = false;
+            this.View.AnswerBtnD.interactable = false;
             this.View.AnswerLabelA.string = '';
             this.View.AnswerLabelD.string = '';
         }
         else if (randInt == 3) {
-            this.View.AnswerBtnB.onDisable;
-            this.View.AnswerBtnD.onDisable;
+            this.View.AnswerBtnB.interactable = false;
+            this.View.AnswerBtnD.interactable = false;
             this.View.AnswerLabelB.string = '';
             this.View.AnswerLabelD.string = '';
         }
@@ -794,20 +826,20 @@ export class GameController extends Component {
         let randInt = Math.floor(Math.random() * 3) + 1;
         this.View.Help1Btn.interactable = false;
         if (randInt == 1) {
-            this.View.AnswerBtnA.onDisable;
-            this.View.AnswerBtnB.onDisable;
+            this.View.AnswerBtnA.interactable = false;
+            this.View.AnswerBtnB.interactable = false;
             this.View.AnswerLabelA.string = '';
             this.View.AnswerLabelB.string = '';
         }
         else if (randInt == 2) {
-            this.View.AnswerBtnA.onDisable;
-            this.View.AnswerBtnC.onDisable;
+            this.View.AnswerBtnA.interactable = false;
+            this.View.AnswerBtnC.interactable = false;
             this.View.AnswerLabelA.string = '';
             this.View.AnswerLabelC.string = '';
         }
         else if (randInt == 3) {
-            this.View.AnswerBtnB.onDisable;
-            this.View.AnswerBtnC.onDisable;
+            this.View.AnswerBtnB.interactable = false;
+            this.View.AnswerBtnC.interactable = false;
             this.View.AnswerLabelB.string = '';
             this.View.AnswerLabelC.string = '';
         }
