@@ -105,6 +105,15 @@ export class GameView extends Component {
     @property({type:Button})
     private question15: Button = null;
 
+    @property({type:Button})
+    private help1Btn: Button = null;
+
+    @property({type:Button})
+    private help2Btn: Button = null;
+
+    @property({type:Button})
+    private help3Btn: Button = null;
+
     public get BackMainMenuBtn() : Button {
         return this.backMainMenuBtn;
     }
@@ -265,7 +274,7 @@ export class GameView extends Component {
     public get Question1() : Button {
         return this.question1
     }
-    
+
     public set Question2(question2 : Button) {
         this.question2 = question2;
     }
@@ -376,6 +385,30 @@ export class GameView extends Component {
 
     public get Question15() : Button {
         return this.question15
+    }
+
+    public set Help1Btn(help1Btn : Button) {
+        this.help1Btn = help1Btn;
+    }
+
+    public get Help1Btn() : Button {
+        return this.help1Btn
+    }
+
+    public set Help2Btn(help2Btn : Button) {
+        this.help2Btn = help2Btn;
+    }
+
+    public get Help2Btn() : Button {
+        return this.help2Btn
+    }
+
+    public set Help3Btn(help3Btn : Button) {
+        this.help3Btn = help3Btn;
+    }
+
+    public get Help3Btn() : Button {
+        return this.help3Btn
     }
 
 }

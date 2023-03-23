@@ -226,7 +226,7 @@
     "_priority": 0,
     "_fov": 45,
     "_fovAxis": 0,
-    "_orthoHeight": 540,
+    "_orthoHeight": 550.2439024390244,
     "_near": 0,
     "_far": 1000,
     "_color": {
@@ -416,7 +416,7 @@
     "_isSystemFontUsed": true,
     "_spacingX": 0,
     "_isItalic": false,
-    "_isBold": false,
+    "_isBold": true,
     "_isUnderline": false,
     "_underlineHeight": 2,
     "_cacheMode": 0,
@@ -952,7 +952,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "69d8ca40-cc30-4b22-b3b0-770b833e3ca6@f9941",
+      "__uuid__": "5481cf76-e41c-4f86-8f63-08ae5b71dd1a@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
