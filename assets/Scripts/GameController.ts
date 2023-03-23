@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, director, Button, CCInteger, CCString, Animation, AnimationState, AnimationClip, SpriteFrame } from 'cc';
+import { _decorator, Component, Node, director, Button, CCInteger, CCString, Animation } from 'cc';
 import { GameModel } from './GameModel';
 import { GameView } from './GameView';
 const { ccclass, property } = _decorator;
@@ -34,7 +34,6 @@ export class GameController extends Component {
     public gameHighScoreArray: number[] = [0];
 
     public start() {
-        // this.randomUniqueNum(200, 200);
         this.questionAndAnswerDisplay();
         this.startCountDown();
         this.View.BtnMute.node.active = true;
@@ -48,15 +47,34 @@ export class GameController extends Component {
             localStorage.setItem('gameHighScoreArray', JSON.stringify(this.gameHighScoreArray));
         }
         console.log(this.gameHighScoreArray);
+        switch(GameController.i){
+            case 1:
+                this.View.Question1.interactable = false;
+                console.log(this.View.Question1.interactable);
+                break;
+            default:
+                break;
+        }
     }
     
     public update(deltaTime: number) {
-
+        
     }
     
     public onLoad() {
         this.View.BackMainMenuBtn.node.on(Button.EventType.CLICK, this.btnBackMainMenu, this);
         this.View.GiveUpBtn.node.on(Button.EventType.CLICK, this.GiveUpLosingScene, this);
+
+        // switch (GameController.i) {
+        //     case 1: {
+        //         console.log(this.View.Question1.transition);
+        //         break;
+        //     }
+        //     default: { 
+        //         //statements; 
+        //         break; 
+        //     }
+        // }
     }
 
     private btnBackMainMenu(BackMainMenuBtn: Button) {
@@ -75,9 +93,6 @@ export class GameController extends Component {
     }
 
     private LosingScene(GiveUpBtn: Button) {
-        // let dataNode = new Node();
-        // dataNode.addComponent('DataComponent');
-        // dataNode.getComponent('DataComponent').
         GameController.i = 1;
         this.unschedule(GameController.callbackSchedule);
         this.scheduleOnce(function() {
@@ -515,6 +530,52 @@ export class GameController extends Component {
             this.timeNum = 15;
             this.startCountDown();
             console.log(GameController.i);
+            switch(GameController.i) {
+                case 2:
+                    this.View.Question2.interactable = false;
+                    break;
+                case 3:
+                    this.View.Question3.interactable = false;
+                    break;
+                case 4:
+                    this.View.Question4.interactable = false;
+                    break;
+                case 5:
+                    this.View.Question5.interactable = false;
+                    break;
+                case 6:
+                    this.View.Question6.interactable = false;
+                    break;
+                case 7:
+                    this.View.Question7.interactable = false;
+                    break;
+                case 8:
+                    this.View.Question8.interactable = false;
+                    break;
+                case 9:
+                    this.View.Question9.interactable = false;
+                    break;
+                case 10:
+                    this.View.Question10.interactable = false;
+                    break;
+                case 11:
+                    this.View.Question11.interactable = false;
+                    break;
+                case 12:
+                    this.View.Question12.interactable = false;
+                    break;
+                case 13:
+                    this.View.Question13.interactable = false;
+                    break;
+                case 14:
+                    this.View.Question14.interactable = false;
+                    break;
+                case 15:
+                    this.View.Question15.interactable = false;
+                    break;
+                default:
+                    break;
+            }
         }, 3)
         // this.schedule(GameController.callbackSchedule);
     }
@@ -623,7 +684,6 @@ export class GameController extends Component {
         this.View.BtnUnmute.node.active = false;
         this.View.AudioLv3.volume = 0.5;
     }
-
 }
 
 

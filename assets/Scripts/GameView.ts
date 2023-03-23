@@ -1,4 +1,4 @@
-import { _decorator, Component, Node, Button, Label, AudioSource, AnimationClip } from 'cc';
+import { _decorator, Component, Node, Button, Label, AudioSource, AnimationClip, SpriteFrame, Sprite } from 'cc';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameView')
@@ -60,6 +60,51 @@ export class GameView extends Component {
     @property({type:Button})
     private btnUnmute: Button = null;
 
+    @property({type:Button})
+    private question1: Button = null;
+
+    @property({type:Button})
+    private question2: Button = null;
+    
+    @property({type:Button})
+    private question3: Button = null;
+
+    @property({type:Button})
+    private question4: Button = null;
+
+    @property({type:Button})
+    private question5: Button = null;
+
+    @property({type:Button})
+    private question6: Button = null;
+
+    @property({type:Button})
+    private question7: Button = null;
+
+    @property({type:Button})
+    private question8: Button = null;
+
+    @property({type:Button})
+    private question9: Button = null;
+
+    @property({type:Button})
+    private question10: Button = null;
+
+    @property({type:Button})
+    private question11: Button = null;
+
+    @property({type:Button})
+    private question12: Button = null;
+
+    @property({type:Button})
+    private question13: Button = null;
+
+    @property({type:Button})
+    private question14: Button = null;
+
+    @property({type:Button})
+    private question15: Button = null;
+
     public get BackMainMenuBtn() : Button {
         return this.backMainMenuBtn;
     }
@@ -95,7 +140,6 @@ export class GameView extends Component {
     public get AnswerLabelB() : Label {
         return this.answerLabelB
     }
-    
 
     public set AnswerLabelB(answerLabelB : Label) {
         this.answerLabelB = answerLabelB;
@@ -213,6 +257,127 @@ export class GameView extends Component {
     public get BtnUnmute() : Button {
         return this.btnUnmute
     }
+
+    public set Question1(question1 : Button) {
+        this.question1 = question1;
+    }
+
+    public get Question1() : Button {
+        return this.question1
+    }
+    
+    public set Question2(question2 : Button) {
+        this.question2 = question2;
+    }
+
+    public get Question2() : Button {
+        return this.question2
+    }
+
+    public set Question3(question3 : Button) {
+        this.question3 = question3;
+    }
+
+    public get Question3() : Button {
+        return this.question3
+    }
+
+    public set Question4(question4 : Button) {
+        this.question4 = question4;
+    }
+
+    public get Question4() : Button {
+        return this.question4
+    }
+
+    public set Question5(question5 : Button) {
+        this.question5 = question5;
+    }
+
+    public get Question5() : Button {
+        return this.question5
+    }
+
+    public set Question6(question6 : Button) {
+        this.question6 = question6;
+    }
+
+    public get Question6() : Button {
+        return this.question6
+    }
+
+    public set Question7(question7 : Button) {
+        this.question7 = question7;
+    }
+
+    public get Question7() : Button {
+        return this.question7
+    }
+
+    public set Question8(question8 : Button) {
+        this.question8 = question8;
+    }
+
+    public get Question8() : Button {
+        return this.question8
+    }
+
+    public set Question9(question9 : Button) {
+        this.question9 = question9;
+    }
+
+    public get Question9() : Button {
+        return this.question9
+    }
+
+    public set Question10(question10 : Button) {
+        this.question10 = question10;
+    }
+
+    public get Question10() : Button {
+        return this.question10
+    }
+
+    public set Question11(question11 : Button) {
+        this.question11 = question11;
+    }
+
+    public get Question11() : Button {
+        return this.question11
+    }
+
+    public set Question12(question12 : Button) {
+        this.question12 = question12;
+    }
+
+    public get Question12() : Button {
+        return this.question12
+    }
+
+    public set Question13(question13 : Button) {
+        this.question13 = question13;
+    }
+
+    public get Question13() : Button {
+        return this.question13
+    }
+
+    public set Question14(question14 : Button) {
+        this.question14 = question14;
+    }
+
+    public get Question14() : Button {
+        return this.question14
+    }
+
+    public set Question15(question15 : Button) {
+        this.question15 = question15;
+    }
+
+    public get Question15() : Button {
+        return this.question15
+    }
+
 }
 
 
