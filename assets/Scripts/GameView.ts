@@ -114,6 +114,27 @@ export class GameView extends Component {
     @property({type:Button})
     private help3Btn: Button = null;
 
+    @property({type:Sprite})
+    private help2Container: Sprite = null;
+
+    @property({type:Label})
+    private labelAPercent: Label = null;
+
+    @property({type:Label})
+    private labelBPercent: Label = null;
+
+    @property({type:Label})
+    private labelCPercent: Label = null;
+
+    @property({type:Label})
+    private labelDPercent: Label = null;
+
+    @property({type:Sprite})
+    private help3Container: Sprite = null;
+
+    @property({type:Label})
+    private help3label: Label = null;
+
     public get BackMainMenuBtn() : Button {
         return this.backMainMenuBtn;
     }
@@ -411,6 +432,61 @@ export class GameView extends Component {
         return this.help3Btn
     }
 
+    public set Help2Container(help2Container : Sprite) {
+        this.help2Container = help2Container;
+    }
+
+    public get Help2Container() : Sprite {
+        return this.help2Container
+    }
+
+    public set LabelAPercent(labelAPercent : Label) {
+        this.labelAPercent = labelAPercent;
+    }
+
+    public get LabelAPercent() : Label {
+        return this.labelAPercent
+    }
+
+    public set LabelBPercent(labelBPercent : Label) {
+        this.labelBPercent = labelBPercent;
+    }
+
+    public get LabelBPercent() : Label {
+        return this.labelBPercent
+    }
+
+    public set LabelCPercent(labelCPercent : Label) {
+        this.labelCPercent = labelCPercent;
+    }
+
+    public get LabelCPercent() : Label {
+        return this.labelCPercent
+    }
+
+    public set LabelDPercent(labelDPercent : Label) {
+        this.labelDPercent = labelDPercent;
+    }
+
+    public get LabelDPercent() : Label {
+        return this.labelDPercent
+    }
+
+    public set Help3Container(help3Container : Sprite) {
+        this.help3Container = help3Container;
+    }
+
+    public get Help3Container() : Sprite {
+        return this.help3Container
+    }
+
+    public set Help3label(help3label : Label) {
+        this.help3label = help3label;
+    }
+
+    public get Help3label() : Label {
+        return this.help3label
+    }
 }
 
 
