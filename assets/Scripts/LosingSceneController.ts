@@ -13,7 +13,6 @@ export class LosingSceneController extends Component {
 
     public start() {
         let gameHighScore1 = JSON.parse(localStorage.getItem('gameHighScoreArray'));
-        console.log(gameHighScore1);
         if (gameHighScore1[gameHighScore1.length - 1].toString() == '0') {
             this.View.CurrentScoreLabel.string = "Rất tiếc ban không trả lời đúng câu nào!";
         }
