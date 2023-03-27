@@ -383,7 +383,10 @@ export class GameController extends Component {
         GameController.i++;
         this.gameHighScoreArray.push(GameController.i - 1);
         localStorage.setItem('gameHighScoreArray', JSON.stringify(this.gameHighScoreArray));
-        this.disableAnswerBtn();
+        this.View.AnswerBtnA.interactable = false;
+        this.View.AnswerBtnB.interactable = false;
+        this.View.AnswerBtnC.interactable = false;
+        this.View.AnswerBtnD.interactable = false;
         this.scheduleOnce(function() {
             this.questionAndAnswerDisplay();
             this.timeNum = 15;

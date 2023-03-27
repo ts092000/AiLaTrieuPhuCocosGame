@@ -223,7 +223,7 @@
     "_priority": 0,
     "_fov": 45,
     "_fovAxis": 0,
-    "_orthoHeight": 582.1935483870968,
+    "_orthoHeight": 580.6451612903226,
     "_near": 0,
     "_far": 1000,
     "_color": {
@@ -6615,7 +6615,10 @@
         "__expectedType__": "cc.AnimationClip"
       }
     ],
-    "_defaultClip": null,
+    "_defaultClip": {
+      "__uuid__": "7e2e7f90-38c7-402f-b3ff-fcabf80344c3",
+      "__expectedType__": "cc.AnimationClip"
+    },
     "_id": "daI6+FyN5DYZLnv19SupJ7"
   },
   {
