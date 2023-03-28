@@ -175,6 +175,7 @@ export class GameController extends Component {
         this.timeNum = 15;
         this.startCountDown();
         labelAniQuestion.playOnLoad = false;
+
         if (GameController.i <= 5) {
             let range2 = 4;
             let outputCount2 = 4;
@@ -205,26 +206,27 @@ export class GameController extends Component {
             this.View.AudioLv1.play();
             this.View.AudioLv2.stop();
             this.View.AudioLv3.stop();
-            console.log(this.question);
             GameController.lv1 += 1;
             
             this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv1, this);
             this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv1, this);
 
+            this.View.QuestionLabel.string = this.question;
+            this.View.AnswerLabelA.string = this.ansA;
+            this.View.AnswerLabelB.string = this.ansB;
+            this.View.AnswerLabelC.string = this.ansC;
+            this.View.AnswerLabelD.string = this.ansD;
+
             if (result2[0] == 2) {
-                console.log('BtnAtrue');
                 this.AtrueGroup();
             }
             else if (result2[1] == 2) {
-                console.log('BtnBtrue');
                 this.BtrueGroup();
             }
             else if (result2[2] == 2) {
-                console.log('BtnCtrue');
                 this.CtrueGroup();
             }
             else if (result2[3] == 2) {
-                console.log('BtnDtrue');
                 this.DtrueGroup();
             }
             
@@ -259,28 +261,30 @@ export class GameController extends Component {
             this.View.AudioLv2.play();
             this.View.AudioLv1.stop();
             this.View.AudioLv3.stop();
-            console.log(this.question);
             GameController.lv2 += 1;
 
             this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv2, this);
             this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv2, this);
 
+            this.View.QuestionLabel.string = this.question;
+            this.View.AnswerLabelA.string = this.ansA;
+            this.View.AnswerLabelB.string = this.ansB;
+            this.View.AnswerLabelC.string = this.ansC;
+            this.View.AnswerLabelD.string = this.ansD;
+
             if (result3[0] == 2) {
-                console.log('BtnAtrue');
                 this.AtrueGroup();
             }
             else if (result3[1] == 2) {
-                console.log('BtnBtrue');
                 this.BtrueGroup();
             }
             else if (result3[2] == 2) {
-                console.log('BtnCtrue');
                 this.CtrueGroup();
             }
             else if (result3[3] == 2) {
-                console.log('BtnDtrue');
                 this.DtrueGroup();
             }
+
 
         }
         else if (GameController.i > 10 && GameController.i <= 15) {
@@ -313,26 +317,27 @@ export class GameController extends Component {
             this.View.AudioLv3.play();
             this.View.AudioLv1.stop();
             this.View.AudioLv2.stop();
-            console.log(this.question);
             GameController.lv3 += 1;
 
             this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv3, this);
             this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv3, this);
 
+            this.View.QuestionLabel.string = this.question;
+            this.View.AnswerLabelA.string = this.ansA;
+            this.View.AnswerLabelB.string = this.ansB;
+            this.View.AnswerLabelC.string = this.ansC;
+            this.View.AnswerLabelD.string = this.ansD;
+
             if (result4[0] == 2) {
-                console.log('BtnAtrue');
                 this.AtrueGroup();
             }
             else if (result4[1] == 2) {
-                console.log('BtnBtrue');
                 this.BtrueGroup();
             }
             else if (result4[2] == 2) {
-                console.log('BtnCtrue');
                 this.CtrueGroup();
             }
             else if (result4[3] == 2) {
-                console.log('BtnDtrue');
                 this.DtrueGroup();
             }
         }
@@ -349,11 +354,11 @@ export class GameController extends Component {
         labelAniAnswerC.play("LabelScaleUp");
         labelAniAnswerD.play("LabelScaleUp");
 
-        this.View.QuestionLabel.string = this.question;
-        this.View.AnswerLabelA.string = this.ansA;
-        this.View.AnswerLabelB.string = this.ansB;
-        this.View.AnswerLabelC.string = this.ansC;
-        this.View.AnswerLabelD.string = this.ansD;
+        // this.View.QuestionLabel.string = this.question;
+        // this.View.AnswerLabelA.string = this.ansA;
+        // this.View.AnswerLabelB.string = this.ansB;
+        // this.View.AnswerLabelC.string = this.ansC;
+        // this.View.AnswerLabelD.string = this.ansD;
         this.View.QuestionLabelNumber.string = 'Câu hỏi số ' + GameController.i.toString();
     }
     
@@ -595,14 +600,12 @@ export class GameController extends Component {
                 this.View.AnswerBtnB.node.active = false;
                 this.View.AnswerBtnC.node.active = false;
                 this.View.AnswerBtnD.node.active = false;
-                GameController.result = [];
+                this.startCondition();
                 this.scheduleOnce(function() {
                     director.preloadScene("Losing", function () {
-                        console.log('Next scene preloaded');
                         director.loadScene("Losing");
                     });
                 }, 2);
-                GameController.i = 1;
             }
         }
         this.schedule(GameController.callbackSchedule, 1);
