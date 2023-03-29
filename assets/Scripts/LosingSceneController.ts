@@ -12,9 +12,13 @@ export class LosingSceneController extends Component {
         Model: LosingSceneModel
 
     public start() {
+        let volumeValue = JSON.parse(localStorage.getItem('volumeValueArray'));
+
+        this.View.Audio.volume = volumeValue[ volumeValue.length - 1];
+
         let gameHighScore1 = JSON.parse(localStorage.getItem('gameHighScoreArray'));
         if (gameHighScore1[gameHighScore1.length - 1].toString() == '0') {
-            this.View.CurrentScoreLabel.string = "Rất tiếc ban không trả lời đúng câu nào!";
+            this.View.CurrentScoreLabel.string = "Rất tiếc bạn không trả lời đúng câu nào!";
         }
         else {
             this.View.CurrentScoreLabel.string = 'Rất tiếc, bạn trả lời được ' +gameHighScore1[gameHighScore1.length - 1].toString() + ' câu!';

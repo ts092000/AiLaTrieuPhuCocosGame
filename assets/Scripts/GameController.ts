@@ -30,6 +30,9 @@ export class GameController extends Component {
     private timeNum: number;
 
     private static result = [];
+    private static result2 = [];
+    private static result3 = [];
+    private static result4 = [];
     private static i: number = 1;
     private static lv1: number = 0;
     private static lv2: number = 0;
@@ -41,12 +44,36 @@ export class GameController extends Component {
     private num2: number = null;
     private num3: number = null;
     private num4: number = null;
+    private volumeValueArray: number[] = [];
     private static range: number = null;
     private static outputCount: number = null;
-
+    
     public start() {
+        let volumeValue = JSON.parse(localStorage.getItem('volumeValueArray'));
+        this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMute, this);
+        this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmute, this);
+        // if (volumeValue) {
+        //     this.volumeValueArray = JSON.parse(volumeValue);
+        //     this.volumeValueArray.push(volumeValue);
+        //     localStorage.setItem('volumeValueArray', JSON.stringify(this.volumeValueArray));
+        // }
+
+        this.View.AudioBg.volume = volumeValue[ volumeValue.length - 1];
+        this.View.AudioCorrectAns.volume = volumeValue[ volumeValue.length - 1];
+        this.View.AudioIncorrectAns.volume = volumeValue[ volumeValue.length - 1];
+
+        if (this.View.AudioBg.volume == 0.7) {
+            this.View.BtnMute.node.active = true;
+            this.View.BtnUnmute.node.active = false;
+        }
+        
+        if (this.View.AudioBg.volume == 0) {
+            this.View.BtnMute.node.active = false;
+            this.View.BtnUnmute.node.active = true;
+        }
+
+        this.View.AudioBg.play();
         this.questionAndAnswerDisplay();
-        this.btnAudioDisplay();
         this.View.Help2Container.node.active = false;
         
         let gameHighScore1 = localStorage.getItem('gameHighScoreArray');
@@ -107,7 +134,13 @@ export class GameController extends Component {
     private LosingScene(GiveUpBtn: Button) {
         this.startCondition();
         this.disableAnswerBtn();
+        this.View.Help1Btn.node.active = false;
+        this.View.Help2Btn.node.active = false;
+        this.View.Help3Btn.node.active = false;
         this.unschedule(GameController.callbackSchedule);
+        this.scheduleOnce(function() {
+            this.View.AudioIncorrectAns.play();
+        }, 0.7)
         this.scheduleOnce(function() {
             director.preloadScene("Losing", function () {
                 director.loadScene("Losing");
@@ -166,6 +199,15 @@ export class GameController extends Component {
         let text2 = this.Model.CsvFilelv2.text;
         let text3 = this.Model.CsvFilelv3.text;
 
+        this.View.Help1Btn.node.active = true;
+        this.View.Help2Btn.node.active = true;
+        this.View.Help3Btn.node.active = true;
+
+        // const aniBtnA = this.View.AnswerBtnA.getComponent(Animation);
+        // const aniBtnB = this.View.AnswerBtnB.getComponent(Animation);
+        // const aniBtnC = this.View.AnswerBtnC.getComponent(Animation);
+        // const aniBtnD = this.View.AnswerBtnD.getComponent(Animation);
+
         const labelAniQuestion = this.View.QuestionLabel.getComponent(Animation);
         const labelAniAnswerA = this.View.AnswerLabelA.getComponent(Animation);
         const labelAniAnswerB = this.View.AnswerLabelB.getComponent(Animation);
@@ -184,52 +226,46 @@ export class GameController extends Component {
             for (let i = 1; i <= range2; i++) {
                 arr2.push(i);
             }
-        
-            let result2 = [];
+
+            GameController.result2 = [];
         
             for (let i = 1; i <= outputCount2; i++) {
                 const random2 = Math.floor(Math.random() * (range2 - i));
-                result2.push(arr2[random2]);
+                GameController.result2.push(arr2[random2]);
                 arr2[random2] = arr2[range2 - i];
             }
 
             this.question = this.csvToArray(text1)[GameController.result[GameController.lv1]][1];
             
-            this.ansA = this.csvToArray(text1)[GameController.result[GameController.lv1]][result2[0]];
+            this.ansA = this.csvToArray(text1)[GameController.result[GameController.lv1]][GameController.result2[0]];
             
-            this.ansB = this.csvToArray(text1)[GameController.result[GameController.lv1]][result2[1]];
+            this.ansB = this.csvToArray(text1)[GameController.result[GameController.lv1]][GameController.result2[1]];
             
-            this.ansC = this.csvToArray(text1)[GameController.result[GameController.lv1]][result2[2]];
+            this.ansC = this.csvToArray(text1)[GameController.result[GameController.lv1]][GameController.result2[2]];
             
-            this.ansD = this.csvToArray(text1)[GameController.result[GameController.lv1]][result2[3]];
-            
-            this.View.AudioLv1.play();
-            this.View.AudioLv2.stop();
-            this.View.AudioLv3.stop();
+            this.ansD = this.csvToArray(text1)[GameController.result[GameController.lv1]][GameController.result2[3]];
+
             GameController.lv1 += 1;
-            
-            this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv1, this);
-            this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv1, this);
+        
 
             this.View.QuestionLabel.string = this.question;
-            this.View.AnswerLabelA.string = this.ansA;
-            this.View.AnswerLabelB.string = this.ansB;
-            this.View.AnswerLabelC.string = this.ansC;
-            this.View.AnswerLabelD.string = this.ansD;
+            this.View.AnswerLabelA.string = 'A: ' + this.ansA;
+            this.View.AnswerLabelB.string = 'B: ' + this.ansB;
+            this.View.AnswerLabelC.string = 'C: ' + this.ansC;
+            this.View.AnswerLabelD.string = 'D: ' + this.ansD;
 
-            if (result2[0] == 2) {
+            if (GameController.result2[0] == 2) {
                 this.AtrueGroup();
             }
-            else if (result2[1] == 2) {
+            else if (GameController.result2[1] == 2) {
                 this.BtrueGroup();
             }
-            else if (result2[2] == 2) {
+            else if (GameController.result2[2] == 2) {
                 this.CtrueGroup();
             }
-            else if (result2[3] == 2) {
+            else if (GameController.result2[3] == 2) {
                 this.DtrueGroup();
             }
-            
         }
         else if (GameController.i > 5 && GameController.i <= 10) {
             let range3 = 4;
@@ -239,53 +275,45 @@ export class GameController extends Component {
             for (let i = 1; i <= range3; i++) {
                 arr3.push(i);
             }
-        
-            let result3 = [];
+
+            GameController.result3 = [];
         
             for (let i = 1; i <= outputCount3; i++) {
                 const random3 = Math.floor(Math.random() * (range3 - i));
-                result3.push(arr3[random3]);
+                GameController.result3.push(arr3[random3]);
                 arr3[random3] = arr3[range3 - i];
             }
 
             this.question = this.csvToArray(text2)[GameController.result[GameController.lv2]][1];
     
-            this.ansA = this.csvToArray(text2)[GameController.result[GameController.lv2]][result3[0]];
+            this.ansA = this.csvToArray(text2)[GameController.result[GameController.lv2]][GameController.result3[0]];
             
-            this.ansB = this.csvToArray(text2)[GameController.result[GameController.lv2]][result3[1]];
+            this.ansB = this.csvToArray(text2)[GameController.result[GameController.lv2]][GameController.result3[1]];
             
-            this.ansC = this.csvToArray(text2)[GameController.result[GameController.lv2]][result3[2]];
+            this.ansC = this.csvToArray(text2)[GameController.result[GameController.lv2]][GameController.result3[2]];
             
-            this.ansD = this.csvToArray(text2)[GameController.result[GameController.lv2]][result3[3]];
+            this.ansD = this.csvToArray(text2)[GameController.result[GameController.lv2]][GameController.result3[3]];
 
-            this.View.AudioLv2.play();
-            this.View.AudioLv1.stop();
-            this.View.AudioLv3.stop();
             GameController.lv2 += 1;
 
-            this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv2, this);
-            this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv2, this);
-
             this.View.QuestionLabel.string = this.question;
-            this.View.AnswerLabelA.string = this.ansA;
-            this.View.AnswerLabelB.string = this.ansB;
-            this.View.AnswerLabelC.string = this.ansC;
-            this.View.AnswerLabelD.string = this.ansD;
+            this.View.AnswerLabelA.string = 'A: ' + this.ansA;
+            this.View.AnswerLabelB.string = 'B: ' + this.ansB;
+            this.View.AnswerLabelC.string = 'C: ' + this.ansC;
+            this.View.AnswerLabelD.string = 'D: ' + this.ansD;
 
-            if (result3[0] == 2) {
+            if (GameController.result3[0] == 2) {
                 this.AtrueGroup();
             }
-            else if (result3[1] == 2) {
+            else if (GameController.result3[1] == 2) {
                 this.BtrueGroup();
             }
-            else if (result3[2] == 2) {
+            else if (GameController.result3[2] == 2) {
                 this.CtrueGroup();
             }
-            else if (result3[3] == 2) {
+            else if (GameController.result3[3] == 2) {
                 this.DtrueGroup();
             }
-
-
         }
         else if (GameController.i > 10 && GameController.i <= 15) {
             let range4 = 4;
@@ -295,50 +323,45 @@ export class GameController extends Component {
             for (let i = 1; i <= range4; i++) {
                 arr4.push(i);
             }
-        
-            let result4 = [];
+            
+            GameController.result4 = [];
         
             for (let i = 1; i <= outputCount4; i++) {
                 const random4 = Math.floor(Math.random() * (range4 - i));
-                result4.push(arr4[random4]);
+                GameController.result4.push(arr4[random4]);
                 arr4[random4] = arr4[range4 - i];
             }
 
             this.question = this.csvToArray(text3)[GameController.result[GameController.lv3]][1];
     
-            this.ansA = this.csvToArray(text3)[GameController.result[GameController.lv3]][result4[0]];
+            this.ansA = this.csvToArray(text3)[GameController.result[GameController.lv3]][GameController.result4[0]];
             
-            this.ansB = this.csvToArray(text3)[GameController.result[GameController.lv3]][result4[1]];
+            this.ansB = this.csvToArray(text3)[GameController.result[GameController.lv3]][GameController.result4[1]];
             
-            this.ansC = this.csvToArray(text3)[GameController.result[GameController.lv3]][result4[2]];
+            this.ansC = this.csvToArray(text3)[GameController.result[GameController.lv3]][GameController.result4[2]];
             
-            this.ansD = this.csvToArray(text3)[GameController.result[GameController.lv3]][result4[3]];
+            this.ansD = this.csvToArray(text3)[GameController.result[GameController.lv3]][GameController.result4[3]];
 
-            this.View.AudioLv3.play();
-            this.View.AudioLv1.stop();
-            this.View.AudioLv2.stop();
             GameController.lv3 += 1;
 
-            this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMuteLv3, this);
-            this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmuteLv3, this);
-
             this.View.QuestionLabel.string = this.question;
-            this.View.AnswerLabelA.string = this.ansA;
-            this.View.AnswerLabelB.string = this.ansB;
-            this.View.AnswerLabelC.string = this.ansC;
-            this.View.AnswerLabelD.string = this.ansD;
+            this.View.AnswerLabelA.string = 'A: ' + this.ansA;
+            this.View.AnswerLabelB.string = 'B: ' + this.ansB;
+            this.View.AnswerLabelC.string = 'C: ' + this.ansC;
+            this.View.AnswerLabelD.string = 'D: ' + this.ansD;
 
-            if (result4[0] == 2) {
+            if (GameController.result4[0] == 2) {
                 this.AtrueGroup();
             }
-            else if (result4[1] == 2) {
+            else if (GameController.result4[1] == 2) {
                 this.BtrueGroup();
             }
-            else if (result4[2] == 2) {
+            else if (GameController.result4[2] == 2) {
                 this.CtrueGroup();
             }
-            else if (result4[3] == 2) {
+            else if (GameController.result4[3] == 2) {
                 this.DtrueGroup();
+                
             }
         }
         else if (GameController.i > 15) {
@@ -347,7 +370,6 @@ export class GameController extends Component {
             });
             GameController.i = 1;
         }
-        
         labelAniQuestion.play("LabelScaleUp");
         labelAniAnswerA.play("LabelScaleUp");
         labelAniAnswerB.play("LabelScaleUp");
@@ -363,13 +385,19 @@ export class GameController extends Component {
     }
     
     private btnClickNextQuestion(AnswerBtnA: Button) {
+        this.View.Help1Btn.node.active = false;
+        this.View.Help2Btn.node.active = false;
+        this.View.Help3Btn.node.active = false;
+        this.View.BackMainMenuBtn.interactable = false;
+        this.View.GiveUpBtn.interactable = false;
         this.unschedule(GameController.callbackSchedule);
         GameController.i++;
         this.gameHighScoreArray.push(GameController.i - 1);
         localStorage.setItem('gameHighScoreArray', JSON.stringify(this.gameHighScoreArray));
         this.disableAnswerBtn();
-        this.View.BackMainMenuBtn.interactable = false;
-        this.View.GiveUpBtn.interactable = false;
+        this.scheduleOnce(function() {
+            this.View.AudioCorrectAns.play();
+        }, 0.7)
         this.scheduleOnce(function() {
             switch(GameController.i) {
                 case 2:
@@ -567,22 +595,70 @@ export class GameController extends Component {
 
     private btnAClickFalse(AnswerBtnA: Button) {
         const aniBtnA = this.View.AnswerBtnA.getComponent(Animation);
+        const aniBtnB = this.View.AnswerBtnB.getComponent(Animation);
+        const aniBtnC = this.View.AnswerBtnC.getComponent(Animation);
+        const aniBtnD = this.View.AnswerBtnD.getComponent(Animation);
         aniBtnA.play("BtnFalse");
+        if (GameController.result2[1] == 2 || GameController.result3[1] == 2 || GameController.result4[1] == 2) {
+            aniBtnB.play("BtnTrueNotHover");
+        }
+        else if (GameController.result2[2] == 2 || GameController.result3[2] == 2 || GameController.result4[2] == 2) {
+            aniBtnC.play("BtnTrueNotHover");
+        }
+        else if (GameController.result2[3] == 2 || GameController.result3[3] == 2 || GameController.result4[3] == 2) {
+            aniBtnD.play("BtnTrueNotHover");
+        }
     }
 
     private btnBClickFalse(AnswerBtnB: Button) {
+        const aniBtnA = this.View.AnswerBtnA.getComponent(Animation);
         const aniBtnB = this.View.AnswerBtnB.getComponent(Animation);
+        const aniBtnC = this.View.AnswerBtnC.getComponent(Animation);
+        const aniBtnD = this.View.AnswerBtnD.getComponent(Animation);
         aniBtnB.play("BtnFalse");
+        if (GameController.result2[0]  == 2 || GameController.result3[0] == 2 || GameController.result4[0] == 2) {
+            aniBtnA.play("BtnTrueNotHover");
+        }
+        else if (GameController.result2[2] == 2 || GameController.result3[2] == 2 || GameController.result4[2] == 2) {
+            aniBtnC.play("BtnTrueNotHover");
+        }
+        else if (GameController.result2[3] == 2 || GameController.result3[3] == 2 || GameController.result4[3] == 2) {
+            aniBtnD.play("BtnTrueNotHover");
+        }
     }
 
     private btnCClickFalse(AnswerBtnC: Button) {
+        const aniBtnA = this.View.AnswerBtnA.getComponent(Animation);
+        const aniBtnB = this.View.AnswerBtnB.getComponent(Animation);
         const aniBtnC = this.View.AnswerBtnC.getComponent(Animation);
+        const aniBtnD = this.View.AnswerBtnD.getComponent(Animation);
         aniBtnC.play("BtnFalse");
+        if (GameController.result2[0] == 2 || GameController.result3[0] == 2 || GameController.result4[0] == 2) {
+            aniBtnA.play("BtnTrueNotHover");
+        }
+        else if (GameController.result2[1] == 2 || GameController.result3[1] == 2 || GameController.result4[1] == 2) {
+            aniBtnB.play("BtnTrueNotHover");
+        }
+        else if (GameController.result2[3] == 2 || GameController.result3[3] == 2 || GameController.result4[3] == 2) {
+            aniBtnD.play("BtnTrueNotHover");
+        }
     }
 
     private btnDClickFalse(AnswerBtnD: Button) {
+        const aniBtnA = this.View.AnswerBtnA.getComponent(Animation);
+        const aniBtnB = this.View.AnswerBtnB.getComponent(Animation);
+        const aniBtnC = this.View.AnswerBtnC.getComponent(Animation);
         const aniBtnD = this.View.AnswerBtnD.getComponent(Animation);
         aniBtnD.play("BtnFalse");
+        if (GameController.result2[0] == 2 || GameController.result3[0] == 2 || GameController.result4[0] == 2) {
+            aniBtnA.play("BtnTrueNotHover");
+        }
+        else if (GameController.result2[1] == 2 || GameController.result3[1] == 2 || GameController.result4[1] == 2) {
+            aniBtnB.play("BtnTrueNotHover");
+        }
+        else if (GameController.result2[2] == 2 || GameController.result3[2] == 2 || GameController.result4[2] == 2) {
+            aniBtnC.play("BtnTrueNotHover");
+        }
     }
 
     private startCountDown() {
@@ -595,11 +671,27 @@ export class GameController extends Component {
                 this.timeNum = this.timeNum;
                 this.View.ResultLabel.string = "Hết Giờ";
                 this.unschedule(GameController.callbackSchedule, 1);
-                this.View.questionLabel.node.active = false;
-                this.View.AnswerBtnA.node.active = false;
-                this.View.AnswerBtnB.node.active = false;
-                this.View.AnswerBtnC.node.active = false;
-                this.View.AnswerBtnD.node.active = false;
+                this.View.AudioIncorrectAns.play();
+                if (GameController.result2[0] == 2 || GameController.result3[0] == 2 || GameController.result4[0] == 2) {
+    
+                    const aniBtnA = this.View.AnswerBtnA.getComponent(Animation);
+                    aniBtnA.play("BtnTrueNotHover");
+                }
+                else if (GameController.result2[1] == 2 || GameController.result3[1] == 2 || GameController.result4[1] == 2) {
+    
+                    const aniBtnB = this.View.AnswerBtnB.getComponent(Animation);
+                    aniBtnB.play("BtnTrueNotHover");
+                }
+                else if (GameController.result2[2] == 2 || GameController.result3[2] == 2 || GameController.result4[2] == 2) {
+    
+                    const aniBtnC = this.View.AnswerBtnC.getComponent(Animation);
+                    aniBtnC.play("BtnTrueNotHover");
+                }
+                else if (GameController.result2[3] == 2 || GameController.result3[3] == 2 || GameController.result4[3] == 2) {
+    
+                    const aniBtnD = this.View.AnswerBtnD.getComponent(Animation);
+                    aniBtnD.play("BtnTrueNotHover");
+                }
                 this.startCondition();
                 this.scheduleOnce(function() {
                     director.preloadScene("Losing", function () {
@@ -611,37 +703,23 @@ export class GameController extends Component {
         this.schedule(GameController.callbackSchedule, 1);
     }
 
-    private btnMuteLv1(BtnMute: Button) {
+    private btnMute(BtnMute: Button) {
         this.View.BtnMute.node.active = false;
         this.View.BtnUnmute.node.active = true;
-        this.View.AudioLv1.volume = 0;
+        this.View.AudioBg.volume = 0;
+        this.View.AudioCorrectAns.volume = 0;
+        this.View.AudioIncorrectAns.volume = 0;
+        this.volumeValueArray.push(this.View.AudioBg.volume);
+        localStorage.setItem('volumeValueArray', JSON.stringify(this.volumeValueArray));
     }
 
-    private btnUnmuteLv1(BtnUnmute: Button) {
+    private btnUnmute(BtnUnmute: Button) {
         this.btnAudioDisplay();
-        this.View.AudioLv1.volume = 0.5;
-    }
-
-    private btnMuteLv2(BtnMute: Button) {
-        this.View.BtnMute.node.active = false;
-        this.View.BtnUnmute.node.active = true;
-        this.View.AudioLv2.volume = 0;
-    }
-
-    private btnUnmuteLv2(BtnUnmute: Button) {
-        this.btnAudioDisplay();
-        this.View.AudioLv2.volume = 0.5;
-    }
-
-    private btnMuteLv3(BtnMute: Button) {
-        this.View.BtnMute.node.active = false;
-        this.View.BtnUnmute.node.active = true;
-        this.View.AudioLv3.volume = 0;
-    }
-
-    private btnUnmuteLv3(BtnUnmute: Button) {
-        this.btnAudioDisplay();
-        this.View.AudioLv3.volume = 0.5;
+        this.View.AudioBg.volume = 0.7;
+        this.View.AudioCorrectAns.volume = 0.7;
+        this.View.AudioIncorrectAns.volume = 0.7;
+        this.volumeValueArray.push(this.View.AudioBg.volume);
+        localStorage.setItem('volumeValueArray', JSON.stringify(this.volumeValueArray));
     }
 
     private btnAudioDisplay() {

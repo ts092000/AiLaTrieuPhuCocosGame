@@ -46,13 +46,13 @@ export class GameView extends Component {
     private resultLabel: Label = null;
 
     @property({type:AudioSource})
-    private audioLv1: AudioSource = null;
+    private audioBg: AudioSource = null;
 
     @property({type:AudioSource})
-    private audioLv2: AudioSource = null;
+    private audioCorrectAns: AudioSource = null;
 
     @property({type:AudioSource})
-    private audioLv3: AudioSource = null;
+    private audioIncorrectAns: AudioSource = null;
 
     @property({type:Button})
     private btnMute: Button = null;
@@ -248,28 +248,28 @@ export class GameView extends Component {
         this.resultLabel = resultLabel;
     }
 
-    public get AudioLv1() : AudioSource {
-        return this.audioLv1;
+    public get AudioBg() : AudioSource {
+        return this.audioBg;
     }
     
-    public set AudioLv1(audioLv1 : AudioSource) {
-        this.audioLv1 = audioLv1;
+    public set AudioBg(audioBg : AudioSource) {
+        this.audioBg = audioBg;
     }
 
-    public get AudioLv2() : AudioSource {
-        return this.audioLv2;
+    public get AudioCorrectAns() : AudioSource {
+        return this.audioCorrectAns;
     }
     
-    public set AudioLv2(audioLv2 : AudioSource) {
-        this.audioLv2 = audioLv2;
+    public set AudioCorrectAns(audioCorrectAns : AudioSource) {
+        this.audioCorrectAns = audioCorrectAns;
     }
 
-    public get AudioLv3() : AudioSource {
-        return this.audioLv3;
+    public get AudioIncorrectAns() : AudioSource {
+        return this.audioIncorrectAns;
     }
     
-    public set AudioLv3(audioLv3 : AudioSource) {
-        this.audioLv3 = audioLv3;
+    public set AudioIncorrectAns(audioIncorrectAns : AudioSource) {
+        this.audioIncorrectAns = audioIncorrectAns;
     }
 
     public set BtnMute(btnMute : Button) {

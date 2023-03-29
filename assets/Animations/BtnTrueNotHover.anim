@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.AnimationClip",
-    "_name": "BtnFalse",
+    "_name": "BtnTrueNotHover",
     "_objFlags": 0,
     "__editorExtras__": {
       "embeddedPlayerGroups": []
@@ -19,13 +19,7 @@
       }
     ],
     "_exoticAnimation": null,
-    "_events": [
-      {
-        "frame": 0,
-        "func": "",
-        "params": []
-      }
-    ],
+    "_events": [],
     "_embeddedPlayers": []
   },
   {
@@ -68,11 +62,11 @@
     ],
     "_values": [
       {
-        "__uuid__": "2e227e34-8c6d-4d67-bb72-7c76b2d670df@f9941",
+        "__uuid__": "d042e2c6-8a8e-4200-9041-e3662b2a8661@f9941",
         "__expectedType__": "cc.SpriteFrame"
       },
       {
-        "__uuid__": "21763156-41f1-4765-a499-15ce0c51602a@f9941",
+        "__uuid__": "203cee98-48b3-40e0-a9f1-ac55bff8d75b@f9941",
         "__expectedType__": "cc.SpriteFrame"
       }
     ]

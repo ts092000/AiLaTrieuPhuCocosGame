@@ -12,7 +12,9 @@ export class WinningSceneController extends Component {
         Model: WinningSceneModel
 
     public start() {
+        let volumeValue = JSON.parse(localStorage.getItem('volumeValueArray'));
 
+        this.View.Audio.volume = volumeValue[ volumeValue.length - 1];
     }
 
     public onLoad() {

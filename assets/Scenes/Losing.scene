@@ -1349,12 +1349,12 @@
     "_enabled": true,
     "__prefab": null,
     "_clip": {
-      "__uuid__": "df58c670-9691-4f1b-b07c-9c9f4b9252ab",
+      "__uuid__": "602940d7-41ff-49b3-bfd5-8488cfd2be89",
       "__expectedType__": "cc.AudioClip"
     },
-    "_loop": true,
+    "_loop": false,
     "_playOnAwake": true,
-    "_volume": 0.5,
+    "_volume": 0.7,
     "_id": "d3KQfHkTFA5ad8heHcy7wS"
   },
   {

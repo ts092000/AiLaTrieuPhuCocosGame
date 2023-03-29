@@ -11,10 +11,31 @@ export class MenuControll extends Component {
     @property({type:MenuModel})
         Model: MenuModel
 
+    private volumeValueArray: number[] = [];
     start() {
         this.View.BackGroundMusic.play();
         this.View.AudioControlMuted.node.active = true;
         this.View.AudioControlPlay.node.active = false;
+
+        
+        let volumeValue = localStorage.getItem('volumeValueArray');
+        
+        if (volumeValue) {
+            this.volumeValueArray = JSON.parse(volumeValue);
+            localStorage.setItem('volumeValueArray', JSON.stringify(this.volumeValueArray));
+        }
+        
+        this.View.BackGroundMusic.volume = this.volumeValueArray[this.volumeValueArray.length - 1];
+        if (this.View.BackGroundMusic.volume == 0.7) {
+            this.View.AudioControlMuted.node.active = true;
+            this.View.AudioControlPlay.node.active = false;
+        }
+        
+        if (this.View.BackGroundMusic.volume == 0) {
+            this.View.AudioControlMuted.node.active = false;
+            this.View.AudioControlPlay.node.active = true;
+        }
+        
     }
     
     public onLoad() {
@@ -35,12 +56,16 @@ export class MenuControll extends Component {
         this.View.AudioControlMuted.node.active = false;
         this.View.AudioControlPlay.node.active = true;
         this.View.BackGroundMusic.volume = 0;
+        this.volumeValueArray.push(this.View.BackGroundMusic.volume);
+        localStorage.setItem('volumeValueArray', JSON.stringify(this.volumeValueArray));
     }
 
     private btnAudioControlPlay(AudioControlBtnPlay: Button) {
         this.View.AudioControlMuted.node.active = true;
         this.View.AudioControlPlay.node.active = false;
-        this.View.BackGroundMusic.volume = 0.5;
+        this.View.BackGroundMusic.volume = 0.7;
+        this.volumeValueArray.push(this.View.BackGroundMusic.volume);
+        localStorage.setItem('volumeValueArray', JSON.stringify(this.volumeValueArray));
     }
 }
 
