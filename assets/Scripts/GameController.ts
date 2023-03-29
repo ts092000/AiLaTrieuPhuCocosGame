@@ -57,10 +57,17 @@ export class GameController extends Component {
         //     this.volumeValueArray.push(volumeValue);
         //     localStorage.setItem('volumeValueArray', JSON.stringify(this.volumeValueArray));
         // }
+        if (this.volumeValueArray.length == 0) {
+            this.View.AudioBg.volume = 0.7;
+            this.View.AudioCorrectAns.volume = 0.7;
+            this.View.AudioIncorrectAns.volume = 0.7;
+        }
+        else {
+            this.View.AudioBg.volume = volumeValue[ volumeValue.length - 1];
+            this.View.AudioCorrectAns.volume = volumeValue[ volumeValue.length - 1];
+            this.View.AudioIncorrectAns.volume = volumeValue[ volumeValue.length - 1];
+        }
 
-        this.View.AudioBg.volume = volumeValue[ volumeValue.length - 1];
-        this.View.AudioCorrectAns.volume = volumeValue[ volumeValue.length - 1];
-        this.View.AudioIncorrectAns.volume = volumeValue[ volumeValue.length - 1];
 
         if (this.View.AudioBg.volume == 0.7) {
             this.View.BtnMute.node.active = true;

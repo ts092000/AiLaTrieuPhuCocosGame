@@ -14,7 +14,12 @@ export class LosingSceneController extends Component {
     public start() {
         let volumeValue = JSON.parse(localStorage.getItem('volumeValueArray'));
 
-        this.View.Audio.volume = volumeValue[ volumeValue.length - 1];
+        if (volumeValue.length == 0) {
+            this.View.Audio.volume = 0.7
+        }
+        else {
+            this.View.Audio.volume = volumeValue[ volumeValue.length - 1];
+        }
 
         let gameHighScore1 = JSON.parse(localStorage.getItem('gameHighScoreArray'));
         if (gameHighScore1[gameHighScore1.length - 1].toString() == '0') {
