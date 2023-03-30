@@ -1,4 +1,5 @@
 import { _decorator, Component, Node, director, Button, CCInteger, CCString, Animation } from 'cc';
+import { createLogicalAnd } from 'typescript';
 import { GameModel } from './GameModel';
 import { GameView } from './GameView';
 const { ccclass, property } = _decorator;
@@ -52,14 +53,17 @@ export class GameController extends Component {
         let volumeValue = JSON.parse(localStorage.getItem('volumeValueArray'));
         this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMute, this);
         this.View.BtnUnmute.node.on(Button.EventType.CLICK, this.btnUnmute, this);
-        // if (volumeValue) {
-        //     this.volumeValueArray = JSON.parse(volumeValue);
-        //     localStorage.setItem('volumeValueArray', JSON.stringify(this.volumeValueArray));
-        // }
 
-        this.View.AudioBg.volume = volumeValue[ volumeValue.length - 1];
-        this.View.AudioCorrectAns.volume = volumeValue[ volumeValue.length - 1];
-        this.View.AudioIncorrectAns.volume = volumeValue[ volumeValue.length - 1];
+        if (volumeValue.length == 0) {
+            this.View.AudioBg.volume = 0.7;
+            this.View.AudioCorrectAns.volume = 0.7;
+            this.View.AudioIncorrectAns.volume = 0.7;
+        }
+        else {
+            this.View.AudioBg.volume = volumeValue[ volumeValue.length - 1];
+            this.View.AudioCorrectAns.volume = volumeValue[ volumeValue.length - 1];
+            this.View.AudioIncorrectAns.volume = volumeValue[ volumeValue.length - 1];
+        }
 
         if (this.View.AudioBg.volume == 0.7) {
             this.View.BtnMute.node.active = true;
@@ -130,12 +134,16 @@ export class GameController extends Component {
         });
     }
 
-    private LosingScene(GiveUpBtn: Button) {
-        this.startCondition();
-        this.disableAnswerBtn();
+    private disableHelpBtn() {
         this.View.Help1Btn.node.active = false;
         this.View.Help2Btn.node.active = false;
         this.View.Help3Btn.node.active = false;
+    }
+
+    private LosingScene(GiveUpBtn: Button) {
+        this.startCondition();
+        this.disableAnswerBtn();
+        this.disableHelpBtn();
         this.unschedule(GameController.callbackSchedule);
         this.scheduleOnce(function() {
             this.View.AudioIncorrectAns.play();
@@ -218,6 +226,8 @@ export class GameController extends Component {
         labelAniQuestion.playOnLoad = false;
 
         if (GameController.i <= 5) {
+            GameController.result3 = [];
+            GameController.result4 = [];
             let range2 = 4;
             let outputCount2 = 4;
 
@@ -245,7 +255,6 @@ export class GameController extends Component {
             this.ansD = this.csvToArray(text1)[GameController.result[GameController.lv1]][GameController.result2[3]];
 
             GameController.lv1 += 1;
-        
 
             this.View.QuestionLabel.string = this.question;
             this.View.AnswerLabelA.string = 'A: ' + this.ansA;
@@ -267,6 +276,8 @@ export class GameController extends Component {
             }
         }
         else if (GameController.i > 5 && GameController.i <= 10) {
+            GameController.result2 = [];
+            GameController.result4 = [];
             let range3 = 4;
             let outputCount3 = 4;
 
@@ -315,6 +326,8 @@ export class GameController extends Component {
             }
         }
         else if (GameController.i > 10 && GameController.i <= 15) {
+            GameController.result2 = [];
+            GameController.result3 = [];
             let range4 = 4;
             let outputCount4 = 4;
 
@@ -381,6 +394,7 @@ export class GameController extends Component {
         // this.View.AnswerLabelC.string = this.ansC;
         // this.View.AnswerLabelD.string = this.ansD;
         this.View.QuestionLabelNumber.string = 'Câu hỏi số ' + GameController.i.toString();
+        console.log(GameController.i);
     }
     
     private btnClickNextQuestion(AnswerBtnA: Button) {
@@ -691,6 +705,11 @@ export class GameController extends Component {
                     const aniBtnD = this.View.AnswerBtnD.getComponent(Animation);
                     aniBtnD.play("BtnTrueNotHover");
                 }
+                this.View.BackMainMenuBtn.interactable = false;
+                this.View.GiveUpBtn.interactable = false;
+
+                this.disableAnswerBtn();
+                this.disableHelpBtn();
                 this.startCondition();
                 this.scheduleOnce(function() {
                     director.preloadScene("Losing", function () {
@@ -823,7 +842,7 @@ export class GameController extends Component {
         this.View.Help2Btn.interactable = false;
         this.scheduleOnce(function() {
             this.View.Help2Container.node.active = false;
-        }, 4)
+        }, 3)
     }
 
     private unactiveHelp3Container() {
@@ -882,8 +901,8 @@ export class GameController extends Component {
     }
 
     private btnHelp3CTrue(Help3Btn: Button) {
-        this.unactiveHelp3Container();
         this.View.Help3label.string = 'Người thân bạn khuyên bạn chọn phương án C';
+        this.unactiveHelp3Container();
     }
 
     private btnHelp3DTrue(Help3Btn: Button) {

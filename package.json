@@ -2,7 +2,7 @@
   "name": "AiLaTrieuPhuGame",
   "uuid": "0b083dc2-1780-4937-8668-f5bc3a239193",
   "creator": {
-    "version": "3.7.1"
+    "version": "3.7.2"
   },
   "dependencies": {
     "papaparse": "^5.4.0"

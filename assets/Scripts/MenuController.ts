@@ -19,18 +19,20 @@ export class MenuControll extends Component {
 
         
         let volumeValue = localStorage.getItem('volumeValueArray');
+        localStorage.setItem('volumeValueArray', JSON.stringify(this.volumeValueArray));
         
         if (volumeValue) {
             this.volumeValueArray = JSON.parse(volumeValue);
             localStorage.setItem('volumeValueArray', JSON.stringify(this.volumeValueArray));
         }
         if (this.volumeValueArray.length == 0) {
-            this.View.BackGroundMusic.volume == 0.7;
+            this.View.BackGroundMusic.volume = 0.7;
+            this.volumeValueArray.push(this.View.BackGroundMusic.volume);
         }
         else {
             this.View.BackGroundMusic.volume = this.volumeValueArray[this.volumeValueArray.length - 1];
         }
-        
+
         if (this.View.BackGroundMusic.volume == 0.7) {
             this.View.AudioControlMuted.node.active = true;
             this.View.AudioControlPlay.node.active = false;
