@@ -611,6 +611,9 @@ export class GameController extends Component {
         const aniBtnB = this.View.AnswerBtnB.getComponent(Animation);
         const aniBtnC = this.View.AnswerBtnC.getComponent(Animation);
         const aniBtnD = this.View.AnswerBtnD.getComponent(Animation);
+
+        this.View.BackMainMenuBtn.interactable = false;
+        this.View.GiveUpBtn.interactable = false;
         aniBtnA.play("BtnFalse");
         if (GameController.result2[1] == 2 || GameController.result3[1] == 2 || GameController.result4[1] == 2) {
             aniBtnB.play("BtnTrueNotHover");
@@ -628,6 +631,9 @@ export class GameController extends Component {
         const aniBtnB = this.View.AnswerBtnB.getComponent(Animation);
         const aniBtnC = this.View.AnswerBtnC.getComponent(Animation);
         const aniBtnD = this.View.AnswerBtnD.getComponent(Animation);
+
+        this.View.BackMainMenuBtn.interactable = false;
+        this.View.GiveUpBtn.interactable = false;
         aniBtnB.play("BtnFalse");
         if (GameController.result2[0]  == 2 || GameController.result3[0] == 2 || GameController.result4[0] == 2) {
             aniBtnA.play("BtnTrueNotHover");
@@ -645,6 +651,9 @@ export class GameController extends Component {
         const aniBtnB = this.View.AnswerBtnB.getComponent(Animation);
         const aniBtnC = this.View.AnswerBtnC.getComponent(Animation);
         const aniBtnD = this.View.AnswerBtnD.getComponent(Animation);
+
+        this.View.BackMainMenuBtn.interactable = false;
+        this.View.GiveUpBtn.interactable = false;
         aniBtnC.play("BtnFalse");
         if (GameController.result2[0] == 2 || GameController.result3[0] == 2 || GameController.result4[0] == 2) {
             aniBtnA.play("BtnTrueNotHover");
@@ -662,6 +671,9 @@ export class GameController extends Component {
         const aniBtnB = this.View.AnswerBtnB.getComponent(Animation);
         const aniBtnC = this.View.AnswerBtnC.getComponent(Animation);
         const aniBtnD = this.View.AnswerBtnD.getComponent(Animation);
+
+        this.View.BackMainMenuBtn.interactable = false;
+        this.View.GiveUpBtn.interactable = false;
         aniBtnD.play("BtnFalse");
         if (GameController.result2[0] == 2 || GameController.result3[0] == 2 || GameController.result4[0] == 2) {
             aniBtnA.play("BtnTrueNotHover");
