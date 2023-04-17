@@ -623,7 +623,7 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "d042e2c6-8a8e-4200-9041-e3662b2a8661@f9941",
+      "__uuid__": "f9d4ddb0-45a1-4c90-be2f-73b8d5c07337@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 1,
@@ -682,17 +682,11 @@
       "a": 255
     },
     "_normalSprite": {
-      "__uuid__": "d042e2c6-8a8e-4200-9041-e3662b2a8661@f9941",
+      "__uuid__": "f9d4ddb0-45a1-4c90-be2f-73b8d5c07337@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
-    "_hoverSprite": {
-      "__uuid__": "2e227e34-8c6d-4d67-bb72-7c76b2d670df@f9941",
-      "__expectedType__": "cc.SpriteFrame"
-    },
-    "_pressedSprite": {
-      "__uuid__": "2e227e34-8c6d-4d67-bb72-7c76b2d670df@f9941",
-      "__expectedType__": "cc.SpriteFrame"
-    },
+    "_hoverSprite": null,
+    "_pressedSprite": null,
     "_disabledSprite": null,
     "_duration": 0.1,
     "_zoomScale": 1.2,
@@ -841,7 +835,7 @@
     "_prefab": null,
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": -390,
+      "x": -430,
       "y": 250,
       "z": 0
     },
@@ -932,8 +926,8 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 80,
-      "height": 80
+      "width": 50,
+      "height": 50
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1127,8 +1121,8 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 80,
-      "height": 80
+      "width": 50,
+      "height": 50
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1269,8 +1263,8 @@
     "__prefab": null,
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 80,
-      "height": 80
+      "width": 50,
+      "height": 50
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -1290,9 +1284,9 @@
     "__prefab": null,
     "_alignFlags": 9,
     "_target": null,
-    "_left": 50,
+    "_left": 25,
     "_right": 0,
-    "_top": 10,
+    "_top": 25,
     "_bottom": 0,
     "_horizontalCenter": 0,
     "_verticalCenter": 0,
@@ -1678,7 +1672,8 @@
     "lightProbeInfo": {
       "__id__": 52
     },
-    "bakedWithStationaryMainLight": false
+    "bakedWithStationaryMainLight": false,
+    "bakedWithHighpLightmap": false
   },
   {
     "__type__": "cc.AmbientInfo",

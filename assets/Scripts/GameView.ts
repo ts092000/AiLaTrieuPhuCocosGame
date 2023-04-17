@@ -135,6 +135,34 @@ export class GameView extends Component {
     @property({type:Label})
     private help3label: Label = null;
 
+    @property({type:Node})
+    private help1node: Node = null;
+
+    @property({type:Node})
+    private help2node: Node = null;
+
+    @property({type:Node})
+    private help3node: Node = null;
+
+    @property({type:Button})
+    private help1Yes: Button = null;
+
+    @property({type:Button})
+    private help1No: Button = null;
+
+    @property({type:Button})
+    private help2Yes: Button = null;
+
+    @property({type:Button})
+    private help2No: Button = null;
+
+    @property({type:Button})
+    private help3Yes: Button = null;
+
+    @property({type:Button})
+    private help3No: Button = null;
+
+
     public get BackMainMenuBtn() : Button {
         return this.backMainMenuBtn;
     }
@@ -158,6 +186,7 @@ export class GameView extends Component {
     public set QuestionLabel(questionLabel : Label) {
         this.questionLabel = questionLabel;
     }
+
     
     public get AnswerLabelA() : Label {
         return this.answerLabelA
@@ -486,6 +515,78 @@ export class GameView extends Component {
 
     public get Help3label() : Label {
         return this.help3label
+    }
+
+    public set Help1node(help1node : Node) {
+        this.help1node = help1node;
+    }
+
+    public get Help1node() : Node {
+        return this.help1node
+    }
+
+    public set Help2node(help2node : Node) {
+        this.help2node = help2node;
+    }
+
+    public get Help2node() : Node {
+        return this.help2node
+    }
+
+    public set Help3node(help3node : Node) {
+        this.help3node = help3node;
+    }
+
+    public get Help3node() : Node {
+        return this.help3node
+    }
+
+    public set Help1Yes(help1Yes : Button) {
+        this.help1Yes = help1Yes;
+    }
+
+    public get Help1Yes() : Button {
+        return this.help1Yes
+    }
+
+    public set Help1No(help1No : Button) {
+        this.help1No = help1No;
+    }
+
+    public get Help1No() : Button {
+        return this.help1No
+    }
+
+    public set Help2Yes(help2Yes : Button) {
+        this.help2Yes = help2Yes;
+    }
+
+    public get Help2Yes() : Button {
+        return this.help2Yes
+    }
+
+    public set Help2No(help2No : Button) {
+        this.help2No = help2No;
+    }
+
+    public get Help2No() : Button {
+        return this.help2No
+    }
+
+    public set Help3Yes(help3Yes : Button) {
+        this.help3Yes = help3Yes;
+    }
+
+    public get Help3Yes() : Button {
+        return this.help3Yes
+    }
+
+    public set Help3No(help3No : Button) {
+        this.help3No = help3No;
+    }
+
+    public get Help3No() : Button {
+        return this.help3No
     }
 }
 
