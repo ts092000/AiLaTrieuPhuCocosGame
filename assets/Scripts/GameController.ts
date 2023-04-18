@@ -53,23 +53,23 @@ export class GameController extends Component {
     public matchId: string;
     
     public async start() : Promise<void> {
-        if (DEBUG === false) {
-
-            if (this.gameClient === undefined) {
-                this.gameClient = new GameClient("642d37fddc7fdb5a28069d70", "9f2af4cb-fc85-4c48-a39d-d2acc5960056");
-                await this.gameClient.initAsync()
-                .then(() => {})
-                .catch((err) => console.log(err));
-            }
+        if (this.gameClient === undefined) {
+            this.gameClient = new GameClient("642d37fddc7fdb5a28069d70", "9f2af4cb-fc85-4c48-a39d-d2acc5960056");
+            await this.gameClient.initAsync()
+            .then(() => {})
+            .catch((err) => console.log(err));
         }
+        // if (DEBUG === false) {
 
-        if (DEBUG === false) {
+        // }
 
-            // Khi bat dau game
-            await this.gameClient.match.startMatch()
-                .then((data) => {this.matchId = data.matchId;})
-                .catch((error) => console.log(error));
-        }
+        // Khi bat dau game
+        await this.gameClient.match.startMatch()
+            .then((data) => {this.matchId = data.matchId;})
+            .catch((error) => console.log(error));
+        // if (DEBUG === false) {
+
+        // }
         
         let volumeValue = JSON.parse(localStorage.getItem('volumeValueArray'));
         this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMute, this);
@@ -151,14 +151,14 @@ export class GameController extends Component {
         let _this = this;
 
         director.preloadScene("Losing", async function () {
-            if (DEBUG === false) {
+            await _this.gameClient.match
+                .completeMatch(_this.matchId, { score: GameController.i })
+                .then((data) => {})
+                .catch((error) => console.log(error));
+            // if (DEBUG === false) {
 
-                await _this.gameClient.match
-                    .completeMatch(_this.matchId, { score: GameController.i })
-                    .then((data) => {})
-                    .catch((error) => console.log(error));
-            }
-                _this.startCondition();
+            // }
+            _this.startCondition();
             director.loadScene("Losing");
         });
     }
@@ -181,13 +181,13 @@ export class GameController extends Component {
         let _this = this;
         this.scheduleOnce(function() {
             director.preloadScene("Losing", async function () {
-                if (DEBUG === false) {
+                await _this.gameClient.match
+                    .completeMatch(_this.matchId, { score: GameController.i })
+                    .then((data) => {})
+                    .catch((error) => console.log(error));
+                // if (DEBUG === false) {
 
-                    await _this.gameClient.match
-                        .completeMatch(_this.matchId, { score: GameController.i })
-                        .then((data) => {})
-                        .catch((error) => console.log(error));
-                }
+                // }
                 _this.startCondition();
                 director.loadScene("Losing");
             });
@@ -420,13 +420,13 @@ export class GameController extends Component {
             this.View.QuestionLabel.node.active = false;
             let _this = this;
             director.preloadScene("Winning",  async function () {
-                if (DEBUG === false) {
+                await _this.gameClient.match
+                    .completeMatch(_this.matchId, { score: GameController.i })
+                    .then((data) => {})
+                    .catch((error) => console.log(error));
+                // if (DEBUG === false) {
 
-                    await _this.gameClient.match
-                        .completeMatch(_this.matchId, { score: GameController.i })
-                        .then((data) => {})
-                        .catch((error) => console.log(error));
-                }
+                // }
                 director.loadScene("Winning");
             });
             GameController.i = 1;
@@ -793,13 +793,13 @@ export class GameController extends Component {
                 this.disableHelpBtn();
                 let _this = this;
                 this.scheduleOnce(async function() {
-                    if (DEBUG === false) {
+                    await _this.gameClient.match
+                        .completeMatch(_this.matchId, { score: GameController.i })
+                        .then((data) => {})
+                        .catch((error) => console.log(error));
+                    // if (DEBUG === false) {
 
-                        await _this.gameClient.match
-                            .completeMatch(_this.matchId, { score: GameController.i })
-                            .then((data) => {})
-                            .catch((error) => console.log(error));
-                    }
+                    // }
                     _this.startCondition();
                     director.preloadScene("Losing", function () {
                         director.loadScene("Losing");
