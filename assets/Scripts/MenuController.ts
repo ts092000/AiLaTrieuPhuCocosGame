@@ -24,6 +24,12 @@ export class MenuControll extends Component {
         if (parameters === null) {
             console.log('null');
             let parameters = new Node("GameClient");
+            if (this.gameClient === undefined) {
+                this.gameClient = new GameClient("643fc5fe0a3bf6132391328d", "568a590d-f9d1-4a10-b59d-ea6e0d9e9786");
+                await this.gameClient.initAsync()
+                .then(() => {})
+                .catch((err) => console.log(err));
+            }
             let gameClientParams = parameters.addComponent(StoredNodeFromScene);
             gameClientParams.gameClient = this.gameClient;
             director.addPersistRootNode(parameters);
@@ -67,12 +73,10 @@ export class MenuControll extends Component {
             this.View.AudioControlMuted.node.active = false;
             this.View.AudioControlPlay.node.active = true;
         }
-        
         this.isReady = true;
     }
     
-    public onLoad() {
-        
+    public onLoad() {     
         this.View.PlayBtn.node.on(Button.EventType.CLICK, this.btnClickPlayGame, this);
         // director.addPersistRootNode(this.View.BackGroundMusic.node);
     }
@@ -81,6 +85,7 @@ export class MenuControll extends Component {
         if (this.isReady == false) {
             return;
         }
+        
         this.View.AudioControlMuted.node.on(Button.EventType.CLICK, this.btnAudioControlMuted, this);
         this.View.AudioControlPlay.node.on(Button.EventType.CLICK, this.btnAudioControlPlay, this);
     }
