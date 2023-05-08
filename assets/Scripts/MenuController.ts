@@ -15,6 +15,7 @@ export class MenuControll extends Component {
 
     private volumeValueArray: number[] = [];
     public gameClient;
+    public isReady: boolean = false;
     
     public async start() : Promise<void> {
         let parameters = find("GameClient");
@@ -67,14 +68,19 @@ export class MenuControll extends Component {
             this.View.AudioControlPlay.node.active = true;
         }
         
+        this.isReady = true;
     }
     
     public onLoad() {
+        
         this.View.PlayBtn.node.on(Button.EventType.CLICK, this.btnClickPlayGame, this);
         // director.addPersistRootNode(this.View.BackGroundMusic.node);
     }
     
-    public async update(deltaTime: number) {
+    public update(deltaTime: number) {
+        if (this.isReady == false) {
+            return;
+        }
         this.View.AudioControlMuted.node.on(Button.EventType.CLICK, this.btnAudioControlMuted, this);
         this.View.AudioControlPlay.node.on(Button.EventType.CLICK, this.btnAudioControlPlay, this);
     }
