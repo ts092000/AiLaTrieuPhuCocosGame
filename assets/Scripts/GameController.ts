@@ -63,7 +63,6 @@ export class GameController extends Component {
         //     // const now = new Date();
         //     console.log(_this.timeNum);
         // })
-
         let parameters = find("GameClient");
         let gameClientParams = parameters.getComponent(StoredNodeFromScene);
         // if (DEBUG === false) {
