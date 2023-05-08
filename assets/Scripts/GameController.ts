@@ -1,8 +1,9 @@
-import { _decorator, Component, Node, director, Button, CCInteger, CCString, Animation } from 'cc';
+import { _decorator, Component, Node, director, Button, CCInteger, CCString, Animation, find, Game, game, AudioClip, Event} from 'cc';
 import GameClient from '@dattenlagiday/oc_gamecenter_sdk_pkg';
 import { GameModel } from './GameModel';
 import { GameView } from './GameView';
 import { DEBUG } from 'cc/env';
+import { StoredNodeFromScene } from './StoredNodeFromScene';
 const { ccclass, property } = _decorator;
 
 @ccclass('GameController')
@@ -53,23 +54,30 @@ export class GameController extends Component {
     public matchId: string;
     
     public async start() : Promise<void> {
-        if (this.gameClient === undefined) {
-            this.gameClient = new GameClient("642d37fddc7fdb5a28069d70", "9f2af4cb-fc85-4c48-a39d-d2acc5960056");
-            await this.gameClient.initAsync()
-            .then(() => {})
-            .catch((err) => console.log(err));
-        }
+        let _this = this;
+        // game.on(Game.EVENT_SHOW, function() {
+        //     // const now = new Date();
+        //     console.log(_this.timeNum);
+        // })
+        // game.on(Game.EVENT_HIDE, function() {
+        //     // const now = new Date();
+        //     console.log(_this.timeNum);
+        // })
+
+        let parameters = find("GameClient");
+        let gameClientParams = parameters.getComponent(StoredNodeFromScene);
         // if (DEBUG === false) {
 
         // }
+        this.gameClient = gameClientParams.gameClient;
 
         // Khi bat dau game
-        await this.gameClient.match.startMatch()
-            .then((data) => {this.matchId = data.matchId;})
+        await gameClientParams.gameClient.match.startMatch()
+            .then((data) => {_this.matchId = data.matchId;})
             .catch((error) => console.log(error));
         // if (DEBUG === false) {
-
         // }
+        
         
         let volumeValue = JSON.parse(localStorage.getItem('volumeValueArray'));
         this.View.BtnMute.node.on(Button.EventType.CLICK, this.btnMute, this);
@@ -116,6 +124,7 @@ export class GameController extends Component {
                 break;
         }
         this.generateArray(this.randonArrayNumb);
+
     }
     
     public update(deltaTime: number) {
@@ -755,14 +764,13 @@ export class GameController extends Component {
         }
     }
 
-    private async startCountDown() {
+    private startCountDown() {
         this.View.TimeLabel.string = this.timeNum.toString();
         GameController.callbackSchedule = function() {
             this.timeNum--;
             this.View.TimeLabel.string = this.timeNum.toString();
             
             if (this.timeNum == 0) {
-                this.timeNum = this.timeNum;
                 this.View.ResultLabel.string = "Hết Giờ";
                 this.unschedule(GameController.callbackSchedule, 1);
                 this.View.AudioIncorrectAns.play();

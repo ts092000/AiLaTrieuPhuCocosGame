@@ -3,6 +3,9 @@ const { ccclass, property } = _decorator;
 
 @ccclass('GameView')
 export class GameView extends Component {
+    @property({type:Node})
+    private bg: Node = null;
+
     @property({type:Button})
     private backMainMenuBtn: Button = null;
 
@@ -587,6 +590,14 @@ export class GameView extends Component {
 
     public get Help3No() : Button {
         return this.help3No
+    }
+
+    public set Bg(bg : Node) {
+        this.bg = bg;
+    }
+
+    public get Bg() : Node {
+        return this.bg
     }
 }
 

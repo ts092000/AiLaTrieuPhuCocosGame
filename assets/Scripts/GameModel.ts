@@ -1,6 +1,5 @@
 import { _decorator, Component, Node, TextAsset, resources, instantiate, director, } from 'cc';
 const { ccclass, property } = _decorator;
-import { Papa } from 'papaparse';
 
 @ccclass('GameModel')
 export class GameModel extends Component {

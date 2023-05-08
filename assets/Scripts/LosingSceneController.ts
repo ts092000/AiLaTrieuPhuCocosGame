@@ -22,12 +22,18 @@ export class LosingSceneController extends Component {
         }
 
         let gameHighScore1 = JSON.parse(localStorage.getItem('gameHighScoreArray'));
+        if (gameHighScore1 == null) {
+            this.View.BestScoreLabel.string = "Bạn trả lời đúng nhiều nhất 0 câu";
+            this.View.CurrentScoreLabel.string = "Rất tiếc bạn không trả lời đúng câu nào!";
+        }
+        
         if (gameHighScore1[gameHighScore1.length - 1].toString() == '0') {
             this.View.CurrentScoreLabel.string = "Rất tiếc bạn không trả lời đúng câu nào!";
         }
         else {
             this.View.CurrentScoreLabel.string = 'Rất tiếc, bạn trả lời được ' +gameHighScore1[gameHighScore1.length - 1].toString() + ' câu!';
         }
+
         this.View.BestScoreLabel.string = 'Bạn trả lời đúng nhiều nhất ' +(Math.max(...gameHighScore1)).toString() + ' câu!';
     }
     

@@ -1,6 +1,8 @@
-import { _decorator, Component, Node, Button, director } from 'cc';
+import { _decorator, Component, Node, Button, director, find, Game } from 'cc';
+import GameClient from '@dattenlagiday/oc_gamecenter_sdk_pkg';
 import { MenuView } from './MenuView';
 import { MenuModel } from './MenuModel';
+import { StoredNodeFromScene } from './StoredNodeFromScene';
 const { ccclass, property } = _decorator;
 
 @ccclass('MenuController')
@@ -12,12 +14,34 @@ export class MenuControll extends Component {
         Model: MenuModel
 
     private volumeValueArray: number[] = [];
-    start() {
+    public gameClient;
+    
+    public async start() : Promise<void> {
+        let parameters = find("GameClient");
+        console.log(this.gameClient);
+        
+        if (parameters === null) {
+            console.log('null');
+            let parameters = new Node("GameClient");
+            let gameClientParams = parameters.addComponent(StoredNodeFromScene);
+            gameClientParams.gameClient = this.gameClient;
+            director.addPersistRootNode(parameters);
+        }
+        // let gameIdStored = localStorage.getItem('gameId');
+        // let apikey = localStorage.getItem('apikey');
+
+        // localStorage.setItem('gameIdStored', JSON.stringify(gameIdStored));
+        // localStorage.setItem('apikey', JSON.stringify(apikey));
+
+        // let PersistNode = new Node('PersistNode');
+        // PersistNode.setPosition(0,0,0);
+        // this.View.BackGroundMenu.addChild(PersistNode);
+        // let nodeToMove = this.View.BackGroundMenu.getChildByName('PersistNode');
+        
         this.View.BackGroundMusic.play();
         this.View.AudioControlMuted.node.active = true;
         this.View.AudioControlPlay.node.active = false;
 
-        
         let volumeValue = localStorage.getItem('volumeValueArray');
         localStorage.setItem('volumeValueArray', JSON.stringify(this.volumeValueArray));
         
@@ -50,7 +74,7 @@ export class MenuControll extends Component {
         // director.addPersistRootNode(this.View.BackGroundMusic.node);
     }
     
-    update(deltaTime: number) {
+    public async update(deltaTime: number) {
         this.View.AudioControlMuted.node.on(Button.EventType.CLICK, this.btnAudioControlMuted, this);
         this.View.AudioControlPlay.node.on(Button.EventType.CLICK, this.btnAudioControlPlay, this);
     }
